@@ -11,3 +11,5 @@ In this course you will learn how push past the boundries of the Site Editor, an
  - Register and use custom templates and template parts
  - Add custom elements like fonts, patterns and Global Styles variations
  - Make your block theme ready for translation
+
+Ready to dive in? Enroll in this course by signing in to your WordPress.org account (or creating a WordPress.org account for the first time) and then clicking the button below.
