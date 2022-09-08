@@ -6,9 +6,13 @@ Let's start by reviewing the requirements for a block theme. We'll do this by lo
 
 
 
-All themes, including block themes, need a style.css file. WordPress uses the header comment section of the style.css to display information about the theme in the Appearance -> Themes dashboard panel. Additionally the WordPress Theme Repository uses data in the header comment to display information about the theme in the Theme Repository.
+All themes, including block themes, need a style.css file. WordPress uses the header comment section of the style.css to display information about the theme in the Appearance -> Themes dashboard panel. 
 
-Here is an example of a the Twenty Twenty-Three theme's style.css header comment:
+![Theme Information](/images/module-01/base-block-theme-01.png)
+
+Additionally, the WordPress Theme Repository uses data in the header comment to display information about the theme in the Theme Repository.
+
+Here is an example of the Twenty Twenty-Three theme's style.css header comment:
 
 ```css
 /*
@@ -43,4 +47,4 @@ Finally, a block theme needs a theme.json file. This file handles the global set
 }
 ```
 
-![Minimum theme requirements for a block theme](/images/module-01/base-block-theme-01.png)
+![Minimum Theme Requirements](/images/module-01/directory-structure.png)
