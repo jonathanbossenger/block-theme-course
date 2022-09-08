@@ -4,9 +4,9 @@ Let's start by reviewing the requirements for a block theme. We'll do this by lo
 
 ## Requirements
 
+All themes, including block themes, need at minimum a style.css file and an index.php file. 
 
-
-All themes, including block themes, need a style.css file. WordPress uses the header comment section of the style.css to display information about the theme in the Appearance -> Themes dashboard panel. 
+WordPress uses the header comment section of the style.css to display information about the theme in the Appearance -> Themes dashboard panel. 
 
 ![Theme Information](/images/module-01/base-block-theme-01.png)
 
@@ -31,6 +31,13 @@ Template:
 Text Domain: twentytwentythree
 Tags: one-column, custom-colors, custom-menu, custom-logo, editor-style, featured-images, full-site-editing, rtl-language-support, theme-options, threaded-comments, translation-ready, wide-blocks
 */
+```
+
+The index.php file is the theme template file that WordPress will use by default, if it can't find a matching template file for the content being rendered. For the purposes of block themes, this file can be left empty, and just include the PHP opening tag.
+
+```php
+<?php
+// Silence is golden.
 ```
 
 Block themes require one additional file, and index.html template. This file needs to be created inside a directory in the theme directory called `templates`. This file can be empty, but it is required for the theme to be recognized as a block theme, and enable the Editor option in the Appearance menu.
