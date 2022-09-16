@@ -1,6 +1,8 @@
 # Block Theme Requirements: A Review
 
-Let's start by reviewing the requirements for a block theme. We'll do this by looking at the block theme we started with in the [Create a Block Theme (Low-Code) course](https://learn.wordpress.org/create-a-block-theme/).
+[Short video covering this lesson]
+
+Let's start by reviewing the requirements for a block theme. You'll do this by looking at the block theme you created in the [Create a Block Theme (Low-Code) course](https://learn.wordpress.org/create-a-block-theme/).
 
 ## Requirements
 
@@ -55,3 +57,5 @@ Finally, a block theme needs a theme.json file. This file handles the global set
 ```
 
 ![Minimum Theme Requirements](/images/module-01/directory-structure.png)
+
+You can read more about the minimum requirements for setting up a Block Theme in the section on [Block Themes](https://developer.wordpress.org/themes/block-themes/block-theme-setup/) in the Theme Handbook.
