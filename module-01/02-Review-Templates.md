@@ -10,66 +10,119 @@ The Template Hierarchy is the logic WordPress uses to decide which theme templat
 
 For example, to render the content for a single post, you can create any of the [single post template files](https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post), and WordPress will use the first one it finds in the theme directory. 
 
-## Template File Location
+## Editing or Creating Templates
 
-In classic themes, template files are located in the root of the theme directory whereas in block themes, template files are located in a directory called `templates`. This makes a block theme directory much cleaner and easier to navigate, as there are no other files in the `templates` directory than theme templates.
+One of the main advantages of block themes over classic themes, is that you can edit existing templates or create new theme templates from the Site editor. 
 
-## Creating New Templates
+<div class="callout">
+    For a detailed breakdown of all the different parts of the Site editor, take a look at this [handy help document](https://wordpress.org/support/article/site-editor/).
+</div>
 
-One of the main advantages of block themes over classic themes, is that you can create new theme templates from the Site Editor. Once created, you can either save the template for the current site, which stores it in the database, or export the template code into a file in the `templatess` directory of your theme. 
+You can then either save the template for the current site, which stores it in the database, or export the template code into the relevant file in the `templates` directory of your theme. 
 
-In the Create a Block Theme (Low-Code) course, you created a couple of block theme templates. 
+### Adding Content to the index.html Template
 
-[Image of one of the templates created in the previous course]
+In the last lesson, you create an empty `index.html` template file. Let's add some content to this template file.
 
-Then you exported your theme, which exported the code for the templates into the theme's `templates` directory.
-
-[Image of the style guide template in the Theme's templates directory]
-
-Now, create a new template by navigating to the Editor. Toggle the Editor navigation menu, and select Templates.
+Start by navigating to Appearance -> Editor. You'll be presented with a blank canvas, ready to add content to your index.html template.
 
 [Image of the list of templates in the Editor created in the previous course]
 
-Click on the Add New button to create a new template. The Editor will give you the option of creating a new template based on the template type, ranging from things like a Front Page to a 404 Page. For this lesson, select the Page option, to create a new Page template.
+As the index.html template is the default template that WordPress will load if it can't find a matching template file for the content being rendered, it's a good idea to add some content to this template. General best practice is to populate this template with a query loop, so that all posts on the site are displayed.
+
+<div class="callout callout-tutorial">
+    1. Add a heading block, and give the template a heading
+    2. Add a query loop block, and select the "Standard" pattern for the query loop.
+</div>
+
+If you switch to the Code editor View, you'll be able to see the block markup for the heading and query loop blocks.
+
+<div class="callout">
+    Enable the Code Editor view by clicking the More Options three-dot menu and selecting Code editor.
+</div>
+
+```
+<!-- wp:heading -->
+<h2>A list of all my posts</h2>
+<!-- /wp:heading -->
+
+<!-- wp:query {"queryId":8,"query":{"perPage":3,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false}} -->
+<div class="wp-block-query"><!-- wp:post-template -->
+<!-- wp:post-title {"isLink":true} /-->
+
+<!-- wp:post-featured-image {"isLink":true,"align":"wide"} /-->
+
+<!-- wp:post-excerpt /-->
+
+<!-- wp:separator {"opacity":"css"} -->
+<hr class="wp-block-separator has-css-opacity"/>
+<!-- /wp:separator -->
+
+<!-- wp:post-date /-->
+<!-- /wp:post-template --></div>
+<!-- /wp:query -->
+```
+
+If you save this template content, it will save the changes to the database. This means the template structure will only be available for this site. In lesson 4 of this module we'll review how to export the code to a template file. 
+
+[Image of index template in the Site editor]
+
+<div class="callout">
+    Save this template now, we'll export it in a bit!
+</div>
+
+### Adding New Templates from the Site Editor
+
+Besides adding block content to existing templates, you can also create brand new templates from the Site editor. 
+
+To start, toggle to the Site editor navigation sidebar, and click on "Templates" in the editor navigation.
+
+<div class="callout">
+    If you don't see the Site editor navigation sidebar, click the WordPress logo in the top left corner of the editor, which is the  "Toggle Navigation" button.
+</div>
+
+You'll be presented with a list of the templates in this theme, and a button to add a new template.
+
+<div class="callout callout-tutorial">
+    Click on the Add New button to create a new template. 
+</div>
+
+The Editor will give you the option of creating a new template based on the template type, ranging from things like a Front Page to a 404 Page. 
+
+<div class="callout callout-tutorial">
+    Select the Page option, to create a new Page template.
+</div>
 
 [Image of the list of templates in the Editor created in the previous course]
 
-In the Create a Block Theme (Low-Code) course you also created a header and footer template, so start by adding the header template. 
+Now you can add content to your page template.
 
-You can do this in two ways:
+<div class="callout callout-tutorial">
+    Add the Post Title, Post Featured Image and Post Content blocks to the page template.
+</div>
 
-1. Click on the Block Inserter Button, and selecting the Header block from the list.
+Because a page in WordPress is merely a custom post type, you can use the Post Title and Post Content blocks to render the title and content of a page.
 
-[Image of the Block Inserter Button]
+Your final page template should look something like this:
 
-2. Type /header in the editor, and select the Header block.
+[Image of the page template with the post title, post featured image, and post content blocks]
 
-[Image using the /header shortcut to insert the Header block]
+Now switch to the Code editor view, to see the block markup that makes up this page template
 
-Either way, once your Header block is added, you can Choose your header template part to insert it into the page template.
+```html
+<!-- wp:post-title /-->
 
-[Image of the Header block selection]
+<!-- wp:post-featured-image /-->
 
-Next, add the Post Title and Post Content blocks to the template. 
+<!-- wp:post-content /-->
+```
 
-<callout>Because a page in WordPress is merely a custom post type, you can use the Post Title and Post Content blocks to render the title and content of a page.</callout>
+<div class="callout">
+    Save this template now, so it's included when we export it later!
+</div>
 
-Finally, add the footer template part to the page template, in the same way you added the header.
+### Further Reading
 
-Your final page should look something like this.
+You can read more about the [block theme templates](https://developer.wordpress.org/themes/block-themes/templates-and-template-parts/)in the Theme Handbook.
 
-[Image of the page template with the header, post title, post content and footer template parts]
-
-Don't save this page at this point, because you're going to want to export this code to a template file.
-
-## Exporting Templates
-
-Now that you have created a new template, you can export it to a file in the theme's `templates` directory. Click on the Editor options and switch to the Code editor view. You'll see the block code in the editor.
-
-[Image of the page template in the Code editor view]
-
-You can now copy this code, create a new template file called page.html in the theme's `templates` directory, and paste the code into the file.
-
-Once you've done that, refresh the Site Editor, either by using your browser's refresh button, or by navigating back to the dashboard, and then back to the Site Editor.
-
-If you navigate to your list of templates, you'll now see a Page template in the list. 
+Now that we've covered theme templates, let's take a look at template parts.

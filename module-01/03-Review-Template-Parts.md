@@ -2,46 +2,78 @@
 
 [Short video covering this lesson]
 
-Template Parts are the reusable theme files. Unlike templates, template parts are not rendered directly, but are instead used inside templates to render specfic content. Consider the header and footer template parts you created in the Create a Block Theme (Low-Code) course. These template parts are used inside the page template to render the same header and footer on all template files.
+Template Parts are reusable parts of a theme. Unlike templates, template parts are not rendered directly, but are instead used inside templates to render specfic content. Template parts of very similar to blocks, in that they are reusable pieces of content that can be inserted into multiple places.
 
-## Template Parts Location
+If you completed the Create a Block Theme (Low-Code) course you would have created a header and footer template part. These template parts are used inside the page template to render the same header and footer on all template files.
 
-Template parts are located in a directory called `parts`. Just like template files, they are html files that contain a mix of HTML and block markup. 
-
-By default, WordPress block themes expect at least a header and footer template part, but you can create multiple template parts, and use them anywhere in your theme templates.
-
-## Creating New Templates
+## Creating Template Parts
 
 Just like you did with creating a new Page template, you can also create new template parts from the Site Editor. The difference here is that you define the template part by giving it a name, and then choosing what type of template part it is.
 
-Create a new template by navigating to the Editor. Toggle the Editor navigation menu, and select Template Parts.
+Create a new template part by navigating to the Editor. Toggle the Editor navigation menu, and select Template Parts.
 
 [Image of the list of template parts in the Editor created in the previous course]
 
-Click on the Add New button to create a new template part. The Editor will ask you to give the template part a name, and select to either create a general template part, a header template part or a footer template part. 
+<div class="callout callout-tutorial">
+    Click on the Add New button to create a new template part. 
+</div>
+
+The Editor will ask you to give the template part a name, and select to either create a general template part, a header template part or a footer template part. 
 
 [Image of the new template part UI]
 
-Create a new General template and call it `quote`. You'll be taken straight to the new Template Part in the editor.
+Go ahead and create a header and footer template part for your theme.
+
+<div class="callout callout-tutorial">
+    Create a new header template part, and name it `header`.
+</div>
+
+Once the template part is created, you'll be taken straight to the new Template Part in the editor.
 
 [Image of the new template part in the editor]
 
-Now, add a Quote block, either by clicking the Block Inserter button, or by typing `/quote` in the editor.
+Now you can begin designing your header template part.
 
-Enter an interesting quote, and add the author of the quote as the citation
+<div class="callout callout-tutorial">
+    1. Add a Column block, with a 3 column layout
+    2. Add a Site Title block to the first column
+    3. Add a Site Logo block to the second column
+    4. Add a Site Title block to the third column
+</div>
 
-[Iamge of the quote block with the quote and citation]
+You should end up with a template part that looks something like this.
 
-Then, select Layout in the Block Sidebar, and enter a padding value of 50px.
+[Image of the header template part in the editor]
 
-[Image of the quote block with the padding value set to 50px]
+Save the template part. You can now use this template part in your page template.
 
-Now that you have designed your template part, export it to a template part file, as you did for the page template in the previous lesson.
+<div class="callout callout-tutorial">
+    Now create a footer template part for your theme, and add some content of your own.
+</div>
 
-1. View the Code Editor
-2. Copy the block code
-3. Navigate to the theme directory in your code editor and create a new template part in the `parts` directory called quote.html
-4. Refresh the Site Editor, and view the list of template parts
+## Using Template Parts in Templates
 
-[Image of the list of template parts in the editor]
+Now that you've created a header and footer template part, you will want to use them in your templates. Adding the template part code to a template in the Site editor is the same as adding any block element. 
 
+Navigate back to your list of templates, and click on the index template to edit it. Then add the header and footer template parts to the template. 
+
+<div class="callout callout-tutorial">
+    1. Click on the Block Inserter, and search for the template part block
+    2. Add the template part block to your template, and move it into the desired location
+    2. Click the "Choose" button in the template part block to choose the template part
+    4. Choose either the header or footer template part to insert it into the template
+</div>
+
+Once you have added your template parts, switch to the Code editor view to see the block markup for the template part inside the template.
+
+```html
+<!-- wp:template-part {"slug":"header","theme":"new-block-theme"} /-->
+...
+<!-- wp:template-part {"slug":"footer","theme":"new-block-theme"} /-->
+```
+
+### Further Reading
+
+You can read more about the [block theme template parts](https://developer.wordpress.org/themes/block-themes/templates-and-template-parts/)in the Theme Handbook.
+
+Now that we've covered creating and editing templates and template parts in the editor, let's look at the options for exporting them to theme files.
