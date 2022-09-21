@@ -38,3 +38,9 @@ Which ever option you used to export your template content, your theme directory
 ![Theme Structure](/images/module-02/lesson-02/block-theme-primary-templates.png)
 
 ## Template Content
+
+The actual template content you add to your templates will depend on the design of your theme. Ideally, you would have designed your theme in something like Figma or Sketch, and have a design for each of the primary templates.
+
+If you're not sure where to get started, check out the [module on designing a theme in the Create a Block Theme Course](#) or take some inspiration from the [open source theme designs](https://make.wordpress.org/design/2022/07/01/open-sourcing-theme-designs/) released by the WordPress design team.
+
+For example, the designs for the [Twenty Twenty Three](https://www.figma.com/community/file/1139275543113752375) theme contain a template design for each of the primary templates, as well as a full style guide, so that you can create a theme that matches the design.
