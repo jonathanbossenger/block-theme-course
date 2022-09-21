@@ -1,6 +1,6 @@
 # Block Theme Template Parts
 
-[Short video covering this lesson]
+[Use template parts](https://videopress.com/v/1FTYZp6a)
 
 Template Parts are reusable parts of a theme. Unlike templates, template parts are not rendered directly, but are instead used inside templates to render specfic content. Template parts of very similar to blocks, in that they are reusable pieces of content that can be inserted into multiple places.
 

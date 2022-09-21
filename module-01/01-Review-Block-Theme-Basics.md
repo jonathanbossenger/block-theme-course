@@ -1,6 +1,6 @@
 # Block Theme Requirements: A Review
 
-[Short video covering this module]
+![Introduction to block theme development (for beginners)](https://videopress.com/v/1FTYZp6a)
 
 Let's start by reviewing the requirements for a block theme. This is the bare minimum you need to create a working block theme.
 

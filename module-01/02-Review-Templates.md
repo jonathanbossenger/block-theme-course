@@ -1,6 +1,6 @@
 # Block Theme Templates
 
-[Short video covering this lesson]
+[Using Page Templates](https://videopress.com/v/1FTYZp6a)
 
 The core files that make up a WordPress theme are templates. [Templates](https://developer.wordpress.org/themes/basics/template-files/) are the files that WordPress uses to render the content of a post or page. 
 
