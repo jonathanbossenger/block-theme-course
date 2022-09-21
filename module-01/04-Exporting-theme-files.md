@@ -1,5 +1,7 @@
 # Exporting Your Block Theme
 
+[Supplemental Video](https://videopress.com/v/ktmuF4cT)
+
 Once you have created your basic theme structure, enabled or disabled settings and applied styles in your theme.json, and created your templates and template parts, your final step is going to be exporting all of this from your WordPress install into an installable theme zip file. After all, the theme you've just designed is not meant to stay in this WordPress installation, it might be meant for a client site, or you're planning to release it on the WordPress.org theme repository. 
 
 This lesson will walk you through the steps to export your theme.
