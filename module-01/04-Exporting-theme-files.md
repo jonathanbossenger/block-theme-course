@@ -17,7 +17,7 @@ This process is a bit tedious, but it's good to review how to do it, because it 
 
 ### Block Theme Template structure
 
-In classic themes, template files are located in the root of the theme directory whereas in block themes, template files are located in a directory called `templates`. You already created this directory when you created the emtpy index.html file in an earlier lesson.
+In classic themes, template files are located in the root of the theme directory whereas in block themes, template files are located in a directory called `templates`. You already created this directory when you created the empty index.html file in an earlier lesson.
 
 Template parts on the other hand are located in a directory called `parts`. 
 
@@ -26,52 +26,57 @@ Both template files and template parts are html files that contain a mix of HTML
 1. the file name is all lower case and matches a template hierarchy slug (eg index.html, single.html, archive.html, etc)
 2. the slug uses hyphens to separate words (eg single-post.html, archive-post.html, etc)
 
-<div class="callout callout-tutorial">
-    Now would be a good idea to switch to your code editor and create the `parts` directory in your theme's directory
-</div>
+> Now would be a good idea to and create the `parts` directory in your theme's directory
+
+![Create the parts directory](/images/module-01/lesson-04/parts-directory.png)
 
 ### Manually exporting templates
 
-To manually export the index template, navigate to the template and switch to the Code editor view, then copy the block markup code into the index.html file in the templates directory.
+To manually export the index template, navigate to the template and switch to the Code editor view, then copy the block markup code into the `index.html` file in the `templates` directory.
 
-<div class="callout callout-tutorial">
-    1. Copy the block markup from the Code editor View
-    2. Navigate to the `templates` directory of your theme, and open the index.html file
-    3. Paste the block markup into the index.html file, and save the file.
-</div>
-
-If you refresh the Site editor, you will see the changes you made to the index.html template file. (to be confirmed)
+> 1. Copy the block markup from the Code editor View
+> 2. Navigate to the `templates` directory of your theme, and open the `index.html` file in a text editor
+> 3. Paste the block markup into the `index.html` file, and save the file.
 
 If you wanted to follow the process for the page template, you'd first create the page.html template file in the `templates` directory, and copy the code from the page template in the editor.
 
-<div class="callout">
-    Create the page.html template file now, and copy the block markup from the page template in the Site editor.
-</div>
+> Create the page.html template file now, and copy the block markup from the page template in the Site editor.
 
 ## Manually exporting template parts
 
-As you did with templates, you're going to want to export your template parts to the relevant template parts file, in this case the `header.html` template part and the `footer.html` template part. 
+As you did with templates, you're going to want to export your template parts to the relevant template parts file, in this case the `header.html` template part and the `footer.html` template part. The main difference is that template parts are created in the `parts` directory.
 
-<div class="callout callout-tutorial">
-    Repeat the process of editing, copying and saving the header and footer template parts to their respective files
-</div>
+> Repeat the process of editing, copying and saving the header and footer template parts to their respective files in the `parts` directory.
 
-You should now have 4 template files on your block theme:
+You should now have 4 theme files on your block theme:
 
 1. templates/index.html
 2. templates/page.html
 3. parts/header.html
 4. parts/footer.html
 
-[Image of the newly created parts directory]
+![Exported templates and template parts](/images/module-01/lesson-04/exported-templates-template-parts.png)
 
 ## Using the Site Editors Export Tool
 
-While manually exporting templates and template parts helps with understanding how a block theme is built, it's not the most suitable solution. Not only is it tedious, but if you've made changes to the Global Styles, you have no way of also exporting those changes. 
+While manually exporting templates and template parts helps with understanding how a block theme is built, it's not the most suitable solution. Not only is it tedious, but if you've made changes to the Global Styles, you have no way of also exporting those changes to the theme.json file. 
 
 Fortunately The Site Editor has an export tool that will export all of your block theme code into an installable theme zip that you can then install on another WordPress site. You can access the export tool from the Site Editor's More Options menu, by clicking on the three dots.
+
+![Accessing the export tool](/images/module-01/lesson-04/export-tool.gif)
 
 Using this export tool will export all of your templates, template parts, and Global Styles into a zip file that you can then install on another WordPress site.
 
 ## Using the Create Block Theme Plugin
+
+Another option for exporting your theme from the editor is the [Create Block Theme](https://wordpress.org/plugins/create-block-theme/) plugin. 
+
+![Create Block Theme](/images/module-01/lesson-04/create-block-theme.png)
+
+This plugin provides the same functionally as the editor's Export tool, but it also allows you to do the following:
+
+1. Create a child theme of your current block theme, only exporting the changes made in the editor.
+2. Clone your current block theme, and export all the changes made in the editor into a brand new block theme.
+3. Overwrite your current block theme with the changes made in the editor.
+4. Create a new "empty" block theme, ready for you to start editing.
 

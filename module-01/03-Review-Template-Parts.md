@@ -12,13 +12,13 @@ Just like you did with creating a new Page template, you can also create new tem
 
 Create a new template part by navigating to the Editor. Toggle the Editor navigation menu, and select **Template Parts**.
 
-![Template parts](/images/module-02/editor-template-parts.png)
+![Template parts](/images/module-01/lesson-03/editor-template-parts.png)
 
 > Click on the Add New button to create a new template part. 
 
 The Editor will ask you to give the template part a name, and select to either create a general template part, a header template part or a footer template part. 
 
-![Adding a header template part](/images/module-02/editor-header-template-part.png)
+![Adding a header template part](/images/module-01/lesson-03/editor-header-template-part.png)
 
 Go ahead and create a header template part for your theme.
 
@@ -26,7 +26,7 @@ Go ahead and create a header template part for your theme.
 
 Once the template part is created, you'll be taken straight to the new template part in the editor.
 
-![Editing the header template part](/images/module-02/editor-edit-header-template-part.png)
+![Editing the header template part](/images/module-01/lesson-03/editor-edit-header-template-part.png)
 
 Now you can begin designing your header template part.
 
@@ -37,7 +37,7 @@ Now you can begin designing your header template part.
 
 You should end up with a template part that looks something like this.
 
-![Header template part content](/images/module-02/editor-header-template-part-content.png)
+![Header template part content](/images/module-01/lesson-03/editor-header-template-part-content.png)
 
 Save the template part. You can now use this template part in your page template.
 
