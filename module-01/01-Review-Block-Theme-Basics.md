@@ -1,6 +1,7 @@
 # Block Theme Requirements: A Review
 
-![Introduction to block theme development (for beginners)](https://videopress.com/v/1FTYZp6a)
+<iframe width="560" height="315" src="https://videopress.com/embed/1FTYZp6a" frameborder="0" allowfullscreen allow="clipboard-write"></iframe>
+<script src="https://videopress.com/videopress-iframe.js"></script>
 
 Let's start by reviewing the requirements for a block theme. This is the bare minimum you need to create a working block theme.
 
