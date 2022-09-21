@@ -116,6 +116,6 @@ Finally, remember to exit the Code editor view, before saving the template.
 
 ### Further Reading
 
-You can read more about the [block theme templates](https://developer.wordpress.org/themes/block-themes/templates-and-template-parts/)in the Theme Handbook.
+You can read more about the [block theme templates](https://developer.wordpress.org/themes/block-themes/templates-and-template-parts/) in the Theme Handbook.
 
 Now that we've covered theme templates, let's take a look at template parts.
