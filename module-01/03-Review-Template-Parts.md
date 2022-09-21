@@ -18,11 +18,11 @@ Create a new template part by navigating to the Editor. Toggle the Editor naviga
 
 The Editor will ask you to give the template part a name, and select to either create a general template part, a header template part or a footer template part. 
 
-![Adding a header template part](/images/module-02/editor-header-template-parts.png)
+![Adding a header template part](/images/module-02/editor-header-template-part.png)
 
 Go ahead and create a header template part for your theme.
 
-> 1. Create a new header template part, and name it `Header`.
+> Create a new header template part, and name it `Header`.
 
 Once the template part is created, you'll be taken straight to the new template part in the editor.
 
