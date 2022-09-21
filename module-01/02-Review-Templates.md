@@ -78,11 +78,11 @@ To start, toggle to the Site editor navigation sidebar, and click on "Templates"
 
 You'll be presented with a list of the templates in this theme, and a button to add a new template.
 
-![Editor Navigation](/images/module-02/editor-templates.png)
+![Editor Templates](/images/module-02/editor-templates.png)
 
 > Click on the Add New button to create a new template.
 
-![Editor Navigation](/images/module-02/editor-add-new-templates.png)
+![Editor Add new template](/images/module-02/editor-add-new-template.png)
 
 The Editor will give you the option of creating a new template based on the primary templates, ranging from things like a Front Page to a 404 Page. 
 
