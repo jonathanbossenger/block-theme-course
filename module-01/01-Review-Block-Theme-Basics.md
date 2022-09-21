@@ -4,25 +4,21 @@
 
 Let's start by reviewing the requirements for a block theme. This is the bare minimum you need to create a working block theme.
 
-<div class="callout">
-    If this is the first time you are learning about block themes you might want to first check out the [Create a Block Theme (Low-Code) course](https://learn.wordpress.org/create-a-block-theme/).
-</div>
+> If this is the first time you are learning about block themes you might want to first check out the [Create a Block Theme (Low-Code) course](https://learn.wordpress.org/create-a-block-theme/).
 
 ## Requirements
 
 All themes, including block themes, reside in a directory in the `wp-content/themes` directory of your WordPress installation. If you take a look at the `wp-content/themes` directory of your WordPress installation you will see a number of directories, each containing a theme. The directory name of each theme is also known as the theme slug which is used to identify the theme in the WordPress admin.
 
-<div class="callout callout-tutorial">
-    To begin, create a new directory in your `themes` directory, and give the directory a unique name for your new theme.
-</div>
+> To begin, create a new directory in your `themes` directory, and give the directory a unique name for your new theme.
 
-[Image of themes directory with 'new-block-theme' directory]
+![Image of themes directory with 'new-block-theme' directory](images/module-01/new-block-theme.png)
 
 Once you've created your theme folder, your theme must have at minimum a `style.css` file and an `index.php` file. 
 
 ### style.css
 
-In a block theme, the style.css is primarily used to register the [header comment](https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/#basic-structure) for your theme, which is used to display information about the theme in the Appearance -> Themes dashboard panel. 
+In a block theme, the `style.css` is primarily used to register the [header comment](https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/#basic-structure) for your theme, which is used to display information about the theme in the Appearance -> Themes dashboard panel. 
 
 ![Theme Information](/images/module-01/base-block-theme-01.png)
 
@@ -50,9 +46,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 The minimum required fields for the header comment are `Theme Name`, but it's useful to add data for `Theme URI`, `Author`, and `Author UR`. 
 
-<div class="callout callout-tutorial">
-    Go ahead and create a new style.css file to your theme, and add the following fields as the header comment, replacing the field values with your own information:
-</div>
+> Go ahead and create a new style.css file to your theme, and add the following fields as the header comment, replacing the field values with your own information:
 
 ```css
 /*
@@ -66,11 +60,9 @@ Text Domain: new-block-theme
 
 ### index.php
 
-The index.php file is the theme template file that WordPress will use by default, if it can't find a matching template file for the content being rendered. For the purposes of block themes, this file can be left empty, and just include the PHP opening tag. Some developers like to add a comment to the file to indicate that it is intentionally left blank.
+The `index.php` file is the theme template file that WordPress will use by default, if it can't find a matching template file for the content being rendered. For the purposes of block themes, this file can be left empty, and just include the PHP opening tag. Some developers like to add a comment to the file to indicate that it is intentionally left blank.
 
-<div class="callout callout-tutorial">
-    Create your theme's index.php file, and add the following code:
-</div>
+> Create your theme's index.php file, and add the following code:
 
 ```php
 <?php
@@ -81,18 +73,14 @@ The index.php file is the theme template file that WordPress will use by default
 
 Block themes require one additional file, and `index.html` template. This file needs to be created inside a new directory in the theme directory called `templates`. This file can be empty, but it is required for the theme to be recognized as a block theme, and enable the Editor option in the Appearance menu.
 
-<div class="callout callout-tutorial">
-    1. Create your theme's `templates` directory.
-    2. Create your theme's `index.html` file inside this directory, and leave it blank for now.
-</div>
+> 1. Create your theme's `templates` directory.
+> 2. Create your theme's `index.html` file inside this directory, and leave it blank for now.
 
 ### theme.json
 
 Finally, a block theme needs a theme.json file. This file handles the global settings and styles for a block theme. While it's not required to add any settings or styles to the theme.json file when starting a new block theme, it's useful to start by setting the theme.json "version", and creating empty fields for the "settings" and "styles".
 
-<div class="callout callout-tutorial">
-    Create your theme's theme.json file in the root of the theme directory, and add the following code:
-</div>
+> Create your theme's theme.json file in the root of the theme directory, and add the following code:
 
 ```json
 {
@@ -108,11 +96,9 @@ Once you've added these required files, you are ready to start developing your b
 
 ![Minimum Theme Requirements](/images/module-01/directory-structure.png)
 
-<div class="callout callout-tutorial">
-    For the rest of this course, you'll be working in your new theme, so go ahead and activate it now from the Appearance -> Themes dashboard page.
-</div>
+> For the rest of this course, you'll be working in your new theme, so go ahead and activate it now from the Appearance -> Themes dashboard page.
 
-[Image of new block theme active]
+![Image of new block theme active](/images/module-01/new-block-theme-active.png)
 
 ### Further Reading
 
