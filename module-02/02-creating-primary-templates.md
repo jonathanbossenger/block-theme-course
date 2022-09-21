@@ -29,8 +29,12 @@ For now, you can leave the template as is, save it, and then move on to creating
 - 404
 - Search
 
-Once you've created your templates in the editor, use either the Export tool in the editor, or the Export or Overwrite options in Create Block Theme to export the templates as files in your theme.
+Once you've created your templates in the editor, you can export your theme templates using one of the export options discussed in a previous lesson.
 
-## Template Structure
+> Pro Tip. The Overwrite option of the Create Block Theme plugin is very useful here. It allows you to save the changes you've made in the editor to the correct files in the current theme, and clears out any changes stored in the database. This is useful if you want to store your theme changes to a revision control system, like Git.
 
-[Loop back to the relevant content in the Create a BLock Theme course to talk about the template structure, which should be design driven]
+Which ever option you used to export your template content, your theme directory will start coming together as you build the various templates.
+
+![Theme Structure](/images/module-02/lesson-02/block-theme-primary-templates.png)
+
+## Template Content
