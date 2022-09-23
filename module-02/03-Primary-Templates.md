@@ -1,10 +1,10 @@
-# Introduction
+# Primary Templates
 
 In the Block Theme Templates module, we briefly discussed the [WordPress Template Hierarchy](https://developer.wordpress.org/themes/basics/template-hierarchy/) and how it's used to determine which template file to use when rendering content. 
 
 > The process of how the template hierarchy works, and how WordPress determines which template to render is beyond the scope of this course, and so we recommend reading the [Template Hierarchy](https://developer.wordpress.org/themes/basics/template-hierarchy/) documentation to learn more.
 
-## Primary Templates
+## Listing the Primary Templates
 
 If you take a look at the template diagram shows which template files used based on the WordPress template hierarchy, you will notice that there are 8 **primary templates**. These are the templates that all themes, classic or block, should have to be considered a complete theme.
 

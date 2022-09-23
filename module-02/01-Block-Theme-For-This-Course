@@ -1,0 +1,38 @@
+# The Block Theme For This Course
+
+In the previous module, you reviewed the basics of a block theme by creating a very limited theme.json, a few template, and a few template parts.
+
+For the rest of this course, you're going to be developing a fully fledged block theme, with a bunch of theme.json settings and styles, all the primary templates, and a couple of template parts.
+
+The theme you will be building is based on the Twenty Twenty Three (aka TT3) theme that shipped with WordPress version 6.1. It's a very simple theme, but it's a great starting point for learning how to build a block theme.
+
+You won't be building all the features of TT3, but you will learn how to build the most important parts of it.
+
+## A Note on Theme Design
+
+The design of the theme you will be building is not the focus of this course. You will be focusing on the technical aspects of building a block theme.
+
+Generally you, or a designer you work with, would design the theme using something like Figma or Sketch. That designs would include the following:
+
+1. A style guide, which contains things like the colours and typography used in the theme.
+2. A design system, which contains things like the spacing and layout used in the theme, including specific elements like buttons.
+3. A set of layouts for each of the templates and (possibly) the template parts.
+
+To learn more about the process of design a theme, check out the following resources:
+
+1. [Designing a WordPress Theme module in the Create a Low Code Block theme course](#)
+2. [The open source theme designs](https://make.wordpress.org/design/2022/07/01/open-sourcing-theme-designs/) released by the WordPress design team, which includes the designs for TT3.
+
+## Getting Started
+
+To get started, you need to download the starter theme for this course. You can download it from the following link:
+
+[Block Course Theme version 0.0.1](https://github.com/WordPress/block-course-theme/releases/download/0.0.1/block-course-theme.0.0.1.zip)
+
+Download, install and activate this theme, and then take a look at the code in your code editor.
+
+1. It has a theme.json with some specific settings and styles already set
+2. It has an index.html template
+3. It has a header and footer template part
+
+In the next lesson, you'll learn about the primary templates you need to create for your theme.
