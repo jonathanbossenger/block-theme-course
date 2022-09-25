@@ -4,7 +4,8 @@
 
 Let's start by reviewing the requirements for a block theme. This is the bare minimum you need to create a working block theme.
 
-> If this is the first time you are learning about block themes you might want to first check out the [Create a Block Theme (Low-Code) course](https://learn.wordpress.org/create-a-block-theme/).
+> **Note:** 
+If this is the first time you are learning about block themes you might want to first check out the [Create a Block Theme (Low-Code) course](https://learn.wordpress.org/create-a-block-theme/).
 
 ## Requirements
 
