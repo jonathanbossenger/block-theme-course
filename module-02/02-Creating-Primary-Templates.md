@@ -1,6 +1,6 @@
 # Creating a Primary Templates
 
-As discussed in the last lesson, the primary templates are:
+As discussed in the last [Create a Block Theme (Low-Code) course](https://learn.wordpress.org/create-a-block-theme/), the primary templates are:
 - index
 - singular
 - archive
@@ -15,10 +15,6 @@ In the recap of templates lesson, you created the index and page templates. Now,
 ## Template Content
 
 As mentioned in the first lesson of this module, you will be building the templates for a this theme, based on the Twenty Twenty Three theme.
-
-The designs for the [Twenty Twenty Three](https://www.figma.com/community/file/1139275543113752375) theme contain a template design for each of the primary templates, as well as a full style guide, so that you can create a theme that matches the design.
-
-> Make sure to make a copy of the designs to your personal Figma account (you can create a free account if you don't already have one) and take a look at each of the designs in the Base Theme. 
 
 ![Twenty Twenty Three Designs](/images/module-02/lesson-02/twenty-twenty-three-design.png)
 

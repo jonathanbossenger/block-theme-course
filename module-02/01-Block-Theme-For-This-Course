@@ -1,8 +1,8 @@
 # The Block Theme For This Course
 
-In the previous module, you reviewed the basics of a block theme by creating a very limited theme.json, a few template, and a few template parts.
+In the previous module, you reviewed the basics of a block theme by creating a very limited theme.json, a few templates, and a few template parts.
 
-For the rest of this course, you're going to be developing a fully fledged block theme, with a bunch of theme.json settings and styles, all the primary templates, and a couple of template parts.
+For the rest of this course, you're going to be using those files and developing a working block theme, with a bunch of theme.json settings and styles, and the rest of the the primary templates.
 
 The theme you will be building is based on the Twenty Twenty Three (aka TT3) theme that shipped with WordPress version 6.1. It's a very simple theme, but it's a great starting point for learning how to build a block theme.
 
@@ -23,16 +23,8 @@ To learn more about the process of design a theme, check out the following resou
 1. [Designing a WordPress Theme module in the Create a Low Code Block theme course](#)
 2. [The open source theme designs](https://make.wordpress.org/design/2022/07/01/open-sourcing-theme-designs/) released by the WordPress design team, which includes the designs for TT3.
 
-## Getting Started
+The Twenty Twenty Three designs are available to [view on Figma](https://www.figma.com/community/file/1139275543113752375) but we recommend making a copy of the designs and working on your own copy.
 
-To get started, you need to download the starter theme for this course. You can download it from the following link:
+> **Note:** Use the **Get a copy** button on a public Figma design to copy if to your own Figma account.
 
-[Block Course Theme version 0.0.1](https://github.com/WordPress/block-course-theme/releases/download/0.0.1/block-course-theme.0.0.1.zip)
-
-Download, install and activate this theme, and then take a look at the code in your code editor.
-
-1. It has a theme.json with some specific settings and styles already set
-2. It has an index.html template
-3. It has a header and footer template part
-
-In the next lesson, you'll learn about the primary templates you need to create for your theme.
+![Twenty Twenty Three Designs](/images/module-02/lesson-02/twenty-twenty-three-design.png)

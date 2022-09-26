@@ -49,14 +49,16 @@ At this point you probably agree that it would be idea if the navigation was ali
 
 Save the template part. You can now use this template part in your page template.
 
+Now create a footer template part for your theme. Then you can add some block content to the footer
+
 > **Do:**
-> Now create a footer template part for your theme, and add some content of your own.
-> 1. Add a **Group** block.
-> 2. Add a **Row** block to the **Group** block.
-> 3. Add the **Site Title** block to the **Row** block.
-> 4. Add a **Paragraph** block next to the **Site Title** block with the text "Proudly powered by WordPress"
-> 5. Add a link to the word WordPress in the **Paragraph** block that links to `https://wordpress.org/`.
-> 6. Change the **Justification** setting on the **Row** block to **Space between items**.
+> 1. Create a Footer template part in the same way you created a header template part.
+> 2. Add a **Group** block.
+> 3. Add a **Row** block to the **Group** block.
+> 4. Add the **Site Title** block to the **Row** block.
+> 5. Add a **Paragraph** block next to the **Site Title** block with the text "Proudly powered by WordPress"
+> 6. Add a link to the word WordPress in the **Paragraph** block that links to `https://wordpress.org/`.
+> 7. Change the **Justification** setting on the **Row** block to **Space between items**.
 
 ![Footer template part content](/images/module-01/lesson-03/editor-footer-template-part-content.png)
 

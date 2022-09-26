@@ -28,7 +28,7 @@ Both template files and template parts are html files that contain a mix of HTML
 1. the file name is all lower case and matches a template hierarchy slug (eg index.html, single.html, archive.html, etc)
 2. the slug uses hyphens to separate words (eg single-post.html, archive-post.html, etc)
 
-> Now would be a good idea to and create the `parts` directory in your theme's directory
+> **Do:** Now would be a good idea to and create the `parts` directory in your theme's directory
 
 ![Create the parts directory](/images/module-01/lesson-04/parts-directory.png)
 
@@ -40,15 +40,31 @@ To manually export the index template, navigate to the template and switch to th
 > 2. Navigate to the `templates` directory of your theme, and open the `index.html` file in a text editor
 > 3. Paste the block markup into the `index.html` file, and save the file.
 
-If you wanted to follow the process for the page template, you'd first create the page.html template file in the `templates` directory, and copy the code from the page template in the editor.
+### Cleaning up site specific data
 
-> Create the page.html template file now, and copy the block markup from the page template in the Site editor.
+If you take a look at the code for the Query Loop block in your `index.html` template file, you'll notice that the `queryId` attribute is set to a value. This is the ID of the Query Loop block in your site, and it's not something you want to keep in your theme. So make sure to remove that attribute from the Query Loop block in your `index.html` file.
+
+Before: 
+
+```html
+<!-- wp:query {"queryId":31,"query":{"perPage":3,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":true}} -->
+```
+
+After: 
+
+```html
+<!-- wp:query {"query":{"perPage":3,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":true}} -->
+```
+
+If you wanted to follow the process for the page template, you'd first create the `page.html` template file in the `templates` directory, and copy the code from the page template in the editor.
+
+> **Do:** Create the page.html template file now, and copy the block markup from the page template in the Site editor.
 
 ## Manually exporting template parts
 
 As you did with templates, you're going to want to export your template parts to the relevant template parts file, in this case the `header.html` template part and the `footer.html` template part. The main difference is that template parts are created in the `parts` directory.
 
-> Repeat the process of editing, copying and saving the header and footer template parts to their respective files in the `parts` directory.
+>  **Do:** Repeat the process of editing, copying and saving the header and footer template parts to their respective files in the `parts` directory.
 
 You should now have 4 theme files on your block theme:
 
@@ -61,7 +77,7 @@ You should now have 4 theme files on your block theme:
 
 ## Using the Site Editors Export Tool
 
-While manually exporting templates and template parts helps with understanding how a block theme is built, it's not the most suitable solution. Not only is it tedious, but if you've made changes to the Global Styles, you have no way of also exporting those changes to the theme.json file. 
+While manually exporting templates and template parts helps with understanding how a block theme is built, it's not the most suitable solution. Not only is it tedious, but if you've made changes to the Global Styles, you have no way of also exporting those changes to the `theme.json` file. 
 
 Fortunately The Site Editor has an export tool that will export all of your block theme code into an installable theme zip that you can then install on another WordPress site. You can access the export tool from the Site Editor's More Options menu, by clicking on the three dots.
 
@@ -82,3 +98,4 @@ This plugin provides the same functionally as the editor's Export tool, but it a
 3. Overwrite your current block theme with the changes made in the editor.
 4. Create a new "empty" block theme, ready for you to start editing.
 
+If you prefer to keep a record of all the changes to your theme using revision control, like Git or SVN, the Create Block Theme and the Overwrite option is extremely valuable. You can make small changes to your theme in the Editor, Overwrite the changes to the theme files, and then commit those changes to your revision control system.
