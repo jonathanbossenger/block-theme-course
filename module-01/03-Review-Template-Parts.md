@@ -28,20 +28,39 @@ Once the template part is created, you'll be taken straight to the new template 
 
 ![Editing the header template part](/images/module-01/lesson-03/editor-edit-header-template-part.png)
 
-Now you can begin designing your header template part.
+Now you can begin designing your header template part. You can use Group blocks and Row blocks to group and align elements in the template part.
 
-> 1. Add a Column block, with a 3 column layout
-> 2. Add a Site Title block to the first column
-> 3. Add a Site Logo block to the second column
-> 4. Add a Navigation block to the third column
+> **Do:** 
+> 1. Add a **Group** block.
+> 2. Inside the **Group** block, add a **Row** block.
+> 3. Inside the **Row** block, add a **Site Title** block.
+> 4. After the **Site Title** block, add a **Navigation** block.
 
 You should end up with a template part that looks something like this.
 
 ![Header template part content](/images/module-01/lesson-03/editor-header-template-part-content.png)
 
+At this point you probably agree that it would be idea if the navigation was aligned to the right. Fortunately you can achieve this by changing the **Justification** setting on the **Row** block. 
+
+> **Do:** 
+> Select the **Row** block, and change the **Justification** setting to **Space between items**.
+
+![Header template part content 2](/images/module-01/lesson-03/editor-header-template-part-content-space.png)
+
 Save the template part. You can now use this template part in your page template.
 
+> **Do:**
 > Now create a footer template part for your theme, and add some content of your own.
+> 1. Add a **Group** block.
+> 2. Add a **Row** block to the **Group** block.
+> 3. Add the **Site Title** block to the **Row** block.
+> 4. Add a **Paragraph** block next to the **Site Title** block with the text "Proudly powered by WordPress"
+> 5. Add a link to the word WordPress in the **Paragraph** block that links to `https://wordpress.org/`.
+> 6. Change the **Justification** setting on the **Row** block to **Space between items**.
+
+![Footer template part content](/images/module-01/lesson-03/editor-footer-template-part-content.png)
+
+Make sure to save the footer template before moving on.
 
 ## Using Template Parts in Templates
 
@@ -49,6 +68,7 @@ Now that you've created a header and footer template part, you will want to use 
 
 Navigate back to your list of templates, and click on the index template to edit it. Then add the header and footer template parts to the template. 
 
+> **Do:**
 > 1. Click on the Block Inserter, and search for the **Template Part** block
 > 2. Add the template part block to your template, and move it into the desired location
 > 2. Click the **Choose** button in the template part block to choose the template part

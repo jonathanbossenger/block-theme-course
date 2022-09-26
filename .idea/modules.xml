@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/block-theme-course.iml" filepath="$PROJECT_DIR$/.idea/block-theme-course.iml" />
+      <module fileurl="file://$USER_HOME$/wp-local-env/sites/wordpress/.idea/wordpress.iml" filepath="$USER_HOME$/wp-local-env/sites/wordpress/.idea/wordpress.iml" />
     </modules>
   </component>
 </project>

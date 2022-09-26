@@ -4,14 +4,13 @@
 
 Let's start by reviewing the requirements for a block theme. This is the bare minimum you need to create a working block theme.
 
-> **Note:** 
-If this is the first time you are learning about block themes you might want to first check out the [Create a Block Theme (Low-Code) course](https://learn.wordpress.org/create-a-block-theme/).
+> **Note:** If this is the first time you are learning about block themes you might want to first check out the [Create a Block Theme (Low-Code) course](https://learn.wordpress.org/create-a-block-theme/).
 
 ## Requirements
 
 All themes, including block themes, reside in a directory in the `wp-content/themes` directory of your WordPress installation. If you take a look at the `wp-content/themes` directory of your WordPress installation you will see a number of directories, each containing a theme. The directory name of each theme is also known as the theme slug which is used to identify the theme in the WordPress admin.
 
-> To begin, create a new directory in your `themes` directory, and give the directory a unique name for your new theme.
+> **Do:** To begin create a new directory in your `themes` directory, and give the directory a unique name for your new theme.
 
 ![Image of themes directory with 'new-block-theme' directory](images/lesson-01/new-block-theme.png)
 
@@ -47,7 +46,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 The minimum required fields for the header comment are `Theme Name`, but it's useful to add data for `Theme URI`, `Author`, and `Author UR`. 
 
-> Go ahead and create a new style.css file to your theme, and add the following fields as the header comment, replacing the field values with your own information:
+> **Do:** Go ahead and create a new style.css file to your theme, and add the following fields as the header comment, replacing the field values with your own information:
 
 ```css
 /*
@@ -63,7 +62,7 @@ Text Domain: new-block-theme
 
 The `index.php` file is the theme template file that WordPress will use by default, if it can't find a matching template file for the content being rendered. For the purposes of block themes, this file can be left empty, and just include the PHP opening tag. Some developers like to add a comment to the file to indicate that it is intentionally left blank.
 
-> Create your theme's index.php file, and add the following code:
+> **Do:** Create your theme's index.php file, and add the following code:
 
 ```php
 <?php
@@ -79,12 +78,19 @@ Block themes require one additional file, and `index.html` template. This file n
 
 ### theme.json
 
-Finally, a block theme needs a theme.json file. This file handles the global settings and styles for a block theme. While it's not required to add any settings or styles to the theme.json file when starting a new block theme, it's useful to start by setting the theme.json "version", and creating empty fields for the "settings" and "styles".
+Finally, a block theme needs a theme.json file. This file handles the global settings and styles for a block theme. This file is not required for a block theme to be active on a WordPress site, but for development purposes, it's extremely useufl to create it early on. 
 
-> Create your theme's theme.json file in the root of the theme directory, and add the following code:
+It's not a requirement to add any settings or styles to the theme.json file when starting a new block theme. 
+
+However, it is useful to start by including the JSON schema, as well as setting the theme.json "version", and creating empty fields for the "settings" and "styles". 
+
+> **Note:** The JSON schema is used by code editors to provide things like tooltips, autocomplete, and validation while editing theme.json.
+
+> **Do:** Create your theme's theme.json file in the root of the theme directory, and add the following code:
 
 ```json
 {
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
   "version": 2,
   "settings": {
   },
@@ -97,7 +103,7 @@ Once you've added these required files, you are ready to start developing your b
 
 ![Minimum Theme Requirements](/images/module-01/lesson-01/directory-structure.png)
 
-> For the rest of this course, you'll be working in your new theme, so go ahead and activate it now from the Appearance -> Themes dashboard page.
+> **Note:** For the rest of this course, you'll be working in your new theme, so go ahead and activate it now from the Appearance -> Themes dashboard page.
 
 ![Image of new block theme active](/images/module-01/lesson-01/new-block-theme-active.png)
 

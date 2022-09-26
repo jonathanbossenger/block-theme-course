@@ -28,8 +28,16 @@ Start by navigating to Appearance -> Editor. You'll be presented with a blank ca
 
 As the index template is the default template that WordPress will load if it can't find a matching template file for the content being rendered, it's a good idea to add some content to this template. General best practice is to populate this template with a query loop, so that all posts on the site are displayed.
 
-> 1. Add a heading block, and give the template a heading
-> 2. Add a query loop block, and select the **Standard** pattern for the query loop.
+> **Note:** While editing your template, you can toggle the Site editor's List View to get a better overview of the template's structure, and select specific blocks.
+
+![Enabling the List View](/images/module-01/lesson-02/enabling-list-view.png)
+
+Go ahead and add a query loop to the template, the pagination block, and a spacer to allow a bit of space between the query loop and the pagination.
+
+> **Do:** 
+> 1. Add a query loop block, and select the **Standard** pattern for the query loop.
+> 2. Add a **Pagination** block inside the Query Loop, right at the bottom.
+> 3. Inside the Query Loop, select the **Post Template** block and add a **Spacer** block at the bottom.
 
 ![The index template with a header and query loop](/images/module-01/lesson-02/basic-index-template.png)
 
@@ -39,11 +47,7 @@ If you switch to the Code editor View, you'll be able to see the block markup fo
 > ![Enabling the Code editor](/images/module-01/lesson-02/editor-more-options.png)
 
 ```
-<!-- wp:heading -->
-<h2>Site Index</h2>
-<!-- /wp:heading -->
-
-<!-- wp:query {"queryId":9,"query":{"perPage":3,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false}} -->
+<!-- wp:query {"queryId":31,"query":{"perPage":3,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":true}} -->
 <div class="wp-block-query"><!-- wp:post-template -->
 <!-- wp:post-title {"isLink":true} /-->
 
@@ -56,7 +60,19 @@ If you switch to the Code editor View, you'll be able to see the block markup fo
 <!-- /wp:separator -->
 
 <!-- wp:post-date /-->
-<!-- /wp:post-template --></div>
+
+<!-- wp:spacer -->
+<div style="height:100px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer -->
+<!-- /wp:post-template -->
+
+<!-- wp:query-pagination -->
+<!-- wp:query-pagination-previous /-->
+
+<!-- wp:query-pagination-numbers /-->
+
+<!-- wp:query-pagination-next /-->
+<!-- /wp:query-pagination --></div>
 <!-- /wp:query -->
 ```
 
@@ -87,30 +103,37 @@ You'll be presented with a list of the templates in this theme, and a button to 
 The Editor will give you the option of creating a new template based on the primary templates, ranging from things like a Front Page to a 404 Page. 
 
 > Select the **Page** option, to create a new page template.
+> Select **All Pages** to create a template that will be used for all pages. (to be tested with 6.1)
 
-The page template will be created, and you'll be taken to the editor to add blocks to the template.
+The page template will be created, and you'll be taken to the editor to add blocks to the template. By default, WordPress will populate the new template with the content from the index template.
 
-Because a page in WordPress is merely a custom post type, you can use the Post Title, Post Featured Image, and Post Content blocks to render the title, featured image, and content of a page in the template.
+> **Do:** Delete the Query Loop from the new page template, so you have an empty page template
 
-> 1. Add a Post Title block to the page template.
-> 2. Add a Post Featured Image block to the page template.
-> 3. Add a Post Content block to the page template.
+Because a page in WordPress is merely a custom post type, you can use the Post Title and Post Content blocks to render the title and content of a page in the template. You can also use Group blocks to logically group specific blocks, based on the design.
+
+> **Do:**
+> 1. Add a **Group** block to the template.
+> 2. Add a **Post Content** block to the group.
+> 3. Add another **Group** block to the template, before the **Post Content** block.
+> 4. Add a **Post Title** block to the second **Group** block.
 
 Your final page template should look something like this:
 
-![Image of the page template with the post title, post featured image, and post content blocks](/images/module-01/lesson-02/page-template.png)
+![Image of the page template](/images/module-01/lesson-02/page-template.png)
 
 Now switch to the Code editor view, to see the block markup that makes up this page template
 
 ```html
-<!-- wp:post-title /-->
+<!-- wp:group {"layout":{"type":"constrained"}} -->
+<div class="wp-block-group"><!-- wp:group {"layout":{"type":"constrained"}} -->
+    <div class="wp-block-group"><!-- wp:post-title /--></div>
+    <!-- /wp:group -->
 
-<!-- wp:post-featured-image /-->
-
-<!-- wp:post-content /-->
+    <!-- wp:post-content /--></div>
+<!-- /wp:group -->
 ```
 
-Finally, remember to exit the Code editor view, before saving the template.
+Finally, remember to exit the Code editor view, and save the template.
 
 > Save this template now, so it's included when we export it later!
 
