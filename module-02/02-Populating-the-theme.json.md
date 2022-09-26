@@ -1,2 +1,0 @@
-# Populating the theme.json
-
