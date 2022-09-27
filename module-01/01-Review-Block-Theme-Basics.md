@@ -12,7 +12,7 @@ All themes, including block themes, reside in a directory in the `wp-content/the
 
 > **Do:** To begin create a new directory in your `themes` directory, and give the directory a unique name for your new theme.
 
-![Image of themes directory with 'new-block-theme' directory](images/lesson-01/new-block-theme.png)
+![Image of themes directory with 'new-block-theme' directory](images/module-01/lesson-01/new-block-theme.png)
 
 Once you've created your theme folder, your theme must have at minimum a `style.css` file and an `index.php` file. 
 
