@@ -30,4 +30,4 @@ In a block theme, the same template hierarchy is used. However, as you've alread
 
 The Site editor allows you to create and edit the primary templates for a block theme. When you created the page template in a previous lesson, that was a primary template. This means you can also create the rest of the primary templates in the editor, and then either manually export them to the correct file, or use one of the automatic export methods we covered in the last lesson.
 
-In the next lesson, you'll create the primary templates for a block theme.
+In the next lesson, you'll create one of primary templates for a block theme.

@@ -6,7 +6,7 @@ The first step a developer usually takes is turning the style guide from the giv
 
 ## Creating a Global Setting
 
-To create your first setting, let's apply the system wide theme font. Take a look at the Twenty Twenty Three style guide in the Figma file you copied earlier. 
+To create your first setting, let's apply the system-wide theme font. Take a look at the Twenty Twenty Three style guide in the Figma file you copied earlier. 
 
 The base font is either the default system font of the operating system, or the fallback is San Serif.
 
