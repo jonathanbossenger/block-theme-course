@@ -103,7 +103,15 @@ Once you've made these changes, your updated theme.json file looks like this:
 
 Now switch back to your Site Editor, and take a look at any of the templates. You should see that the font has been updated to the system font.
 
-## Block Course Theme Settings and Styles
+# Exporting Styles Applied in the Global Styles Interface
+
+At this point you might be wondering if it's possible to view the code for the styles applied in the Global Styles interface, in the same way you can view the code for the templates and template parts.
+
+Due to the nature of JSON vs HTML/block code, it's not currently possible. What you can do however is use the Overwrite option of the Create Block Theme plugin, which will update your theme.json file with anny changes applied in the Global Styles interface.
+
+If you do follow this process, note that the Create Block Theme plugin will write your theme.json top level elements in alphabetical order, which may not be the order you want. This won't break the functionality of the theme, but it may be a little confusing if, for example, you're used to seeing the `schema` and `version` items at the top of the file.
+
+# Block Course Theme Settings and Styles
 
 The process outline above is the same for any setting or style you want to apply to your theme.
 
@@ -312,13 +320,15 @@ Once you've updated your theme.json file, refresh the Site editor, and you shoul
 
 Typically, when developing a theme, you would define the theme settings and styles first, based on the designs, and then start building the templates and template parts. 
 
-However, in the previous module we created the header and footer templates first, without any styles. So now might be a good time to review the header and footer template parts, and make any necessary changes based on the designs.
+However, in the previous module we created various templates and template parts first, without applying any styles. 
 
-### Layout Sizes
+So now might be a good time to review the header and footer template parts, and make any necessary changes based on the designs.
+
+## Layout Sizes
 
 If you take a look at any of the template designs, you'll notice the following commonalities:
 
-1. The largest element on any page is 1000 pixels wide (eg featured images, titles, latest posts etc)
+1. The largest element on any page is 1000 pixels wide (eg featured images, titles, latest posts etc.)
 3. Any text content is contained within a 650 pixel wide area
 
 > **Note:** The actual text content size is 655 pixels wide in the designs, but it's a good idea to stick to round numbers in web design, so we'll go with 650.
@@ -352,14 +362,19 @@ This will force the header content to always display at a width of 1000 pixels a
 
 Then take a look at the page template you created earlier, and you will see how the header and footer are now aligned to the 1000 pixel wide layout.
 
+![Updated Page Template](/images/module-02/lesson-02/updated-page-template.png)
 
+At the same time, take a look at the Figma design for the page layout. You'll notice that the Featured Image and the Post Title should also be set to 1000 pixels wide, and the text should be 650 pixels wide.
 
-```
+> **Do:**
+> 1. Navigate to the Page template
+> 2. Select the **Group** block that contains the Featured Image and Post Title, and set it's alignment to Wide width
+> 3. Select the **Featured Image** block, and set it's alignment to Wide width
+> 4. Select the **Post Title** block, and set it's alignment to Wide width
 
-## Exporting Styles Applied in the Global Styles Interface
+There is no design for the index template, mostly because this template will only be used as a fallback if the archive template is not defined. However, you can also set the Query Loop block to constrain itself to the widths specified in the theme.json, by toggling the **Inner blocks use content width** setting.
 
-At this point you might be wondering if it's possible to view the code for the styles applied in the Global Styles interface, in the same way you can view the code for the templates and template parts.
+![Updated Index Template](/images/module-02/lesson-02/updated-page-template.png)
 
-Due to the nature of JSON vs HTML/block code, it's not currently possible. What you can do however is use the Overwrite option of the Create Block Theme plugin, which will update your theme.json file with anny changes applied in the Global Styles interface.
+> **Tip:** Using Group, Row and Column blocks for defining layout is very useful, so it's a good idea to learn about all the different [core blocks](https://developer.wordpress.org/block-editor/reference-guides/core-blocks/) and what functionality they provide.
 
-If you do follow this process, note that the Create Block Theme plugin will write your theme.json top level elements in alphabetical order, which may not be the order you want. This won't break the functionality of the theme, but it may be a little confusing if, for example, you're used to seeing the `schema` and `version` items at the top of the file.
