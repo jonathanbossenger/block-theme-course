@@ -115,8 +115,8 @@ Because a page in WordPress is merely a custom post type, you can use the Post T
 > 1. Add a **Group** block to the template.
 > 2. Add a **Post Content** block to the group.
 > 3. Add another **Group** block to the template, before the **Post Content** block.
-> 4. Add a **Post Title** block to the second **Group** block.
-> 5. Add a **Post Featured Image** block to the second **Group** block.
+> 4. Add a **Post Featured Image** block to the second **Group** block.
+> 5. Add a **Post Title** block to the second **Group** block.
 
 Your final page template should look something like this:
 
