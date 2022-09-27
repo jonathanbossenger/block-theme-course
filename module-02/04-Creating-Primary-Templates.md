@@ -1,4 +1,4 @@
-# Creating a Primary Templates
+# Creating a Primary Template
 
 In the recap of templates lesson, you created the index and page templates. Now, you can create the rest of the primary templates in the editor. A good place to start would be the single post template, as it would be used for displaying a single post, and also as a fallback for any custom post type.
 
