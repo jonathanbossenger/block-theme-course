@@ -112,8 +112,6 @@ The process outline above is the same for any setting or style you want to apply
 
 Styles can be applied globally, as we did for the typography, or to specific blocks.
 
-
-
 > **Note**
 > To speed up this process, it's also possible to copy exiting settings and styles from existing themes, and update the values to match your theme.
 
@@ -304,6 +302,58 @@ For the purposes of this lesson, we've gone ahead and done some of the groundwor
     }
   }
 }
+```
+
+Once you've updated your theme.json file, refresh the Site editor, and you should see a bunch of differences.
+
+![Settings and Styles applied](/images/module-02/lesson-02/updated-theme-json-applied.png)
+
+## Style Before Layout
+
+Typically, when developing a theme, you would define the theme settings and styles first, based on the designs, and then start building the templates and template parts. 
+
+However, in the previous module we created the header and footer templates first, without any styles. So now might be a good time to review the header and footer template parts, and make any necessary changes based on the designs.
+
+### Layout Sizes
+
+If you take a look at any of the template designs, you'll notice the following commonalities:
+
+1. The largest element on any page is 1000 pixels wide (eg featured images, titles, latest posts etc)
+3. Any text content is contained within a 650 pixel wide area
+
+> **Note:** The actual text content size is 655 pixels wide in the designs, but it's a good idea to stick to round numbers in web design, so we'll go with 650.
+
+These two layout values are set in the theme.json `layout` setting, as follows:
+
+```
+    ...
+    "layout": {
+      "contentSize": "650px",
+      "wideSize": "1000px"
+    },
+    ...
+```
+
+Based on this, you can update your header and footer template parts to use the new `layout` `wideSize` setting:
+
+> **Do:** 
+> 1. Navigate to the Template Parts, and select the header template part
+> 2. Select the **Row** block that contains the Site Title and Navigation
+> 3. Change the Alignment from None to Wide width
+> 4. Save the template
+
+This will force the header content to always display at a width of 1000 pixels across the site. Do the same for the footer template
+
+> **Do:**
+> 1. Navigate to the Template Parts, and select the footer template part
+> 2. Select the **Row** block that contains the Site Title and "powered by WordPress" text
+> 3. Change the Alignment from None to Wide width
+> 4. Save the template
+
+Then take a look at the page template you created earlier, and you will see how the header and footer are now aligned to the 1000 pixel wide layout.
+
+
+
 ```
 
 ## Exporting Styles Applied in the Global Styles Interface

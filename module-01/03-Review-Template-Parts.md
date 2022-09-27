@@ -56,9 +56,10 @@ Now create a footer template part for your theme. Then you can add some block co
 > 2. Add a **Group** block.
 > 3. Add a **Row** block to the **Group** block.
 > 4. Add the **Site Title** block to the **Row** block.
-> 5. Add a **Paragraph** block next to the **Site Title** block with the text "Proudly powered by WordPress"
-> 6. Add a link to the word WordPress in the **Paragraph** block that links to `https://wordpress.org/`.
-> 7. Change the **Justification** setting on the **Row** block to **Space between items**.
+> 5. Change the **Site Title** block settings to use a paragraph and not an h1 tag.
+> 6. Add a **Paragraph** block next to the **Site Title** block with the text "Proudly powered by WordPress"
+> 7. Add a link to the word WordPress in the **Paragraph** block that links to `https://wordpress.org/`.
+> 8. Change the **Justification** setting on the **Row** block to **Space between items**.
 
 ![Footer template part content](/images/module-01/lesson-03/editor-footer-template-part-content.png)
 

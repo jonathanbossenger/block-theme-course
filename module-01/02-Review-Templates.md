@@ -109,13 +109,14 @@ The page template will be created, and you'll be taken to the editor to add bloc
 
 > **Do:** Delete the Query Loop from the new page template, so you have an empty page template
 
-Because a page in WordPress is merely a custom post type, you can use the Post Title and Post Content blocks to render the title and content of a page in the template. You can also use Group blocks to logically group specific blocks, based on the design.
+Because a page in WordPress is merely a custom post type, you can use the Post Title, Post Featured Image, and Post Content blocks to render the title and content of a page in the template. You can also use Group blocks to logically group specific blocks, based on the design.
 
 > **Do:**
 > 1. Add a **Group** block to the template.
 > 2. Add a **Post Content** block to the group.
 > 3. Add another **Group** block to the template, before the **Post Content** block.
 > 4. Add a **Post Title** block to the second **Group** block.
+> 5. Add a **Post Featured Image** block to the second **Group** block.
 
 Your final page template should look something like this:
 
@@ -126,7 +127,9 @@ Now switch to the Code editor view, to see the block markup that makes up this p
 ```html
 <!-- wp:group {"layout":{"type":"constrained"}} -->
 <div class="wp-block-group"><!-- wp:group {"layout":{"type":"constrained"}} -->
-    <div class="wp-block-group"><!-- wp:post-title /--></div>
+    <div class="wp-block-group"><!-- wp:post-featured-image /-->
+
+        <!-- wp:post-title /--></div>
     <!-- /wp:group -->
 
     <!-- wp:post-content /--></div>
