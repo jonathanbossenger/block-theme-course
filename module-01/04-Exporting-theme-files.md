@@ -99,3 +99,5 @@ This plugin provides the same functionally as the editor's Export tool, but it a
 4. Create a new "empty" block theme, ready for you to start editing.
 
 If you prefer to keep a record of all the changes to your theme using revision control, like Git or SVN, the Create Block Theme and the Overwrite option is extremely valuable. You can make small changes to your theme in the Editor, Overwrite the changes to the theme files, and then commit those changes to your revision control system.
+
+> **Note:** If you have not created empty header.html and footer.html files in your parts directory, the Create Block Theme plugin will not save the changes if you use the Overwrite option. So make sure to create those files before using Overwrite.
