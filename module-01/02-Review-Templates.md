@@ -12,15 +12,15 @@ For example, to render the content for a single post, you can create any of the 
 
 ## Editing or Creating Templates
 
-One of the main advantages of block themes over classic themes, is that you can edit existing templates or create new theme templates from the Site editor. 
+One of the main advantages of block themes over classic themes, is that you can edit existing templates or create new theme templates from the Site Editor. 
 
-> For a detailed breakdown of all the different parts of the Site editor, take a look at this [handy help document](https://wordpress.org/support/article/site-editor/).
+> **Note:** For a detailed breakdown of all the different parts of the Site Editor, take a look at this [handy help document](https://wordpress.org/support/article/site-editor/).
 
 You can then either save the template for the current site, which stores it in the database, or export the template code into the relevant file in the `templates` directory of your theme. 
 
 ### Adding Content to the index.html Template
 
-In the last lesson, you create an empty `index.html` template file. Let's add some content to this template.
+In the last lesson, you created an empty `index.html` template file. Let's add some content to this template.
 
 Start by navigating to Appearance -> Editor. You'll be presented with a blank canvas, ready to add content to your index.html template.
 
@@ -28,22 +28,23 @@ Start by navigating to Appearance -> Editor. You'll be presented with a blank ca
 
 As the index template is the default template that WordPress will load if it can't find a matching template file for the content being rendered, it's a good idea to add some content to this template. General best practice is to populate this template with a query loop, so that all posts on the site are displayed.
 
-> **Note:** While editing your template, you can toggle the Site editor's List View to get a better overview of the template's structure, and select specific blocks.
+> **Note:** While editing your template, you can toggle the Site Editor's List View to get a better overview of the template's structure, and select specific blocks.
 
 ![Enabling the List View](/images/module-01/lesson-02/enabling-list-view.png)
 
 Go ahead and add a query loop to the template, the pagination block, and a spacer to allow a bit of space between the query loop and the pagination.
 
 > **Do:** 
-> 1. Add a query loop block, and select the **Standard** pattern for the query loop.
+> 1. Add a **Query Loop** block, and select the **Standard** pattern for the query loop.
 > 2. Add a **Pagination** block inside the Query Loop, right at the bottom.
 > 3. Inside the Query Loop, select the **Post Template** block and add a **Spacer** block at the bottom.
 
 ![The index template with a header and query loop](/images/module-01/lesson-02/basic-index-template.png)
 
-If you switch to the Code editor View, you'll be able to see the block markup for the heading and query loop blocks.
+If you switch to the Code editor View, you'll be able to see the block markup for the Query Loop block.
 
-> Enable the Code editor view by clicking the More Options three-dot menu and selecting **Code editor**.
+> **Do:** Enable the Code editor view by clicking the More Options three-dot menu and selecting **Code editor**.
+
 > ![Enabling the Code editor](/images/module-01/lesson-02/editor-more-options.png)
 
 ```
@@ -76,19 +77,19 @@ If you switch to the Code editor View, you'll be able to see the block markup fo
 <!-- /wp:query -->
 ```
 
-> Remember to exit the Code editor when you're done looking at the code! 
+> **Do:** Remember to exit the Code editor when you're done looking at the code! 
 
 If you save this template content, it will save the changes to the database. This means the template structure will only be available for this site. In lesson 4 of this module we'll review how to export the code to a template file. 
 
-> Save this template now, we'll export it in a bit!
+> **Do:** Save this template now, we'll export it in a bit!
 
 ### Adding New Templates from the Site Editor
 
-Besides adding block content to existing templates, you can also create brand new templates from the Site editor. 
+Besides adding block content to existing templates, you can also create brand new templates from the Site Editor. 
 
-To start, toggle to the Site editor navigation sidebar, and click on "Templates" in the editor navigation.
+To start, toggle to the Site Editor navigation sidebar, and click on "Templates" in the editor navigation.
 
-> If you don't see the Site editor navigation sidebar, click the WordPress logo in the top left corner of the editor, which is the  "Toggle Navigation" button.
+> **Tip:** If you don't see the Site Editor navigation sidebar, click the WordPress logo in the top left corner of the editor, which is the  "Toggle Navigation" button.
 
 ![Editor Navigation](/images/module-01/lesson-02/editor-navigation.png)
 
@@ -96,14 +97,15 @@ You'll be presented with a list of the templates in this theme, and a button to 
 
 ![Editor Templates](/images/module-01/lesson-02/editor-templates.png)
 
-> Click on the Add New button to create a new template.
+> **Do:** Click on the Add New button to create a new template.
 
 ![Editor Add new template](/images/module-01/lesson-02/editor-add-new-template.png)
 
 The Editor will give you the option of creating a new template based on the primary templates, ranging from things like a Front Page to a 404 Page. 
 
-> Select the **Page** option, to create a new page template.
-> Select **All Pages** to create a template that will be used for all pages. (to be tested with 6.1)
+> **Do:** 
+> 1. Select the **Page** option, to create a new page template.
+> 2. Select **All Pages** to create a template that will be used for all pages. (to be tested with 6.1)
 
 The page template will be created, and you'll be taken to the editor to add blocks to the template. By default, WordPress will populate the new template with the content from the index template.
 
@@ -122,7 +124,7 @@ Your final page template should look something like this:
 
 ![Image of the page template](/images/module-01/lesson-02/page-template.png)
 
-Now switch to the Code editor view, to see the block markup that makes up this page template
+Now switch to the Code editor view, to see the block markup that makes up this page template.
 
 ```html
 <!-- wp:group {"layout":{"type":"constrained"}} -->
@@ -138,7 +140,7 @@ Now switch to the Code editor view, to see the block markup that makes up this p
 
 Finally, remember to exit the Code editor view, and save the template.
 
-> Save this template now, so it's included when we export it later!
+> **Do:** Save this template now, so it's included when we export it later!
 
 ### Further Reading
 
