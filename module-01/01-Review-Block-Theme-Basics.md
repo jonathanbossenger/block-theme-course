@@ -78,7 +78,7 @@ Block themes require one additional file, and `index.html` template. This file n
 
 ### theme.json
 
-Finally, a block theme needs a theme.json file. This file handles the global settings and styles for a block theme. This file is not required for a block theme to be active on a WordPress site, but for development purposes, it's extremely useufl to create it early on. 
+Finally, a block theme needs a theme.json file. This file handles the global settings and styles for a block theme. This file is not required for a block theme to be active on a WordPress site, but for development purposes, it's extremely useful to create it early on. 
 
 It's not a requirement to add any settings or styles to the theme.json file when starting a new block theme. 
 
