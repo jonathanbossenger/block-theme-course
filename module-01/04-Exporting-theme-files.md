@@ -11,7 +11,7 @@ This lesson will walk you through the steps to export your theme.
 The process to manually export your theme involves a few steps, which you must follow for each template and template part in your theme:
 
 1. Navigate to the template or template part in the Site Editor.
-2. Click the "More Options" button in the top right corner of the editor and select the Code Editor option to view the block markup code.
+2. Click the "More Options" button in the top right corner of the Editor and select the Code Editor option to view the block markup code.
 3. Copy the block markup code for the template or template part and paste it into the relevant file in your theme directory.
 4. Save the file, and then repeat these steps for each template and template part in your theme.
 
@@ -34,9 +34,10 @@ Both template files and template parts are html files that contain a mix of HTML
 
 ### Manually exporting templates
 
-To manually export the index template, navigate to the template and switch to the Code editor view, then copy the block markup code into the `index.html` file in the `templates` directory.
+To manually export the index template, navigate to the template and switch to the Code Editor view, then copy the block markup code into the `index.html` file in the `templates` directory.
 
-> 1. Copy the block markup from the Code editor View
+> **Do:**
+> 1. Copy the block markup from the Code Editor View
 > 2. Navigate to the `templates` directory of your theme, and open the `index.html` file in a text editor
 > 3. Paste the block markup into the `index.html` file, and save the file.
 
@@ -56,9 +57,9 @@ After:
 <!-- wp:query {"query":{"perPage":3,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":true}} -->
 ```
 
-If you wanted to follow the process for the page template, you'd first create the `page.html` template file in the `templates` directory, and copy the code from the page template in the editor.
+If you wanted to follow the process for the page template, you'd first create the `page.html` template file in the `templates` directory, and copy the code from the page template in the Editor.
 
-> **Do:** Create the page.html template file now, and copy the block markup from the page template in the Site editor.
+> **Do:** Create the page.html template file now, and copy the block markup from the page template in the Site Editor.
 
 ## Manually exporting template parts
 
@@ -87,15 +88,15 @@ Using this export tool will export all of your templates, template parts, and Gl
 
 ## Using the Create Block Theme Plugin
 
-Another option for exporting your theme from the editor is the [Create Block Theme](https://wordpress.org/plugins/create-block-theme/) plugin. 
+Another option for exporting your theme from the Editor is the [Create Block Theme](https://wordpress.org/plugins/create-block-theme/) plugin. 
 
 ![Create Block Theme](/images/module-01/lesson-04/create-block-theme.png)
 
-This plugin provides the same functionally as the editor's Export tool, but it also allows you to do the following:
+This plugin provides the same functionally as the Editor's Export tool, but it also allows you to do the following:
 
 1. Create a child theme of your current block theme, only exporting the changes made in the editor.
-2. Clone your current block theme, and export all the changes made in the editor into a brand new block theme.
-3. Overwrite your current block theme with the changes made in the editor.
+2. Clone your current block theme, and export all the changes made in the Editor into a brand new block theme.
+3. Overwrite your current block theme with the changes made in the Editor.
 4. Create a new "empty" block theme, ready for you to start editing.
 
 If you prefer to keep a record of all the changes to your theme using revision control, like Git or SVN, the Create Block Theme and the Overwrite option is extremely valuable. You can make small changes to your theme in the Editor, Overwrite the changes to the theme files, and then commit those changes to your revision control system.
