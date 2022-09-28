@@ -1,40 +1,46 @@
 # Saving Changes to Global Styles
 
-One of the benefits of developing a block theme in the Site Editor, is that you can make changes and see how they would affect the design, without writing them to any theme files, or needing to refresh your browser.
+One of the benefits of developing a block theme in the Site Editor, is that you can make changes and see how they would affect the design, without writing them to any theme files, or needing to refresh your browser. 
 
-This is because any changes you make to the Global Styles are saved to the database, and are only read from the database when the site is rendered to the browser.
+This is because any changes you make to the Global Styles are saved to the WordPress database, and are only read from the database when the site is rendered in the browser.
 
 It is important to understand where these changes are saved, as well as how WordPress decides which styles to use, when rendering the site.
 
 ## Where are Global Styles saved?
 
-When you make changes to the Global Styles, they are saved to the database in the `wp_posts` table, as a custom post type. 
+When you make changes to theme styles in the Global Styles interface, and hit **Save**, the changes are saved to the `wp_posts` table in the WordPress database. Global Styles are stored as a specific custom post type. 
 
-Below is a detailed breakdown of the relevant data that is stored for any changes made to a theme's Global Styles, and stored in the database.
+Below is a breakdown of the important fields and the data that is stored for changes made to a theme's Global Styles.
 
- - post_content: stores the updated Global Styles values, in JSON format
- - post_title: stores the name of post as "Global Styles"
- - post_name: stores the slug of the post as "wp-global-styles-{theme-slug}"
- - post_type: stores the post type as "wp_global_styles"
+ - `post_content`: stores the updated Global Styles data, in JSON format
+ - `post_title`: stores a value of "Global Styles"
+ - `post_name`: stores the slug of the post as "wp-global-styles-{theme-slug}", where {theme-slug} is the slug of the active theme
+ - `post_type`: stores the post type as "wp_global_styles"
 
-Make some changes to your theme's Global Styles in the editor, save them, and then open the database in your favorite database management tool. 
+Go ahead and make some changes to your theme's Global Styles in the Editor, and save them.
 
-Search in the wp_posts table for a record with a `post_name` of `wp-global-styles-new-block-theme` and `post_type` of `wp_global_styles`.
+> **Do:**
+> 1. Set the global Background colour to the Page pink preset
+> 2. Set the global Text colour to the Black preset 
+> 3. Change the Content and Wide dimensions in the global Layout settings to 750px and 1200px respectively
 
-If your database management tool 
+![Making changes in the Editor](/images/module-03/lesson-01/global-styles-changes.gif)
+
+Once you've saved the changes, open the database in your favorite database management tool (e.g. [phpMyAdmin](https://www.phpmyadmin.net/), [TablePlus](https://tableplus.com/) etc). 
+
+Search in the `wp_posts` table for a record with a `post_name` of `wp-global-styles-new-block-theme` and `post_type` of `wp_global_styles`.
+
+If your database management tool supports running a SQL query, you can also run this query:
 
 ```mysql
 SELECT post_content, post_title, post_name, post_type FROM `wp_posts` WHERE post_type = 'wp_global_styles' and post_name = 'wp-global-styles-new-block-theme'
 ```
 
+Here are the results of that query in TablePlus:
 
-## How WordPress decides which styles to use
+![Global Styles](/images/module-03/lesson-01/global-styles-view-tableplus.png)
 
-In the example below, the following settings have been changed in the Global Styles interface in the editor, and saved to the database
-
-- set the global background colour to the page-pink preset
-- set the global text colour to the black preset
-- set the contentSize to 750px and the wideSize to 1000px
+If you look at the post_content field, you can see the styles are stored as JSON data.
 
 ```json
 {
@@ -47,7 +53,7 @@ In the example below, the following settings have been changed in the Global Sty
   "settings": {
     "layout": {
       "contentSize": "750px",
-      "wideSize": "1000px"
+      "wideSize": "1200px"
     }
   },
   "isGlobalStylesUserThemeJSON": true,
@@ -55,7 +61,13 @@ In the example below, the following settings have been changed in the Global Sty
 }
 ```
 
-You will notice that only the changes are stored as JSON in the custom post type record, along with a special `isGlobalStylesUserThemeJSON` property, which is set to `true`. 
+Take note of the following:
+
+1. Only the changes are stored, not an updated version of the original theme.json with the changes included
+2. The style values are stored in a slightly different format to what you've seen in the theme.json file so far (e.g. `var:preset|color|pale-pink` instead of `var(--wp--preset--color--pale-pink)`). Both formats are acceptable in theme.json.
+3. The `isGlobalStylesUserThemeJSON` field is included in the stored data, and set to `true`. This allows WordPress to know which styles are from the theme.json file, and which are from the stored Global Styles data.
+
+## How WordPress Decides Which Global Styles to use
 
 When a post or page is rendered, WordPress will first load all the settings and styles from the theme.json file, and then merge any settings or styles stored in the custom post type record.
 
