@@ -6,11 +6,44 @@ Just like Global Styles, changes to your theme's templates and template parts ma
 
 Similar to Global Styles, templates and template parts are stored as a specific custom post type. Let's look at the important fields and the data that is stored for each.
 
-Templates
+### Template parts
 
-- `post_content`: stores the updated Global Styles data, in JSON format
-- `post_title`: stores a value of "Global Styles"
-- `post_name`: stores the slug of the post as "wp-global-styles-{theme-slug}", where {theme-slug} is the slug of the active theme
-- `post_type`: stores the post type as "wp_global_styles"
+- `post_content`: stores the full template part content, in HTML format, including block markup
+- `post_title`: stores the name of the template part
+- `post_name`: stores the slug of the template part
+- `post_type`: stores the post type as "wp_template_part"
 
-Template parts
+### Templates
+
+- `post_content`: stores the full template content, in HTML format, including block markup
+- `post_title`: stores the name of the template
+- `post_name`: stores the slug of the template
+- `post_type`: stores the post type as "wp_template"
+
+### Example
+
+Go ahead and make some changes to your theme's header template, and save it.
+
+Once you've saved the changes, open the database in your favorite database management tool (e.g. [phpMyAdmin](https://www.phpmyadmin.net/), [TablePlus](https://tableplus.com/) etc).
+
+Search in the `wp_posts` table for a record with a `post_name` of `header` and `post_type` of `wp_template_part`.
+
+If your database management tool supports running a SQL query, you can also run this query:
+
+```mysql
+SELECT post_content, post_title, post_name, post_type FROM `wp_posts` WHERE post_type = 'wp_template_part' and post_name = 'header'
+```
+
+> **Note:** Depending on how your template part is named, you may need to change the `post_name` value. Alternatively, just search for any `wp_template_part post` types.
+
+Here are the results of that search in TablePlus, with the header template part selected:
+
+![Template Parts](/images/module-03/lesson-02/template-parts-view-tableplus.png)
+
+## Template/Template Parts Relationship to the Theme
+
+In the previous lesson on saving Global Styles, you learned that the global style record uses a post_name value which includes the theme slug. This allows WordPress to determine which saved styles to use for which theme.
+
+The same is not true for templates and template parts, as the post_name value is the name of the template or template part. Instead, the relationship between the template/template part and the theme is stored using the WordPress taxonomies system. This is the same system that manages the relationship between posts and categories or tags.
+
+It's a bit more complicated to explain how this system works in the context of this lesson, but rest assured that it works behind the scenes to make sure the saved templates and template parts are associated to the correct theme

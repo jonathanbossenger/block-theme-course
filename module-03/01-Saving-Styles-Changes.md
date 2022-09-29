@@ -36,7 +36,7 @@ If your database management tool supports running a SQL query, you can also run 
 SELECT post_content, post_title, post_name, post_type FROM `wp_posts` WHERE post_type = 'wp_global_styles' and post_name = 'wp-global-styles-new-block-theme'
 ```
 
-Here are the results of that query in TablePlus:
+Here are the results of that search in TablePlus:
 
 ![Global Styles](/images/module-03/lesson-01/global-styles-view-tableplus.png)
 
