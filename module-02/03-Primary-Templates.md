@@ -2,7 +2,7 @@
 
 In the Block Theme Templates module, we briefly discussed the [WordPress Template Hierarchy](https://developer.wordpress.org/themes/basics/template-hierarchy/) and how it's used to determine which template file to use when rendering content. 
 
-> The process of how the template hierarchy works, and how WordPress determines which template to render is beyond the scope of this course, and so we recommend reading the [Template Hierarchy](https://developer.wordpress.org/themes/basics/template-hierarchy/) documentation to learn more.
+> The process of how the template hierarchy works, and how WordPress determines which template to render is beyond the scope of this course, We recommend reading the [Template Hierarchy](https://developer.wordpress.org/themes/basics/template-hierarchy/) documentation to learn more.
 
 ## Listing the Primary Templates
 
