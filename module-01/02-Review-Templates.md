@@ -20,7 +20,7 @@ You can then either save the template for the current site, which stores it in t
 
 ### Adding Content to the index.html Template
 
-In the last lesson, you created an empty `index.html` template file. Let's add some content to this template.
+In the previous lesson, you created an empty `index.html` template file. Let's add some content to this template.
 
 Start by navigating to Appearance -> Editor. You'll be presented with a blank canvas, ready to add content to your index.html template.
 
