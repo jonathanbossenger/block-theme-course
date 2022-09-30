@@ -123,12 +123,15 @@ Styles can be applied globally, as we did for the typography, or to specific blo
 > **Note**
 > To speed up this process, it's also possible to copy exiting settings and styles from existing themes, and update the values to match your theme.
 
-For the purposes of this lesson, we've gone ahead and done some of the groundwork for you, so go ahead and copy the following base `theme.json`, which is based on the Twenty Twenty Three Figma designs, and paste it over your current `theme.json`
+For the purposes of this lesson, we've gone ahead and done some groundwork for you. Go ahead and copy the `settings` and `styles` sections below and replace your current `theme.json` settings and styles.
+
+> **Note** These settings and styles are a sub set of the Twenty Twenty Three Figma styles.
+
+**Settings:**
 
 ```json
 {
-  "$schema": "https://schemas.wp.org/trunk/theme.json",
-  "version": 2,
+  ...
   "settings": {
     "appearanceTools": true,
     "color": {
@@ -200,6 +203,13 @@ For the purposes of this lesson, we've gone ahead and done some of the groundwor
       ]
     }
   },
+  ...
+```
+
+**Styles:**
+
+```json
+  ...
   "styles": {
     "color": {
       "background": "var(--wp--preset--color--base)",
@@ -309,10 +319,10 @@ For the purposes of this lesson, we've gone ahead and done some of the groundwor
       "lineHeight": "1.6"
     }
   }
-}
+  ...
 ```
 
-Once you've updated your theme.json file, refresh the Site editor, and you should see a bunch of differences.
+Once you've updated your theme.json file, refresh the Site editor, and you'll see the settings and styles applied to your theme.
 
 ![Settings and Styles applied](/images/module-02/lesson-02/updated-theme-json-applied.png)
 
