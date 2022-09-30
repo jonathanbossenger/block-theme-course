@@ -73,6 +73,8 @@ When a post or page is rendered, WordPress will first load all the settings and 
 
 What is also important to understand is that if you make changes to a setting or style in theme.json, and there's also a value for that setting or style in the custom post type record, then the value from the custom post type record will be used, and not the value from theme.json. 
 
+## Resetting Global Styles
+
 If you manually make changes to the theme.json file, you can reset the theme styles in the Global Styles interface. To do this, click on the tree dots in the Global Styles interface, to open the options menu, and select **Reset to defaults**.
 
 ![Reset Global Styles](/images/module-03/lesson-01/reset-global-styles.png)

@@ -49,3 +49,12 @@ In the previous lesson on saving Global Styles, you learned that the global styl
 The same is not true for templates and template parts, as the post_name value is the name of the template or template part. Instead, the relationship between the template/template part and the theme is stored using the WordPress taxonomies system. This is the same system that manages the relationship between posts and categories or tags.
 
 It's a bit more complicated to explain how this system works in the context of this lesson, but rest assured that it works behind the scenes to make sure the saved templates and template parts are associated to the correct theme
+
+## Resetting Templates and Template Parts
+
+Just as you can with Global Styles, you can reset the changes saved to a template or template part. To do this, click on the **Show template details** button and select **Clear customizations**
+
+![Reset Template Customizations](/images/module-03/lesson-02/clear-template-customisations.gif)
+
+This will delete the custom post type record, and the template layout will be loaded from the template file.
+
