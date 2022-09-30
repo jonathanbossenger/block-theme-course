@@ -20,7 +20,7 @@ Below is a breakdown of the important fields and the data that is stored for cha
 Go ahead and make some changes to your theme's Global Styles in the Editor, and save them.
 
 > **Do:**
-> 1. Set the global Background colour to the Page pink preset
+> 1. Set the global Background colour to the Pale pink preset
 > 2. Set the global Text colour to the Black preset 
 > 3. Change the Content and Wide dimensions in the global Layout settings to 750px and 1200px respectively
 

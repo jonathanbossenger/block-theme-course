@@ -22,7 +22,9 @@ Similar to Global Styles, templates and template parts are stored as a specific 
 
 ### Example
 
-Go ahead and make some changes to your theme's header template, and save it.
+Go ahead and make some changes to your theme's header template part, and save it.
+
+> **Do:** Select the Site Title in the header template part, and change the Typography size to Medium
 
 Once you've saved the changes, open the database in your favorite database management tool (e.g. [phpMyAdmin](https://www.phpmyadmin.net/), [TablePlus](https://tableplus.com/) etc).
 
