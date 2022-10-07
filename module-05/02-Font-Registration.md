@@ -78,7 +78,7 @@ Now, let's take what we've learned and put it into practice.  Open your `theme.j
 		"typography": {
 			"fontFamilies": [
 				{
-					"fontFamily": "\"Open Sans\", serif",
+					"fontFamily": "\"Open Sans\", sans-serif",
 					"name": "Open Sans",
 					"slug": "open-sans",
 					"fontFace": [
