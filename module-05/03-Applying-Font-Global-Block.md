@@ -4,7 +4,7 @@ WordPress allows theme authors and users to apply default font families to eleme
 
 On that screen, locate the Styles button at the top of the screen and click it.  It should open a sidebar panel with several design options, as shown in the following screenshot.
 
-![WordPress site editor with the Styles panel open on the right and the content canvas on the left.](/images/module-05/lesson-03.png)
+![WordPress site editor with the Styles panel open on the right and the content canvas on the left.](/images/module-05/lesson-03/site-editor-styles-typography.png)
 
 This is the starting point for configuring typography at the global scale, regardless if it is for elements or blocks.
 
@@ -19,7 +19,7 @@ To modify the base text font or other elements, you should click on the "Typogra
 
 For this lesson, let's alter the "Text" option, which is the equivalent of applying styles to the `<body>` element in CSS.  After selecting this option, locate the "Font" setting, as shown in the following screenshot:
 
-![Styles panel open on the right of the WordPress site editor with the Font option for text selected as Open Sans.](/images/module-05/lesson-03/styles-text-typogrpahy.png)
+![Styles panel open on the right of the WordPress site editor with the Font option for text selected as Open Sans.](/images/module-05/lesson-03/styles-text-typography.png)
 
 You should at least see a choice between "Default" and "Open Sans" (your registered font) available.  Saving this option will make this the default font family for the entire site, and it will only be overruled by a more specific value on other elements and blocks.
 
