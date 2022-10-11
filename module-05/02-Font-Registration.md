@@ -29,7 +29,7 @@ Let's take a look at what a `fontFace` array should look like for Open Sans:
 
 Note that we included both of the font files and set the values based on the style and available weights of each.
 
-Those familiar with the `@font-face` CSS at-rule should see the similarities between this JSON-based counterpart.  The work nearly the same.  `fontFamily` maps to `font-family` in CSS, `fontWeight` maps to `font-weight`, and so on.
+Those familiar with the `@font-face` [CSS at-rule](https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face) should see the similarities between it and this JSON-based counterpart.  The work nearly the same.  `fontFamily` maps to `font-family` in CSS, `fontWeight` maps to `font-weight`, and so on.
 
 However, one of the differences here is the format of the `src` file:
 
@@ -39,7 +39,7 @@ However, one of the differences here is the format of the `src` file:
 
 In particular, the `file:` bit at the beginning.  Essentially, that lets WordPress know to look for a file in the theme, and the actual path should be relative to the folder where the `theme.json` file is located.
 
-When registering a `fontFace`, it must be paired with a font object in the `theme.json`.  This object should have a `name`, `slug`, and `fontFamily` (i.e., font stack) registered.
+When registering a `fontFace`, it must be paired with a font family object in the `theme.json`.  This object should have a `name`, `slug`, and `fontFamily` (i.e., font stack) registered.
 
 Here is what an entire font family object looks like:
 
@@ -103,3 +103,5 @@ Now, let's take what we've learned and put it into practice.  Open your `theme.j
 	}
 }
 ```
+
+At this point, Open Sans is now registered as a font with WordPress via your theme.  The next lesson will walk you through applying it via the Styles interface in the site editor.

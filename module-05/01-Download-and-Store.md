@@ -1,10 +1,10 @@
-# How to download a web font and store it the theme
+# How to Download a Web Font and Store It in the Theme
 
 WordPress 5.9 introduced the ability for theme authors to bundle custom fonts and make them available via the block system.  This makes them available via global styles and on a per-block level.
 
 ## Downloading a Web Font
 
-There are many sites around the web to download custom web fonts.  Google Fonts is a common place for theme authors, so we will uses it throughout this lesson.
+There are many sites around the web to download custom web fonts from.  Google Fonts is a common place for theme authors, so we will uses it throughout this lesson.
 
 To get started, head over to the [Google Fonts](https://fonts.google.com/) website and browse for a font as shown in the following screenshot:
 
@@ -34,11 +34,11 @@ One you've converted the fonts, you should have a folder that looks like the fol
 	- `/OpenSans-Italic-VariableFont_wdth,wght.woff2`
 	- `/OpenSans-VariableFont_wdth,wght.woff2`
 
-You may rename these files to anything you prefer if it helps with remembering them.  For the purposes of this course, we'll keep them the same.
+You may rename these files to anything you prefer if it helps with remembering them.  For the purposes of this lesson, we'll keep them the same.
 
 ## Storing the Web Font in the Theme
 
-The next step is to figure out where the font files should go in your theme.  Every theme author has their own preference for organizing such files, but a common location is within and `/assets/fonts` folder.  The easiest way to do that is to copy over the contents of the `Open_Sans` folder and drop it in, so that your theme's directory structure looks like the following:
+The next step is to figure out where the font files should go in your theme.  Every theme author has their preference for organizing such files, but a common location is within and `/assets/fonts` folder.  The easiest way to do that is to copy over the contents of the `Open_Sans` folder and drop it in, so that your theme's directory structure looks like the following:
 
 ```
 theme-slug
