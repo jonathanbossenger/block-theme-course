@@ -4,7 +4,7 @@ WordPress 5.9 introduced the ability for theme authors to bundle custom fonts an
 
 ## Downloading a Web Font
 
-There are many sites around the web to download custom web fonts from.  Google Fonts is a common place for theme authors, so we will uses it throughout this lesson.
+There are many sites around the web to download custom web fonts from.  Google Fonts is a common place for theme authors, so we will use it throughout this lesson.
 
 To get started, head over to the [Google Fonts](https://fonts.google.com/) website and browse for a font as shown in the following screenshot:
 
@@ -38,7 +38,7 @@ You may rename these files to anything you prefer if it helps with remembering t
 
 ## Storing the Web Font in the Theme
 
-The next step is to figure out where the font files should go in your theme.  Every theme author has their preference for organizing such files, but a common location is within and `/assets/fonts` folder.  The easiest way to do that is to copy over the contents of the `Open_Sans` folder and drop it in, so that your theme's directory structure looks like the following:
+The next step is to figure out where the font files should go in your theme.  Every theme author has their preference for organizing such files, but the recommended location is within an `/assets/fonts` folder.  The easiest way to do that is to copy over the contents of the `Open_Sans` folder and drop it in, so that your theme's directory structure looks like the following:
 
 ```
 theme-slug
