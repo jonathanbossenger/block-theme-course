@@ -67,6 +67,9 @@ Here is what an entire font family object looks like:
 }
 ```
 
+> **Note**\
+> Multi-word family names, such as Open Sans should be wrapped in double quotes. However, since the JSON format already uses double quotes for wrapping strings, you must escape any you use with a `\` (backslash) character.  Therefore, the `"Open Sans"` family is shown as `\"Open Sans\"` in the `fontFamily` definition above.
+
 Theme authors can include multiple family objects via the `settings.typography.fontFamilies` array.  For the purposes of this lesson, we will only register the Open Sans font.
 
 Now, let's take what we've learned and put it into practice.  Open your `theme.json` file and put your Open Sans font code inside the `fontFamilies` array:
