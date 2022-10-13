@@ -10,28 +10,28 @@ This is the starting point for configuring typography at the global scale, regar
 
 ## Applying Font Families to Elements
 
-To modify the base text font or other elements, you should click on the "Typography" button in the Styles sidebar panel.  You will see several options for modifying the typography, such as:
+To modify the base text font or other elements, you should click on the **Typography** button in the Styles sidebar panel.  You will see several options for modifying the typography, such as:
 
 - Text
 - Links 
 - Headings
 - Buttons
 
-For this lesson, let's alter the "Text" option, which is the equivalent of applying styles to the root HTML element via CSS.  After selecting this option, locate the "Font" setting, as shown in the following screenshot:
+For this lesson, let's alter the **Text** option, which is the equivalent of applying styles to the root HTML element via CSS.  After selecting this option, locate the **Font** setting, as shown in the following screenshot:
 
 ![Styles panel open on the right of the WordPress site editor with the Font option for text selected as Open Sans.](/images/module-05/lesson-03/styles-text-typography.png)
 
-You should at least see a choice between "Default" and "Open Sans" (your registered font) available.  Saving this option will make this the default font family for the entire site, and it will only be overruled by a more specific value on other elements or blocks.
+You should at least see a choice between **Default** and **Open Sans** (your registered font) available.  Saving this option will make this the default font family for the entire site, and it will only be overruled by a more specific value on other elements or blocks.
 
 ## Applying Font Families to Blocks
 
-To apply a font family to a specific block by default, the process is pretty similar.  Return to the original Styles panel shown at the beginning of this lesson.  You should see button labeled "Blocks."  Click on this to open a new section, which should list all of the available blocks:
+To apply a font family to a specific block by default, the process is pretty similar.  Return to the original Styles panel shown at the beginning of this lesson.  You should see button labeled **Blocks**.  Click on this to open a new section, which should list all of the available blocks:
 
 ![WordPress site editor with the Styles interface open on the right, listing all of the site's blocks.](/images/module-05/lesson-03/styles-block-list.png)
 
 From this point, you can select any block that supports typography options, such as Paragraph, Heading, Site Title, and others, to change the block's default font family.
 
-For this lesson, locate the "Site Title" block, which will open a new sub-panel.  Then, select the "Typography" option.  From that point, the settings should look similar to those in the previous section of this lesson.  Select "Open Sans" under the "Font" option, as shown in the following screenshot.
+For this lesson, locate the **Site Title** block, which will open a new sub-panel.  Then, select the **Typography** option.  From that point, the settings should look similar to those in the previous section of this lesson.  Select **Open Sans** under the **Font** option, as shown in the following screenshot.
 
 ![Styles panel open on the right of the WordPress site editor with the Font option for the Site Title selected as Open Sans.](/images/module-05/lesson-03/styles-site-title-typography.png)
 

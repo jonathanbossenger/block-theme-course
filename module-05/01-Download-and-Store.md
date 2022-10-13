@@ -12,7 +12,7 @@ To get started, head over to the [Google Fonts](https://fonts.google.com/) websi
 
 For this lesson, we have selected the [Open Sans font](https://fonts.google.com/specimen/Open+Sans).  It is one of the most popular choices from Google Fonts.
 
-The next step for getting the Open Sans or a font family of your choice into your theme is to click the "Download Family" button on the font's page, as shown in the following screenshot:
+The next step for getting the Open Sans or a font family of your choice into your theme is to click the **Download Family** button on the font's page, as shown in the following screenshot:
 
 ![Open Sans family on the Google Fonts website. The "Download Family" button is highlighted.](/images/module-05/lesson-01/google-fonts-download.png)
 
