@@ -1,8 +1,8 @@
 # Applying Font Families via the Styles Interface
 
-WordPress allows theme authors and users to apply default font families to elements and blocks.  Both methods are available through the Styles interface under the Appearance > Editor screen.
+WordPress allows theme authors and users to apply default font families to elements and blocks.  Both methods are available through the Styles interface under the **Appearance > Editor** screen.
 
-On that screen, locate the Styles button at the top rights and click it.  It should open a sidebar panel with several design options, as shown in the following screenshot.
+On that screen, locate the **Styles** button at the top rights and click it.  It should open a sidebar panel with several design options, as shown in the following screenshot.
 
 ![WordPress site editor with the Styles panel open on the right and the content canvas on the left.](/images/module-05/lesson-03/site-editor-styles-typography.png)
 
@@ -10,7 +10,7 @@ This is the starting point for configuring typography at the global scale, regar
 
 ## Applying Font Families to Elements
 
-To modify the base text font or other elements, you should click on the **Typography** button in the Styles sidebar panel.  You will see several options for modifying the typography, such as:
+To modify the base text font or other elements, you should click on the **Typography** button in the **Styles** sidebar panel.  You will see several options for modifying the typography, such as:
 
 - Text
 - Links 
@@ -25,7 +25,7 @@ You should at least see a choice between **Default** and **Open Sans** (your reg
 
 ## Applying Font Families to Blocks
 
-To apply a font family to a specific block by default, the process is pretty similar.  Return to the original Styles panel shown at the beginning of this lesson.  You should see button labeled **Blocks**.  Click on this to open a new section, which should list all of the available blocks:
+To apply a font family to a specific block by default, the process is pretty similar.  Return to the original **Styles** panel shown at the beginning of this lesson.  You should see button labeled **Blocks**.  Click on this to open a new section, which should list all of the available blocks:
 
 ![WordPress site editor with the Styles interface open on the right, listing all of the site's blocks.](/images/module-05/lesson-03/styles-block-list.png)
 
