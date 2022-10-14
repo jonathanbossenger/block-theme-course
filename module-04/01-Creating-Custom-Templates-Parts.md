@@ -6,100 +6,57 @@ During that process, you selected the specific template to be created from the l
 
 ![Adding a new template](/images/module-04/lesson-01/add-new-template.png)
 
-For most themes, this list of templates is sufficient, but what if you wanted to create a custom template, either one higher up in the hierarchy, or one that has a specific function. 
+For most themes, this list of templates is sufficient, but what if you wanted to create a custom template that has a specific function. 
 
-For example, let's say you want to create a custom post template in your theme, to be used when a featured author is writing a post. 
-
-The requirements are:
-1. The post title should be at the top of the page, and centered to the page
-2. The post author and post date should display below the title, and center justified
-3. The author's bio should be displayed below author name and date, center justified
-4. The featured image should follow the bio
-5. The post content should follow the featured image
+If you look at the Twenty Three designs, you'll see a couple of custom templates, including a page template without a featured image, and a post template without a featured image. These templates will need to be created, so that users can choose to apply them to specific pages or posts respectively. 
 
 ## Creating custom templates
 
-The WordPress 6.1 release included a new template option in the list of new templates to add, the Custom template option. As the name suggests, this can be used to create a custom template, either a specific one in the template hierarchy, or a template that can be applied to any post or page.
+The WordPress 6.1 release includes a new template option in the list of new templates to add, the **Custom template** option. As the name suggests, this can be used to create a custom template that can be applied to any post or page.
 
-As the Featured Author template will only be applied on a per-post basis, it doesn't need to be created to match any specific template in the hierarchy. For now you can create the template, and then apply it to a specific post.
+![Adding a new template](/images/module-04/lesson-01/add-new-custom-template.png)
 
-> **Do** Create the Featured Author Post template
+Using this option, you can now create and edit your alternative page and post templates.
+
+> **Do** Create the alternative page template
 > 1. Navigate to the list of templates in the editor
-> 2. Click the "Add New" button
-> 3. Select "Custom template" from the list of available templates
-> 4. Give the template a name - "Featured Author Post"
+> 2. Click the **Add New** button
+> 3. Select **Custom template** from the list of available templates
+> 4. Give the template a name - "Page (Alternative)"
 
-As before, when you create the new template, it auto populates it with the same content from the index template, and redirects you to the template editor.
+![Adding a new template](/images/module-04/lesson-01/add-new-custom-page-template.png)
 
-> **Do** Edit the new template to match the theme requirements
-> 1. 
+As before, when you create the new template, it autopopulates it with some content, in this case it uses the content from the **Page** template.
 
-> **Do** Apply the template to a specific post
-> 1.
+![Adding a new template](/images/module-04/lesson-01/added-new-custom-page-template.png)
 
-### Export the custom template
+You can now edit the alternative page template in the editor, in this case, by removing the featured image, and saving the template
 
-Either manually or using Create Block Theme
-
-### Register the template in theme.json
-
-```json
-"customTemplates": [
-		{
-			"name": "featured-author-template",
-			"title": "Featured Author Template",
-			"postTypes": [
-				"post"
-			]
-		}
-	],
-```
-
-## Creating specific templates
-
-Create a template for a specific post by slug
-
-https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
-
-> **Do** Create a new custom post template for the post by slug
-> 1. Create the template
-> 2. Edit the template
-> 3. Export the template, and rename it to match the required template name
-> 4. Register the template in theme.json
+> **Do** Create the alternative post template, using the same steps for the alternative page template.
 
 ## Creating custom template parts
 
-> **Do** Create a new custom template part for comments
-> 
+Just as you can create custom templates to be used for specific purposes, you can create custom template parts. Headers and footers are commonly reusable template parts, but you don't have to limit yourself to these two options.
 
-Export
-Register in theme.json
+For example, things like post meta group you created for the single template in the previous module on Creating Primary Templates is perfect to create as a template part. You can then reuse the part in any post related templates you create.
 
-```json
-	"templateParts": [
-		{
-			"area": "general",
-			"name": "post-comments",
-			"title": "Post Comments Part"
-		},
-	],
-```
+Depending on how you're developing your theme, you can either take blocks, or collections of blocks, from an existing template and create a template part from them, or you can create a template part from scratch.
 
-While we are here, let's register the header and footer as well
+Either way, the main difference between creating a header or footer template part, or a custom template part, is that you choose the **General** area when creating a custom template part.
 
-```json
-		{
-			"area": "header",
-			"name": "header",
-			"title": "Header Part"
-		}, 
-		{
-			"area": "footer",
-			"name": "footer",
-			"title": "Footer Part"
-		}
-```
+## Creating a custom template part from a template
 
-> **Do** Add the template parts to a template
-> 1. In the Site Editor
-> 2. Manually
+To create a template part from an existing template, edit a template, select the block or group of blocks you want to turn into a part, and use the *Create template part** option.
+
+> **Do** Create a new custom template part for post meta from the single post template
+> 1. Edit the Single Template
+> 2. In the List view, select the post meta group
+> 3. Click on the Group options and select **Create template part**
+> 4. Give the template part a name - "Post Meta"
+
+![Adding a new template part](/images/module-04/lesson-01/create-template-part.gif)
+
+The template part will be created, and it will be added to the template in the editor. If you view your list of template parts, you'll see the new template part in the list
+
+![Template part list](/images/module-04/lesson-01/template-part-list.png)
+
