@@ -57,3 +57,5 @@ If you run into any trouble, copy the following block HTML code and insert it in
 <!-- /wp:group --></div></div>
 <!-- /wp:cover -->
 ```
+
+Congratulations! You have now successfully created a custom block pattern.  Of course, there's not much you can do with it other than customize it from the editor at this point.  In the upcoming lesson, you will learn how to register and bundle it with your theme.
