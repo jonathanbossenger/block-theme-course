@@ -12,7 +12,9 @@ For example, to render the content for a single post, you can create any of the 
 
 ## Editing or Creating Templates
 
-One of the main advantages of block themes over classic themes, is that you can edit existing templates or create new theme templates from the Site Editor. 
+One of the main advantages of block themes over classic themes is that you can edit existing templates or create new theme templates from the Site Editor. 
+
+This is useful when developing themes, as you could use a "base" or "starter" block theme, edit the base templates, and then export the updated templates to a new theme. Alternatively, you could create an entirely new theme from scratch for a specific use case, all from the Site Editor. 
 
 > **Note:** For a detailed breakdown of all the different parts of the Site Editor, take a look at this [handy help document](https://wordpress.org/support/article/site-editor/).
 
@@ -28,7 +30,9 @@ Start by navigating to Appearance -> Editor. You'll be presented with a blank ca
 
 As the index template is the default template that WordPress will load if it can't find a matching template file for the content being rendered, it's a good idea to add some content to this template. General best practice is to populate this template with a query loop, so that all posts on the site are displayed.
 
-> **Note:** While editing your template, you can toggle the Site Editor's List View to get a better overview of the template's structure, and select specific blocks.
+> **Note:** If you're not familiar with the Query Loop, take a look at this [handy tutorial](https://learn.wordpress.org/tutorial/taking-advantage-of-query-loops/).
+
+While editing your template, you can toggle the Site Editor's List View to get a better overview of the template's structure, and select specific blocks.
 
 ![Enabling the List View](https://learn.wordpress.org/files/2022/10/enabling-list-view.png)
 
@@ -144,6 +148,6 @@ Finally, remember to exit the Code editor view, and save the template.
 
 ### Further Reading
 
-You can read more about the [block theme templates](https://developer.wordpress.org/themes/block-themes/templates-and-template-parts/) in the Theme Handbook.
+You can read more about the [block theme templates](https://developer.wordpress.org/themes/block-themes/templates-and-template-parts/) in the Theme Handbook. If you're interested in reading up about all the core blocks available in the Site Editor, the Theme Developer Handbook has this handy list of [all core blocks](https://developer.wordpress.org/block-editor/reference-guides/core-blocks/).
 
 Now that we've covered theme templates, let's take a look at template parts.
