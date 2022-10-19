@@ -44,7 +44,9 @@ Use it to make something cool, have fun, and share what you've learned with othe
 */
 ```
 
-The minimum required fields for the header comment are `Theme Name`, but it's useful to add data for `Theme URI`, `Author`, and `Author URI`. 
+> **Note** If this is the first time you are seeing these fields, you can learn more about them, and what they are used for in the [Theme Developer Handbook](https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/#explanations).
+
+The minimum required fields for the header comment are `Theme Name`, (the name of the theme) but it's useful to add data for `Theme URI` (the web address where the theme can be downloaded), `Author` (the name of the theme developer), and `Author URI` (a web address where the theme developer can be contacted).
 
 > **Do:** Go ahead and create a new style.css file to your theme, and add the following fields as the header comment, replacing the field values with your own information:
 
