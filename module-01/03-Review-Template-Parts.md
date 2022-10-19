@@ -1,10 +1,8 @@
 # Block Theme Template Parts
 
-[Supplemental Video](https://wordpress.org/support/article/site-editor/)
+Template Parts are reusable parts of a theme. Unlike templates, template parts are not rendered directly, but are instead used inside templates to render specfic content. Template parts are very similar to reusable blocks, in that they are reusable pieces of content that can be inserted into multiple places.
 
-Template Parts are reusable parts of a theme. Unlike templates, template parts are not rendered directly, but are instead used inside templates to render specfic content. Template parts are very similar to blocks, in that they are reusable pieces of content that can be inserted into multiple places.
-
-If you completed the Create a Block Theme (Low-Code) course you would have created a header and footer template part. These template parts are used inside the page template to render the same header and footer on all template files.
+If you completed the [Develop Your First Low-Code Block Theme course](https://learn.wordpress.org/course/develop-your-first-low-code-block-theme/) course you would have created a header and footer template part. These template parts are used inside the page template to render the same header and footer on all template files.
 
 ## Creating Template Parts
 
@@ -12,13 +10,13 @@ Just like you did with creating a new Page template, you can also create new tem
 
 Create a new template part by navigating to the Editor. Toggle the Editor navigation menu, and select **Template Parts**.
 
-![Template parts](/images/module-01/lesson-03/editor-template-parts.png)
+![Template parts](https://learn.wordpress.org/files/2022/10/editor-template-parts.png)
 
 > **Do:** Click on the Add New button to create a new template part. 
 
 The Editor will ask you to give the template part a name, and select to either create a general template part, a header template part or a footer template part. 
 
-![Adding a header template part](/images/module-01/lesson-03/editor-header-template-part.png)
+![Adding a header template part](https://learn.wordpress.org/files/2022/10/editor-header-template-part.png)
 
 Go ahead and create a header template part for your theme.
 
@@ -26,7 +24,7 @@ Go ahead and create a header template part for your theme.
 
 Once the template part is created, you'll be taken straight to the new template part in the Editor.
 
-![Editing the header template part](/images/module-01/lesson-03/editor-edit-header-template-part.png)
+![Editing the header template part](https://learn.wordpress.org/files/2022/10/editor-edit-header-template-part.png)
 
 Now you can begin designing your header template part. You can use Group blocks and Row blocks to group and align elements in the template part.
 
@@ -38,13 +36,13 @@ Now you can begin designing your header template part. You can use Group blocks 
 
 You should end up with a template part that looks something like this.
 
-![Header template part content](/images/module-01/lesson-03/editor-header-template-part-content.png)
+![Header template part content](https://learn.wordpress.org/files/2022/10/editor-header-template-part-content.png)
 
 At this point you probably agree that it would be ideal if the navigation were aligned to the right. Fortunately you can achieve this by changing the **Justification** setting on the **Row** block. 
 
 > **Do:** Select the **Row** block, and change the **Justification** setting to **Space between items**.
 
-![Header template part content 2](/images/module-01/lesson-03/editor-header-template-part-content-space.png)
+![Header template part content 2](https://learn.wordpress.org/files/2022/10/editor-header-template-part-content-space.png)
 
 Save the template part. You can now use this template part in your page template.
 
@@ -60,7 +58,7 @@ Now create a footer template part for your theme. Then you can add some block co
 > 7. Add a link to the word WordPress in the **Paragraph** block that links to `https://wordpress.org/`.
 > 8. Change the **Justification** setting on the **Row** block to **Space between items**.
 
-![Footer template part content](/images/module-01/lesson-03/editor-footer-template-part-content.png)
+![Footer template part content](https://learn.wordpress.org/files/2022/10/editor-footer-template-part-content.png)
 
 Make sure to save the footer template before moving on.
 

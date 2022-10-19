@@ -4,7 +4,7 @@
 
 Let's start by reviewing the requirements for a block theme. This is the bare minimum you need to create a working block theme.
 
-> **Note:** If this is the first time you are learning about block themes you might want to first check out the [Create a Block Theme (Low-Code) course](https://learn.wordpress.org/create-a-block-theme/).
+> **Note:** If this is the first time you are learning about block themes you might want to first check out the [Develop Your First Low-Code Block Theme course](https://learn.wordpress.org/course/develop-your-first-low-code-block-theme/).
 
 ## Requirements
 
@@ -12,7 +12,7 @@ All themes, including block themes, reside in a directory in the `wp-content/the
 
 > **Do:** To begin create a new directory in your `themes` directory, and give the directory a unique name for your new theme.
 
-![Image of themes directory with 'new-block-theme' directory](/images/module-01/lesson-01/new-block-theme.png)
+![Image of themes directory with 'new-block-theme' directory](https://learn.wordpress.org/files/2022/10/new-block-theme.png)
 
 Once you've created your theme folder, your theme must have at minimum a `style.css` file and an `index.php` file. 
 
@@ -20,7 +20,7 @@ Once you've created your theme folder, your theme must have at minimum a `style.
 
 In a block theme, the `style.css` is primarily used to register the [header comment](https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/#basic-structure) for your theme, which is used to display information about the theme in the Appearance -> Themes dashboard panel. 
 
-![Theme Information](/images/module-01/lesson-01/base-block-theme-01.png)
+![Theme Information](https://learn.wordpress.org/files/2022/10/base-block-theme-01.png)
 
 Here is an example of the Twenty Twenty theme's style.css header comment:
 
@@ -44,7 +44,9 @@ Use it to make something cool, have fun, and share what you've learned with othe
 */
 ```
 
-The minimum required fields for the header comment are `Theme Name`, but it's useful to add data for `Theme URI`, `Author`, and `Author UR`. 
+> **Note** If this is the first time you are seeing these fields, you can learn more about them, and what they are used for in the [Theme Developer Handbook](https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/#explanations).
+
+The minimum required fields for the header comment are `Theme Name`, (the name of the theme) but it's useful to add data for `Theme URI` (the web address where the theme can be downloaded), `Author` (the name of the theme developer), and `Author URI` (a web address where the theme developer can be contacted).
 
 > **Do:** Go ahead and create a new style.css file to your theme, and add the following fields as the header comment, replacing the field values with your own information:
 
@@ -73,12 +75,13 @@ The `index.php` file is the theme template file that WordPress will use by defau
 
 Block themes require one additional file, and `index.html` template. This file needs to be created inside a new directory in the theme directory called `templates`. This file can be empty, but it is required for the theme to be recognized as a block theme, and enable the Editor option in the Appearance menu.
 
+> **Do:**
 > 1. Create your theme's `templates` directory.
 > 2. Create your theme's `index.html` file inside this directory, and leave it blank for now.
 
 ### theme.json
 
-Finally, a block theme needs a theme.json file. This file handles the global settings and styles for a block theme. This file is not required for a block theme to be active on a WordPress site, but for development purposes, it's extremely useful to create it early on. 
+Finally, a block theme should have a theme.json file. This file handles the global settings and styles for a block theme. While this file is not required for a block theme to be active on a WordPress site, for the purposes of developing your theme, it's extremely useful to create it early on. 
 
 It's not a requirement to add any settings or styles to the theme.json file when starting a new block theme. 
 
@@ -88,7 +91,7 @@ However, it is useful to start by including the JSON schema, as well as setting 
 
 > **Do:** Create your theme's theme.json file in the root of the theme directory, and add the following code:
 
-```json
+```
 {
   "$schema": "https://schemas.wp.org/trunk/theme.json",
   "version": 2,
@@ -101,14 +104,14 @@ However, it is useful to start by including the JSON schema, as well as setting 
 
 Once you've added these required files, you are ready to start developing your block theme.
 
-![Minimum Theme Requirements](/images/module-01/lesson-01/directory-structure.png)
+![Minimum Theme Requirements](https://learn.wordpress.org/files/2022/10/directory-structure.png)
 
-> **Note:** For the rest of this course, you'll be working in your new theme, so go ahead and activate it now from the Appearance -> Themes dashboard page.
+> **Note:** For the rest of this course, you'll be working in your new theme, so go ahead and activate it now from the **Appearance -> Themes** dashboard page.
 
-![Image of new block theme active](/images/module-01/lesson-01/new-block-theme-active.png)
+![Image of new block theme active](https://learn.wordpress.org/files/2022/10/new-block-theme-active.png)
 
 ### Further Reading
 
-You can read more about the minimum requirements for setting up a Block Theme in the section on [Block Themes](https://developer.wordpress.org/themes/block-themes/block-theme-setup/) in the Theme Handbook. 
+You can read more about the minimum requirements for setting up a Block Theme in the section on [Block Themes](https://developer.wordpress.org/themes/block-themes/block-theme-setup/) in the Theme Handbook. Also, check out these useful [developer tools and resources](https://developer.wordpress.org/themes/basics/tools-resources/) that will help speed up your block theme development.
 
 In the next two lessons, we'll take a look at the two types of files that make up a block theme, templates and template parts.
