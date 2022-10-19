@@ -44,7 +44,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 */
 ```
 
-The minimum required fields for the header comment are `Theme Name`, but it's useful to add data for `Theme URI`, `Author`, and `Author UR`. 
+The minimum required fields for the header comment are `Theme Name`, but it's useful to add data for `Theme URI`, `Author`, and `Author URI`. 
 
 > **Do:** Go ahead and create a new style.css file to your theme, and add the following fields as the header comment, replacing the field values with your own information:
 
@@ -78,7 +78,7 @@ Block themes require one additional file, and `index.html` template. This file n
 
 ### theme.json
 
-Finally, a block theme needs a theme.json file. This file handles the global settings and styles for a block theme. This file is not required for a block theme to be active on a WordPress site, but for development purposes, it's extremely useful to create it early on. 
+Finally, a block theme should have a theme.json file. This file handles the global settings and styles for a block theme. While this file is not required for a block theme to be active on a WordPress site, for the purposes of developing your theme, it's extremely useful to create it early on. 
 
 It's not a requirement to add any settings or styles to the theme.json file when starting a new block theme. 
 
