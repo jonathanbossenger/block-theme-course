@@ -1,8 +1,6 @@
 # Block Theme Template Parts
 
-[Supplemental Video](https://wordpress.org/support/article/site-editor/)
-
-Template Parts are reusable parts of a theme. Unlike templates, template parts are not rendered directly, but are instead used inside templates to render specfic content. Template parts are very similar to blocks, in that they are reusable pieces of content that can be inserted into multiple places.
+Template Parts are reusable parts of a theme. Unlike templates, template parts are not rendered directly, but are instead used inside templates to render specfic content. Template parts are very similar to reusable blocks, in that they are reusable pieces of content that can be inserted into multiple places.
 
 If you completed the [Develop Your First Low-Code Block Theme course](https://learn.wordpress.org/course/develop-your-first-low-code-block-theme/) course you would have created a header and footer template part. These template parts are used inside the page template to render the same header and footer on all template files.
 

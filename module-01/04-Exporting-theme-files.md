@@ -2,16 +2,20 @@
 
 [Supplemental Video](https://videopress.com/v/ktmuF4cT)
 
-Once you have created your basic theme structure, enabled or disabled settings and applied styles in your theme.json, and created your templates and template parts, your final step is going to be exporting all of this from your WordPress install into an installable theme zip file. After all, the theme you've just designed is not meant to stay in this WordPress installation, it might be meant for a client site, or you're planning to release it on the WordPress.org theme repository. 
+Once you have created your basic theme structure, enabled or disabled settings and applied styles in your `theme.json`, and created your templates and template parts, your final step is going to be exporting all of this from your WordPress install into an installable theme zip file. After all, the theme you've just designed is not meant to stay in this WordPress installation, it might be meant for a client site, or you're planning to release it on the WordPress.org theme repository. 
 
-This lesson will walk you through the steps to export your theme.
+This lesson will walk you through the steps to export your theme. We'll cover three options:
+
+1. Manually exporting your theme
+2. Using the Site Editor's Export Tool
+3. Using the [Create Block Theme](https://wordpress.org/plugins/create-block-theme/) plugin
 
 ## Manually Exporting Your Theme
 
 The process to manually export your theme involves a few steps, which you must follow for each template and template part in your theme:
 
 1. Navigate to the template or template part in the Site Editor.
-2. Click the "More Options" button in the top right corner of the Editor and select the Code Editor option to view the block markup code.
+2. Click the **More Options** button in the top right corner of the Editor and select the **Code Editor** option to view the block markup code.
 3. Copy the block markup code for the template or template part and paste it into the relevant file in your theme directory.
 4. Save the file, and then repeat these steps for each template and template part in your theme.
 
@@ -80,7 +84,7 @@ You should now have 4 theme files on your block theme:
 
 While manually exporting templates and template parts helps with understanding how a block theme is built, it's not the most suitable solution. Not only is it tedious, but if you've made changes to the Global Styles, you have no way of also exporting those changes to the `theme.json` file. 
 
-Fortunately The Site Editor has an export tool that will export all of your block theme code into an installable theme zip that you can then install on another WordPress site. You can access the export tool from the Site Editor's More Options menu, by clicking on the three dots.
+Fortunately, The Site Editor has an export tool that will export all of your block theme code into an installable theme zip that you can then install on another WordPress site. You can access the export tool from the Site Editor's More Options menu, by clicking on the three dots.
 
 ![Accessing the export tool](https://learn.wordpress.org/files/2022/10/export-tool.gif)
 
@@ -88,7 +92,7 @@ Using this export tool will export all of your templates, template parts, and Gl
 
 ## Using the Create Block Theme Plugin
 
-Another option for exporting your theme from the Editor is the [Create Block Theme](https://wordpress.org/plugins/create-block-theme/) plugin. 
+The final option for exporting your theme from the Editor is the [Create Block Theme](https://wordpress.org/plugins/create-block-theme/) plugin. 
 
 ![Create Block Theme](https://learn.wordpress.org/files/2022/10/create-block-theme.png)
 
@@ -102,3 +106,7 @@ This plugin provides the same functionally as the Editor's Export tool, but it a
 If you prefer to keep a record of all the changes to your theme using revision control, like Git or SVN, the Create Block Theme and the Overwrite option is extremely valuable. You can make small changes to your theme in the Editor, Overwrite the changes to the theme files, and then commit those changes to your revision control system.
 
 > **Note:** If you have not created empty header.html and footer.html files in your parts directory, the Create Block Theme plugin will not save the changes if you use the Overwrite option. So make sure to create those files before using Overwrite.
+
+## Summary
+
+While it's certainly possible to manually export your new block theme, we recommend either using the Site Editor export tool, or the the [Create Block Theme](https://wordpress.org/plugins/create-block-theme/) plugin. Both options will drastically speed up the process of preparing your theme for distribution. 
