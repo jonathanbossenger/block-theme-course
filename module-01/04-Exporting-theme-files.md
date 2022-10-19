@@ -30,7 +30,7 @@ Both template files and template parts are html files that contain a mix of HTML
 
 > **Do:** Now would be a good idea to and create the `parts` directory in your theme's directory
 
-![Create the parts directory](/images/module-01/lesson-04/parts-directory.png)
+![Create the parts directory](https://learn.wordpress.org/files/2022/10/parts-directory.png)
 
 ### Manually exporting templates
 
@@ -74,7 +74,7 @@ You should now have 4 theme files on your block theme:
 3. parts/header.html
 4. parts/footer.html
 
-![Exported templates and template parts](/images/module-01/lesson-04/exported-templates-template-parts.png)
+![Exported templates and template parts](https://learn.wordpress.org/files/2022/10/exported-templates-template-parts.png)
 
 ## Using the Site Editors Export Tool
 
@@ -82,7 +82,7 @@ While manually exporting templates and template parts helps with understanding h
 
 Fortunately The Site Editor has an export tool that will export all of your block theme code into an installable theme zip that you can then install on another WordPress site. You can access the export tool from the Site Editor's More Options menu, by clicking on the three dots.
 
-![Accessing the export tool](/images/module-01/lesson-04/export-tool.gif)
+![Accessing the export tool](https://learn.wordpress.org/files/2022/10/export-tool.gif)
 
 Using this export tool will export all of your templates, template parts, and Global Styles into a zip file that you can then install on another WordPress site.
 
@@ -90,7 +90,7 @@ Using this export tool will export all of your templates, template parts, and Gl
 
 Another option for exporting your theme from the Editor is the [Create Block Theme](https://wordpress.org/plugins/create-block-theme/) plugin. 
 
-![Create Block Theme](/images/module-01/lesson-04/create-block-theme.png)
+![Create Block Theme](https://learn.wordpress.org/files/2022/10/create-block-theme.png)
 
 This plugin provides the same functionally as the Editor's Export tool, but it also allows you to do the following:
 

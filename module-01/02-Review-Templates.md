@@ -24,13 +24,13 @@ In the previous lesson, you created an empty `index.html` template file. Let's a
 
 Start by navigating to Appearance -> Editor. You'll be presented with a blank canvas, ready to add content to your index.html template.
 
-![The index template in the editor](/images/module-01/lesson-02/empty-index-template.png)
+![The index template in the editor](https://learn.wordpress.org/files/2022/10/empty-index-template.png)
 
 As the index template is the default template that WordPress will load if it can't find a matching template file for the content being rendered, it's a good idea to add some content to this template. General best practice is to populate this template with a query loop, so that all posts on the site are displayed.
 
 > **Note:** While editing your template, you can toggle the Site Editor's List View to get a better overview of the template's structure, and select specific blocks.
 
-![Enabling the List View](/images/module-01/lesson-02/enabling-list-view.png)
+![Enabling the List View](https://learn.wordpress.org/files/2022/10/enabling-list-view.png)
 
 Go ahead and add a query loop to the template, the pagination block, and a spacer to allow a bit of space between the query loop and the pagination.
 
@@ -39,13 +39,13 @@ Go ahead and add a query loop to the template, the pagination block, and a space
 > 2. Add a **Pagination** block inside the Query Loop, right at the bottom.
 > 3. Inside the Query Loop, select the **Post Template** block and add a **Spacer** block at the bottom.
 
-![The index template with a header and query loop](/images/module-01/lesson-02/basic-index-template.png)
+![The index template with a header and query loop](https://learn.wordpress.org/files/2022/10/basic-index-template.png)
 
 If you switch to the Code editor View, you'll be able to see the block markup for the Query Loop block.
 
 > **Do:** Enable the Code editor view by clicking the More Options three-dot menu and selecting **Code editor**.
 
-> ![Enabling the Code editor](/images/module-01/lesson-02/editor-more-options.png)
+> ![Enabling the Code editor](https://learn.wordpress.org/files/2022/10/editor-more-options.png)
 
 ```
 <!-- wp:query {"queryId":31,"query":{"perPage":3,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":true}} -->
@@ -91,15 +91,15 @@ To start, toggle to the Site Editor navigation sidebar, and click on "Templates"
 
 > **Tip:** If you don't see the Site Editor navigation sidebar, click the WordPress logo in the top left corner of the editor, which is the  "Toggle Navigation" button.
 
-![Editor Navigation](/images/module-01/lesson-02/editor-navigation.png)
+![Editor Navigation](https://learn.wordpress.org/files/2022/10/editor-navigation.png)
 
 You'll be presented with a list of the templates in this theme, and a button to add a new template.
 
-![Editor Templates](/images/module-01/lesson-02/editor-templates.png)
+![Editor Templates](https://learn.wordpress.org/files/2022/10/editor-templates.png)
 
 > **Do:** Click on the Add New button to create a new template.
 
-![Editor Add new template](/images/module-01/lesson-02/editor-add-new-template.png)
+![Editor Add new template](https://learn.wordpress.org/files/2022/10/editor-add-new-template.png)
 
 The Editor will give you the option of creating a new template based on the primary templates, ranging from things like a Front Page to a 404 Page. 
 
@@ -122,7 +122,7 @@ Because a page in WordPress is merely a custom post type, you can use the Post T
 
 Your final page template should look something like this:
 
-![Image of the page template](/images/module-01/lesson-02/page-template.png)
+![Image of the page template](https://learn.wordpress.org/files/2022/10/page-template.png)
 
 Now switch to the Code editor view, to see the block markup that makes up this page template.
 

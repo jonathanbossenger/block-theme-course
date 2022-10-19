@@ -12,7 +12,7 @@ All themes, including block themes, reside in a directory in the `wp-content/the
 
 > **Do:** To begin create a new directory in your `themes` directory, and give the directory a unique name for your new theme.
 
-![Image of themes directory with 'new-block-theme' directory](/images/module-01/lesson-01/new-block-theme.png)
+![Image of themes directory with 'new-block-theme' directory](https://learn.wordpress.org/files/2022/10/new-block-theme.png)
 
 Once you've created your theme folder, your theme must have at minimum a `style.css` file and an `index.php` file. 
 
@@ -20,7 +20,7 @@ Once you've created your theme folder, your theme must have at minimum a `style.
 
 In a block theme, the `style.css` is primarily used to register the [header comment](https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/#basic-structure) for your theme, which is used to display information about the theme in the Appearance -> Themes dashboard panel. 
 
-![Theme Information](/images/module-01/lesson-01/base-block-theme-01.png)
+![Theme Information](https://learn.wordpress.org/files/2022/10/base-block-theme-01.png)
 
 Here is an example of the Twenty Twenty theme's style.css header comment:
 
@@ -101,11 +101,11 @@ However, it is useful to start by including the JSON schema, as well as setting 
 
 Once you've added these required files, you are ready to start developing your block theme.
 
-![Minimum Theme Requirements](/images/module-01/lesson-01/directory-structure.png)
+![Minimum Theme Requirements](https://learn.wordpress.org/files/2022/10/directory-structure.png)
 
 > **Note:** For the rest of this course, you'll be working in your new theme, so go ahead and activate it now from the Appearance -> Themes dashboard page.
 
-![Image of new block theme active](/images/module-01/lesson-01/new-block-theme-active.png)
+![Image of new block theme active](https://learn.wordpress.org/files/2022/10/new-block-theme-active.png)
 
 ### Further Reading
 
