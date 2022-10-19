@@ -111,6 +111,6 @@ Once you've added these required files, you are ready to start developing your b
 
 ### Further Reading
 
-You can read more about the minimum requirements for setting up a Block Theme in the section on [Block Themes](https://developer.wordpress.org/themes/block-themes/block-theme-setup/) in the Theme Handbook. 
+You can read more about the minimum requirements for setting up a Block Theme in the section on [Block Themes](https://developer.wordpress.org/themes/block-themes/block-theme-setup/) in the Theme Handbook. Also, check out these useful [developer tools and resources](https://developer.wordpress.org/themes/basics/tools-resources/) that will help speed up your block theme development.
 
 In the next two lessons, we'll take a look at the two types of files that make up a block theme, templates and template parts.
