@@ -4,7 +4,7 @@
 
 Let's start by reviewing the requirements for a block theme. This is the bare minimum you need to create a working block theme.
 
-> **Note:** If this is the first time you are learning about block themes you might want to first check out the [Create a Block Theme (Low-Code) course](https://learn.wordpress.org/create-a-block-theme/).
+> **Note:** If this is the first time you are learning about block themes you might want to first check out the [Develop Your First Low-Code Block Theme course](https://learn.wordpress.org/course/develop-your-first-low-code-block-theme/).
 
 ## Requirements
 
@@ -75,6 +75,7 @@ The `index.php` file is the theme template file that WordPress will use by defau
 
 Block themes require one additional file, and `index.html` template. This file needs to be created inside a new directory in the theme directory called `templates`. This file can be empty, but it is required for the theme to be recognized as a block theme, and enable the Editor option in the Appearance menu.
 
+> **Do:**
 > 1. Create your theme's `templates` directory.
 > 2. Create your theme's `index.html` file inside this directory, and leave it blank for now.
 
@@ -90,7 +91,7 @@ However, it is useful to start by including the JSON schema, as well as setting 
 
 > **Do:** Create your theme's theme.json file in the root of the theme directory, and add the following code:
 
-```json
+```
 {
   "$schema": "https://schemas.wp.org/trunk/theme.json",
   "version": 2,
@@ -105,7 +106,7 @@ Once you've added these required files, you are ready to start developing your b
 
 ![Minimum Theme Requirements](https://learn.wordpress.org/files/2022/10/directory-structure.png)
 
-> **Note:** For the rest of this course, you'll be working in your new theme, so go ahead and activate it now from the Appearance -> Themes dashboard page.
+> **Note:** For the rest of this course, you'll be working in your new theme, so go ahead and activate it now from the **Appearance -> Themes** dashboard page.
 
 ![Image of new block theme active](https://learn.wordpress.org/files/2022/10/new-block-theme-active.png)
 
