@@ -24,7 +24,7 @@ Go ahead and make some changes to your theme's Global Styles in the Editor, and 
 > 2. Set the global Text colour to the Black preset 
 > 3. Change the Content and Wide dimensions in the global Layout settings to 750px and 1200px respectively
 
-![Making changes in the Editor](/images/module-03/lesson-01/global-styles-changes.gif)
+![Making changes in the Editor](https://learn.wordpress.org/files/2022/10/global-styles-changes.gif)
 
 Once you've saved the changes, open the database in your favorite database management tool (e.g. [phpMyAdmin](https://www.phpmyadmin.net/), [TablePlus](https://tableplus.com/) etc). 
 
@@ -38,7 +38,7 @@ SELECT post_content, post_title, post_name, post_type FROM `wp_posts` WHERE post
 
 Here are the results of that search in TablePlus:
 
-![Global Styles](/images/module-03/lesson-01/global-styles-view-tableplus.png)
+![Global Styles](https://learn.wordpress.org/files/2022/10/global-styles-view-tableplus.png)
 
 If you look at the post_content field, you can see the styles are stored as JSON data.
 
@@ -77,7 +77,7 @@ What is also important to understand is that if you make changes to a setting or
 
 If you manually make changes to the theme.json file, you can reset the theme styles in the Global Styles interface. To do this, click on the tree dots in the Global Styles interface, to open the options menu, and select **Reset to defaults**.
 
-![Reset Global Styles](/images/module-03/lesson-01/reset-global-styles.png)
+![Reset Global Styles](https://learn.wordpress.org/files/2022/10/reset-global-styles.png)
 
 > **Do:** Go ahead and reset the Global Styles now.
 

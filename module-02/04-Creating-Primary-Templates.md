@@ -4,9 +4,9 @@ In the recap of templates lesson, you created the index and page templates. Now,
 
 ## Template Content
 
-As mentioned in the first lesson of this module, you will be building the templates, based on the Twenty Twenty Three theme.
+As mentioned in the first lesson of this module, you will be building the templates, based on the Twenty Twenty-Three theme.
 
-![Twenty Twenty Three Designs](/images/module-02/lesson-02/twenty-twenty-three-design.png)
+![Twenty Twenty-Three Designs](https://learn.wordpress.org/files/2022/10/twenty-twenty-three-design.png)
 
 ## Create a Primary Template
 
@@ -75,5 +75,5 @@ Once you've created your templates in the editor, you can export your theme temp
 
 Which ever option you used to export your template content, your theme directory will start coming together as you build the various templates.
 
-![Theme Structure](/images/module-02/lesson-02/block-theme-primary-templates.png)
+![Theme Structure](https://learn.wordpress.org/files/2022/10/block-theme-primary-templates.png)
 

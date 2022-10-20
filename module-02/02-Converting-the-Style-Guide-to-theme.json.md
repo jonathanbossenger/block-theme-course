@@ -6,7 +6,7 @@ The first step a developer usually takes is turning the style guide from the giv
 
 ## Creating a Global Setting
 
-To create your first setting, let's apply the system-wide theme font. Take a look at the Twenty Twenty Three style guide in the Figma file you copied earlier. 
+To create your first setting, let's apply the system-wide theme font. Take a look at the Twenty Twenty-Three style guide in the Figma file you copied earlier. 
 
 The base font is either the default system font of the operating system, or the fallback is San Serif.
 
@@ -50,11 +50,11 @@ Switch back to the Site editor, open the Global Styles interface, and apply the 
 > 3. Click **Text**.
 > 4. Select **System Font** from the **Font** dropdown.
 
-![Applying a Global Font](/images/module-02/lesson-02/global-styles-fonts.gif)
+![Applying a Global Font](https://learn.wordpress.org/files/2022/10/global-styles-fonts.gif)
 
 Instantly you'll notice that the font in the template in the editor has been updated to the new font.
 
-![System Font Applied](/images/module-02/lesson-02/system-font-applied.png)
+![System Font Applied](https://learn.wordpress.org/files/2022/10/system-font-applied.png)
 
 Make sure to save your Custom Styles, to ensure they are applied to the theme.
 
@@ -125,7 +125,7 @@ Styles can be applied globally, as we did for the typography, or to specific blo
 
 For the purposes of this lesson, we've gone ahead and done some groundwork for you. Go ahead and copy the `settings` and `styles` sections below and replace your current `theme.json` settings and styles.
 
-> **Note** These settings and styles are a sub set of the Twenty Twenty Three Figma styles.
+> **Note** These settings and styles are a sub set of the Twenty Twenty-Three Figma styles.
 
 **Settings:**
 
@@ -324,7 +324,7 @@ For the purposes of this lesson, we've gone ahead and done some groundwork for y
 
 Once you've updated your theme.json file, refresh the Site editor, and you'll see the settings and styles applied to your theme.
 
-![Settings and Styles applied](/images/module-02/lesson-02/updated-theme-json-applied.png)
+![Settings and Styles applied](https://learn.wordpress.org/files/2022/10/updated-theme-json-applied.png)
 
 ## Style Before Layout
 
@@ -372,7 +372,7 @@ This will force the header content to always display at a width of 1000 pixels a
 
 Then take a look at the page template you created earlier, and you will see how the header and footer are now aligned to the 1000 pixel wide layout.
 
-![Updated Page Template](/images/module-02/lesson-02/updated-page-template.png)
+![Updated Page Template](https://learn.wordpress.org/files/2022/10/updated-page-template.png)
 
 At the same time, take a look at the Figma design for the page layout. You'll notice that the Featured Image and the Post Title should also be set to 1000 pixels wide, and the text should be 650 pixels wide.
 
@@ -384,7 +384,7 @@ At the same time, take a look at the Figma design for the page layout. You'll no
 
 There is no design for the index template, mostly because this template will only be used as a fallback if the archive template is not defined. However, you can also set the Query Loop block to constrain itself to the widths specified in the theme.json, by toggling the **Inner blocks use content width** setting.
 
-![Updated Index Template](/images/module-02/lesson-02/updated-page-template.png)
+![Updated Index Template](https://learn.wordpress.org/files/2022/10/updated-page-template.png)
 
 > **Tip:** Using Group, Row and Column blocks for defining layout is very useful, so it's a good idea to learn about all the different [core blocks](https://developer.wordpress.org/block-editor/reference-guides/core-blocks/) and what functionality they provide.
 

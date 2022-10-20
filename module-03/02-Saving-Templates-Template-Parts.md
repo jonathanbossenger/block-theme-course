@@ -40,7 +40,7 @@ SELECT post_content, post_title, post_name, post_type FROM `wp_posts` WHERE post
 
 Here are the results of that search in TablePlus, with the header template part selected:
 
-![Template Parts](/images/module-03/lesson-02/template-parts-view-tableplus.png)
+![Template Parts](https://learn.wordpress.org/files/2022/10/template-parts-view-tableplus.png)
 
 ## Template/Template Parts Relationship to the Theme
 
@@ -54,7 +54,7 @@ It's a bit more complicated to explain how this system works in the context of t
 
 Just as you can with Global Styles, you can reset the changes saved to a template or template part. To do this, click on the **Show template details** button and select **Clear customizations**
 
-![Reset Template Customizations](/images/module-03/lesson-02/clear-template-customisations.gif)
+![Reset Template Customizations](https://learn.wordpress.org/files/2022/10/clear-template-customisations.gif)
 
 This will delete the custom post type record, and the template layout will be loaded from the template file.
 
