@@ -67,7 +67,7 @@ Then you can register your custom template, giving it a name, a list of postType
 
 If you switch back to the Site Editor, and refresh the Templates list, you'll see there are now two Page Alternative templates listed. 
 
-![Duplicate Templates](/images/module-04/lesson-02/updated-custom-templates-list.png)
+![Duplicate Templates](https://learn.wordpress.org/files/2022/10/updated-custom-templates-list.png)
 
 One is marked as added by your user, and the other as added by the theme. The one added by the user was created soley in the editor, and is therefore only stored in the database. The other is the file you just created and registered. You can therefore delete the one added by the user.
 

@@ -2,6 +2,8 @@
 
 The first step a developer usually takes is turning the style guide from the given designs into CSS. With the introduction of the theme.json file, this process is made a little easier. 
 
+theme.json is a file in your block theme that allows you to enable specific theme functionality and create theme specific settings, and then apply 
+
 # Populating theme.json - Settings and Styles
 
 ## Creating a Global Setting
