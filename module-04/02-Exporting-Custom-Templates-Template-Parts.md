@@ -4,11 +4,11 @@ The big difference between the Primary (and Secondary) Templates and the Header 
 
 The main reason for this is that custom templates and template parts do not have specific, predefined names within the Template Hierarchy system. 
 
-For this reason, it's not possible to automatically export the code to a file name you specifiy, as it might be with a page, post, or single template, or a header or footer template part.
+For this reason, it's not possible to automatically export the code to a file name you specify, as it might be with a page, post, or single template, or a header or footer template part.
 
 Instead, you might choose to manually export the code to a file to give it a specific name, and then register your custom templates and template parts in the theme.json file.
 
-## Exporting Custom Templates
+## Manually Exporting Custom Templates
 
 To start, export the alternative page template to a file. This process will follow the same process as described in the Manually exporting templates section of the Exporting theme files lesson from Module 01.
 
@@ -36,6 +36,8 @@ wp-custom-template-{template-slug}.html
 So if you create a template called `Alternative Page`, the file will be named `wp-custom-template-alternative-page.html`.
 
 You can then rename the file to something more descriptive, such as `page-alternative.html`.
+
+The downside of using this option is that you then will need to extract this file back into your theme directory, in order to register it in theme.json. For this reason, this method is not recommended.
 
 ## Exporting Custom Templates using Create Block Theme
 
