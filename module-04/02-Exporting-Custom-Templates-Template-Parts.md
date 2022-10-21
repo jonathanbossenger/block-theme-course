@@ -2,9 +2,11 @@
 
 The big difference between the Primary (and Secondary) Templates and the Header and Footer template parts, and any custom templates or template parts you create, is how you export the code to theme files. 
 
-The main reason for this is that custom templates and template parts do not have specific, predefined names within the Template Hierarchy system. For this reason, it's not possible to automatically export the code to a specific file name, as it might be with a page, post, or single template, or a header or footer template part.
+The main reason for this is that custom templates and template parts do not have specific, predefined names within the Template Hierarchy system. 
 
-Instead, you need to manually export the code to a file with a specific name, and then register your custom templates and template parts in the theme.json file.
+For this reason, it's not possible to automatically export the code to a file name you specifiy, as it might be with a page, post, or single template, or a header or footer template part.
+
+Instead, you might choose to manually export the code to a file to give it a specific name, and then register your custom templates and template parts in the theme.json file.
 
 ## Exporting Custom Templates
 
@@ -19,11 +21,11 @@ To manually export the alternative page template, navigate to the template and s
 > 5. Navigate to the `templates` directory of your theme, and open the `page-alternative.html` file in a text editor
 > 6. Paste the block markup into the `page-alternative.html` file, and save the file.
 
-## Exporting Custom Templates using Create Block Theme
+## Exporting Custom Templates using the Site Editor export tool
 
-If you're using Create Block Theme, you can export custom templates using the `Overwrite New Block Theme` option. 
+If you choose to export your theme using the Export tool in the Site Editor, the custom template will be included in the exported theme files. 
 
-This option will create the file in the templates directory, with the following filename structure, where {template-slug} is a "slugified" version of the template name you specified when you create the template:
+The export will create the file in the templates' directory, with the following filename structure, where {template-slug} is a "slugified" version of the template name you specified when you create the template:
 
 ```
 wp-custom-template-{template-slug}.html
@@ -33,9 +35,23 @@ wp-custom-template-{template-slug}.html
 
 So if you create a template called `Alternative Page`, the file will be named `wp-custom-template-alternative-page.html`.
 
+You can then rename the file to something more descriptive, such as `page-alternative.html`.
+
+## Exporting Custom Templates using Create Block Theme
+
+If you're using Create Block Theme, you can export custom templates using the `Overwrite New Block Theme` option. 
+
+This option will create the file in the templates directory, using the same "slugified" version of the template name as the file name:
+
+```
+wp-custom-template-{template-slug}.html
+```
+
+As when using the Export tool, you then need to rename the file.
+
 ## Registering Custom Templates
 
-Whether you export manually, or use Create Block Theme, your final step is to register the custom template in the theme.json file. To do so, you add a new top level item called `customTemplates` to the file, and then add an object for each custom template.
+Whether you export manually, use the Export tool, or use Create Block Theme, your final step is to register the custom template in the `theme.json` file. To do so, you add a new top level item called `customTemplates` to the file, and then add an object for each custom template.
 
 ```json
 "customTemplates": [
