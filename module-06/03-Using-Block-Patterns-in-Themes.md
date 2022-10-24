@@ -2,28 +2,28 @@
 
 You learned how to register patterns in themes during the previous lesson.  That provides end-users with an easy method of inserting a pattern into their posts, pages, or custom templates via the site editor.  However, there is much more that you can do with the feature.
 
-In this lesson, you will learn a few methods of using block patterns in your theme.  This will include using them within block templates, internationalizing text strings, and including dynamic data, such as a URL path to an image. 
+In this lesson, you will learn a few methods for using block patterns in your theme.  This will include using them within block templates, internationalizing text strings, and including dynamic data, such as a URL path to an image. 
 
 ## Using Patterns in Templates
 
 WordPress allows theme authors to include a pattern directly in a block template or template part.  There are two primary reasons for this:
 
-- **Reusability:** Build templates following the DRY (Don't Repeat Yourself) principle, reusing a pattern in multiple places.
-- **Dynamic Data:** Include dynamic data that would otherwise be inaccessible in HTML-based templates and template parts.
+- **Reusability:** To follow the DRY (Don't Repeat Yourself) principle, reusing a pattern in multiple places.
+- **Dynamic Data:** To include dynamic data that would otherwise be inaccessible in HTML-based templates and template parts.
 
-You may be asking how you are supposed to use PHP-based patterns within HTML.  This is possible via WordPress' built-in Pattern block, which is essentially a wrapper for an individual pattern that makes this magic possible.
+You may be asking how you are supposed to use PHP-based patterns within HTML.  This is possible via WordPress' built-in Pattern block, a wrapper block for outputting individual patterns.
 
 Let's say you have a `templates/home.html` template for your theme.  It might looks something like the following:
 
 ```html
-/<!-- wp:template-part {"slug":"header"} /-->
+<!-- wp:template-part {"slug":"header"} /-->
 
 <!-- Some other blocks. /-->
 
 <!-- wp:template-part {"slug":"footer"} /-->
 ```
 
-However, you want to include your registered Hero pattern from the previous lesson just below the header.  To do this, you would use the Pattern block, which allows you to show any registered pattern in any block template or template part.
+However, you want to include your registered Hero pattern from the previous lesson just below the header.  To do this, you would use the Pattern block, which allows you to show a registered pattern in any block template or template part.
 
 The Pattern block code looks like the following:
 
@@ -36,7 +36,7 @@ Because you know the slug for your Hero pattern is `themeslug/hero`, all you nee
 Now, add that code to your `templates/home.html` template.  It should look similar to the following code snippet:
 
 ```html
-/<!-- wp:template-part {"slug":"header"} /-->
+<!-- wp:template-part {"slug":"header"} /-->
 
 <!-- wp:pattern {"slug":"themeslug/hero"} /-->
 
@@ -51,25 +51,23 @@ When a user loads the Home template via **Appearance > Editor**, they will see t
 
 ## Internationalizing Text in Patterns
 
-The `<-- wp:pattern /-->` block was primari
+When you built the Hero pattern, you added three different blocks with custom text.  Let's take a look at the Heading block from that pattern, the first to use such text:
 
-When you built the Hero pattern, you added three different blocks with custom text.  First, there was the Heading block:
+```html
+<h2 class="has-text-align-center">Welcome to My Site</h2>
+```
 
-> Welcome to My Site
+The text string "Welcome to My Site" is problematic.  Not every user is a native speaker of the language you wrote that text in (English in this case).  When users insert patterns with custom text, it would be nice to see it in their own language.
 
-Then, the Paragraph block:
+The `<-- wp:pattern /-->` block was originally built as a method of internationalizing text strings.  This allows you to use translations functions, such as [`_e()` WordPress function](https://developer.wordpress.org/reference/functions/_e/), to make the text translatable.
 
-> This is my little home away from home. Here, you will get to know me.  I'll share my likes, hobbies, and more.  Every now and then, I'll even have something interesting to say in a blog post.
+The internationalized version of the Heading block should look like the following:
 
-And, finally, the button block:
+```php
+<h2 class="has-text-align-center"><?php _e( 'Welcome to My Site', 'themeslug' ); ?></h2>
+```
 
-> See My Popular Posts →
-
-The problem with text like that in block patterns is that not everyone is a native speaker of the language you wrote that text in (English in this case).  Each block of text needs to be internationalized so that translators can make it readable for users of other languages.
-
-For the Hero pattern, you need to wrap each block of text in the [`_e()` WordPress function](https://developer.wordpress.org/reference/functions/_e/) to internationalize it.  So, `Welcome to My Site` becomes `<?php _e( 'Welcome to My Site', 'themeslug' ); ?>`.
-
-Your `patterns/hero.php` file should now look similar to the following:
+Now, follow this process for all three blocks with text strings in them.  Your `patterns/hero.php` file should now look similar to the following:
 
 ```php
 <?php
@@ -97,10 +95,6 @@ Your `patterns/hero.php` file should now look similar to the following:
 <!-- /wp:group --></div></div>
 <!-- /wp:cover -->
 ```
-
-
-> **Note**\
-> Dynamic data only remains dynamic when it comes from the theme.  The moment that a user saves a post in the block content editor or a template in the site editor, the data becomes static.  You cannot later update that specific instance of the pattern.
 
 ## Adding Images and Other Dynamic Data in Patterns
 
@@ -140,6 +134,7 @@ With:
 <?php echo esc_url( get_theme_file_uri( 'assets/images/hero-background.webp' ) ); ?>
 ```
 
+Once you've replaced each instance of the URL path, your `patterns/hero.php` file should look like the following:
 
 ```php
 <?php
@@ -171,6 +166,9 @@ With:
 Once you saved your progress, go to **Pages > Add New** in your WordPress admin and open the pattern inserter.  Your new pattern with its background image should appear:
 
 ![WordPress page editor with the Patterns inserter open on the left, showing a single hero pattern with a background image.](/images/module-06/lesson-03/hero-with-background-inserter.jpg)
+
+> **Note**\
+> Dynamic data only remains dynamic when it comes from the theme.  The moment that a user saves a post in the block content editor or a template in the site editor, the data becomes static.  You cannot later update that specific instance of the pattern.
 
 Images are merely the tip of the iceberg when it comes to what type of data you can use in a block pattern.  You could potentially show a specific configuration of a pattern based on whether a specific plugin is active, for example.  Internationalizing text strings and including media are the most common scenarios.
 
