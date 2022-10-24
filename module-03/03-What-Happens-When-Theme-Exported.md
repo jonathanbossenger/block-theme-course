@@ -19,4 +19,4 @@ When you export the theme from the Site Editor, a request is made to to the `wp-
 
 ## Create Block Theme Export
 
-The Create Block Theme plugin uses the same core functionality to export the theme. The main difference is in how it exports or creates theme files, based on the option selected.
+The Create Block Theme plugin uses the same core functionality to export the theme. The main difference is in how it exports or creates theme files, based on the option selected. For example, if you choose to create a child theme, it will only export the changes as child theme files, and if you use the Overwrite option, instead of creating a zip file, it will overwrite the relevant theme files with the updates from the database.

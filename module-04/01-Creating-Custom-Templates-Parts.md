@@ -4,7 +4,7 @@ In the module on Building Your Site Structure in the Editor, you learned about t
 
 During that process, you selected the specific template to be created from the list of available templates in the **Add new template** interface.
 
-![Adding a new template](/images/module-04/lesson-01/add-new-template.png)
+![Adding a new template](https://learn.wordpress.org/files/2022/10/add-new-template.png)
 
 For most themes, this list of templates is sufficient, but what if you wanted to create a custom template that has a specific function. 
 
@@ -14,7 +14,7 @@ If you look at the Twenty Three designs, you'll see a couple of custom templates
 
 The WordPress 6.1 release includes a new template option in the list of new templates to add, the **Custom template** option. As the name suggests, this can be used to create a custom template that can be applied to any post or page.
 
-![Adding a new template](/images/module-04/lesson-01/add-new-custom-template.png)
+![Adding a new template](https://learn.wordpress.org/files/2022/10/add-new-custom-template.png)
 
 Using this option, you can now create and edit your alternative page and post templates.
 
@@ -24,11 +24,11 @@ Using this option, you can now create and edit your alternative page and post te
 > 3. Select **Custom template** from the list of available templates
 > 4. Give the template a name - "Page (Alternative)"
 
-![Adding a new template](/images/module-04/lesson-01/add-new-custom-page-template.png)
+![Adding a new template](https://learn.wordpress.org/files/2022/10/add-new-custom-page-template.png)
 
 As before, when you create the new template, it autopopulates it with some content, in this case it uses the content from the **Page** template.
 
-![Adding a new template](/images/module-04/lesson-01/added-new-custom-page-template.png)
+![Adding a new template](https://learn.wordpress.org/files/2022/10/added-new-custom-page-template.png)
 
 You can now edit the alternative page template in the editor, in this case, by removing the featured image, and saving the template
 
@@ -54,9 +54,9 @@ To create a template part from an existing template, edit a template, select the
 > 3. Click on the Group options and select **Create template part**
 > 4. Give the template part a name - "Post Meta"
 
-![Adding a new template part](/images/module-04/lesson-01/create-template-part.gif)
+![Adding a new template part](https://learn.wordpress.org/files/2022/10/create-template-part.gif)
 
 The template part will be created, and it will be added to the template in the editor. If you view your list of template parts, you'll see the new template part in the list
 
-![Template part list](/images/module-04/lesson-01/template-part-list.png)
+![Template part list](https://learn.wordpress.org/files/2022/10/template-part-list.png)
 
