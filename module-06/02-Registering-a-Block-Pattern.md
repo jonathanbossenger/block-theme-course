@@ -17,9 +17,9 @@ Create this file in your theme so that your theme structure looks like the follo
 - `themeslug`
 	- `/patterns`
 		- `/hero.php`
-	- ...
+	- `/...`
 
-Themes registered via the `/patterns` folder require a file header with information about the pattern.  At the very least, all patterns require a `Title` and `Slug` field.  A `Categories` field is strongly recommended too so that it's easier for users to find patterns related to what they're looking for.
+Patterns registered via the `/patterns` folder require a file header with the pattern data.  At the very least, each file requires a `Title` and `Slug` field.  A `Categories` field is strongly recommended too so that it's easier for users to find patterns related to what they're looking for.
 
 Enter the following code into your `hero.php` file.  Let's give it the minimum fields needed to become a pattern.
 
@@ -34,8 +34,7 @@ Enter the following code into your `hero.php` file.  Let's give it the minimum f
 <!-- Pattern code goes here. -->
 ```
 
-> **Note**
-> The `Slug` field should be namespaced based on your theme folder name.  So, if your theme's slug is `super-duper`, your `Slug` value becomes `super-duper/hero`.
+> **Note** The `Slug` field should be namespaced based on your theme folder name.  So, if your theme's slug is `super-duper`, your `Slug` value becomes `super-duper/hero`.
 
 There are several file header fields that you may choose from (remember that `Title` and `Slug` are required):
 
@@ -77,13 +76,13 @@ _Remember the block code that you copied earlier in this lesson?_  Replace the `
 <!-- /wp:group --></div></div>
 <!-- /wp:cover -->
 ```
-Save your progress in your code editor.  Now, open a new post or page in the WordPress admin and click the **+** (block inserter) button in the editor.  Then, select the **Patterns** tab.  You should see your Hero pattern listed under the **Featured** category, as shown in the following screenshot:
+Save your progress in your code editor.  Now, open a new post or page in the WordPress admin and click the **+** (Toggle block inserter) button in the editor.  Then, select the **Patterns** tab.  You should see your Hero pattern listed under the **Featured** category, as shown in the following screenshot:
 
 ![WordPress post editor with an empty content canvas and a left sidebar panel showing a list of patterns.](/images/module-06/lesson-02/pattern-in-inserter.jpg)
 
 ## Register a Pattern via functions.php
 
-While it is not the recommended method, you can also register block patterns via the [`register_block_pattern()` function](https://developer.wordpress.org/reference/functions/register_block_pattern/) in your theme's `functions.php` file.  Generally, this method is more useful in plugins, which do not have the `/patterns` folder support as described earlier.
+While it is not the recommended method, you can also register block patterns via the [`register_block_pattern()`](https://developer.wordpress.org/reference/functions/register_block_pattern/) function in your theme's `functions.php` file.  Generally, this method is more useful in plugins, which do not have the `/patterns` folder support as described earlier.
 
 Here is an example code snippet of registering the Hero pattern you've already created via PHP:
 
@@ -136,9 +135,9 @@ function themeslug_register_pattern_categories() {
 }
 ```
 
-Of course, change `themeslug` and `Theme Name` to your theme's actual slug and name.
+Change `themeslug` and `Theme Name` to your theme's real slug and name.
 
-Now, open your original `/patterns/hero.php` file.  In `Categories` header field, add your custom category to the list:
+Now, open your original `/patterns/hero.php` file.  In the `Categories` header field, add your custom category to the list:
 
 ```php
 <?php
@@ -155,14 +154,14 @@ If you open the pattern inserter on the post-editing screen in the WordPress adm
 
 ## Unregister Patterns
 
-There are times when you may desire removing a registered block pattern.  Some scenarios include:
+There are times when you may desire to remove a registered block pattern.  Some scenarios include:
 
 - A third-party plugin registering custom patterns
 - A parent theme's patterns via a child theme
 - WordPress' built-in patterns
 - Remote patterns pulled from the [Pattern Directory](https://wordpress.org/patterns)
 
-In any scenario, you can unregister a pattern as long as you know its name.  For example, if the pattern name is `pluginslug/awesome-pricing-table`, you would unregister it as shown in the following `functions.php` code snippet via the [`unregister_block_pattern()` function]():
+In any scenario, you can unregister a pattern as long as you know its name.  For example, if the pattern name is `pluginslug/awesome-pricing-table`, you would unregister it as shown in the following `functions.php` code snippet via the [`unregister_block_pattern()`](https://developer.wordpress.org/reference/functions/unregister_block_pattern/) function:
 
 ```php
 add_action( 'init', 'themeslug_unregister_patterns', 15 );
@@ -174,9 +173,9 @@ function themeslug_unregister_patterns() {
 
 Note the priority of `15` in the `add_action()` call.  It's generally good practice to bump that number up above the default of `10` to make sure your function runs after registration functions from others.
 
-It is not always the case that you will know the pattern name.  When WordPress loads remote patterns from the Pattern Directory, the patterns included will change over time.  If you attempt to unregister them by name, you will forever be playing catchup.  The good news is that WordPress provides a simple filter hook that allows you to disable remote patterns.
+It is not always the case that you will know the pattern name.  When WordPress loads remote patterns from the Pattern Directory, the patterns included will change over time.  If you attempt to unregister them by name, you will forever be playing catchup.  The good news is that WordPress provides a simple filter hook that allows you to disable them.
 
-If you add the following single line of code to your `functions.php` file, it will disable remote patterns:
+If you add the following single line of code to your `functions.php` file, it will disable all remote patterns:
 
 ```php
 add_filter( 'should_load_remote_block_patterns', '__return_false' );
@@ -194,4 +193,4 @@ function themeslug_setup_patterns() {
 }
 ```
 
-Removing core pattern support will also remove all remote patterns from the Pattern Directory.  This also means that you do not need to filter  `should_load_remote_block_patterns` in this scenario.
+> **Note** Removing core pattern support will also remove all remote patterns from the Pattern Directory.  This means that you do not need to filter  `should_load_remote_block_patterns` in this scenario.

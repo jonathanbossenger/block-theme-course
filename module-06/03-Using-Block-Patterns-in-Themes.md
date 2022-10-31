@@ -57,9 +57,9 @@ When you built the Hero pattern, you added three different blocks with custom te
 <h2 class="has-text-align-center">Welcome to My Site</h2>
 ```
 
-The text string "Welcome to My Site" is problematic.  Not every user is a native speaker of the language you wrote that text in (English in this case).  When users insert patterns with custom text, it would be nice to see it in their own language.
+The text string "Welcome to My Site" is problematic in a distributed theme.  Not every user is a native speaker of the language you wrote that text in (English in this case).  When users insert patterns with custom text, it would be nice to see it in their own language.
 
-The `<-- wp:pattern /-->` block was originally built as a method of internationalizing text strings.  This allows you to use translations functions, such as [`_e()`](https://developer.wordpress.org/reference/functions/_e/), to make the text translatable.
+The `<-- wp:pattern /-->` block was originally built as a method of internationalizing text strings.  This allows you to use translation functions  like [`_e()`](https://developer.wordpress.org/reference/functions/_e/) to make the text translatable.
 
 The internationalized version of the Heading block should look like the following:
 
@@ -96,25 +96,24 @@ Now, follow this process for all three blocks with text strings in them.  Your `
 <!-- /wp:cover -->
 ```
 
-> **Note**\
-> Dynamic data, such as internationalized text strings, only remains dynamic when it comes from the theme.  The moment that a user saves a post in the block content editor or a template in the site editor, the data becomes static.
+> **Note** Dynamic data, such as internationalized text strings, only remains dynamic when it comes from the theme.  The moment that a user saves a post in the block content editor or a template in the site editor, the data becomes static.
 
 ## Adding Images and Other Dynamic Data in Patterns
 
-Where patterns can be fun and exciting, offering a ton of flexibility is including other dynamic data.
+Where patterns can be fun and exciting, offering a ton of flexibility, is including other dynamic data.
 
-Find an image on [WordPress Photos](https://wordpress.org/photos/), such as [night view of a hill area](https://wordpress.org/photos/photo/67563182d4/).  Drag it into into the Cover block area in the content canvas.  It should upload and become the background for the Cover:
+Let's expand on the Hero pattern.  Find an image on [WordPress Photos](https://wordpress.org/photos/), such as [night view of a hill area](https://wordpress.org/photos/photo/67563182d4/).  Drag it into into the Cover block area in the content canvas.  It should upload and become the background for the Cover:
 
 ![WordPress post editor with a "hero" pattern in the content canvas. The pattern has a background image of the night sky with hills below it.](/images/module-06/lesson-03/hero-pattern-with-background.jpg)
 
 Here is a partial view of what the Cover block code looks like with the included background image.  Take note of the two instances of the image URL that begin with `http://`:
 
 ```php
-<!-- wp:cover {"url":"http://localhost/wp-content/uploads/2022/10/67563182d40242c84.99466282-2048x1152-jpg.webp","id":3424,"dimRatio":50,"overlayColor":"contrast","align":"full"} -->
-<div class="wp-block-cover alignfull"><span aria-hidden="true" class="wp-block-cover__background has-contrast-background-color has-background-dim"></span><img class="wp-block-cover__image-background wp-image-3424" alt="" src="http://localhost/wp/wp-content/uploads/2022/10/67563182d40242c84.99466282-2048x1152-jpg.webp" data-object-fit="cover"/>
+<!-- wp:cover {"url":"http://localhost/wp-content/uploads/2022/10/image-name.webp","id":3424,"dimRatio":50,"overlayColor":"contrast","align":"full"} -->
+<div class="wp-block-cover alignfull"><span aria-hidden="true" class="wp-block-cover__background has-contrast-background-color has-background-dim"></span><img class="wp-block-cover__image-background wp-image-3424" alt="" src="http://localhost/wp-content/uploads/2022/10/image-name.webp" data-object-fit="cover"/>
 ```
 
-Just like the plain text strings covered in the previous section, if you build this pattern directly from the editor, your image URL will be static and look something like `http://localhost/wp-content/2022/10/image-name.webp`.  That is problematic because the URL is specific to the URL of the install where you built the pattern.  Therefore, you must include it dynamically.
+Just like the plain text strings covered in the previous section, if you build this pattern directly from the editor, your image URL will be static and look something like `http://localhost/wp-content/uploads/2022/10/image-name.webp`.  That is problematic because the URL is specific to the install where you built the pattern.  Therefore, you must include it dynamically so that it will work on a user's site.
 
 To bundle it in the theme, first give the image a easy-to-remember filename, such as `hero-background.webp`.  Then, add it to your theme's `/assets/images` folder (create this if it doesn't already exist).  Your theme's directory structure should look like the following:
 
@@ -123,12 +122,12 @@ To bundle it in the theme, first give the image a easy-to-remember filename, suc
 		- `/images`
 			- `/hero-background.webp`
 
-Now, you must replace each of the image URL paths in the `patterns/hero.php` file with a reference to the file in your theme.  You will do this with the `get_theme_file_uri()` function.  And, to be on the safe side, you will wrap it in `esc_url()` to make sure it is escaped and prevent any potential security issues.
+Now, you must replace each of the image URL paths in the `patterns/hero.php` file with a reference to the file in your theme.  You will do this with the `get_theme_file_uri()` function.  And, to be on the safe side, you will wrap it in `esc_url()` to any potential security issues.
 
 Make sure you replace both instances of the URL string, which should look like:
 
 ```
-http://localhost/wp-content/2022/10/image-name.webp
+http://localhost/wp-content/uploads/2022/10/image-name.webp
 ```
 
 With:
@@ -170,7 +169,6 @@ Once you saved your progress, go to **Pages > Add New** in your WordPress admin 
 
 ![WordPress page editor with the Patterns inserter open on the left, showing a single hero pattern with a background image.](/images/module-06/lesson-03/hero-with-background-inserter.jpg)
 
-Images are merely the tip of the iceberg when it comes to what type of data you can use in a block pattern.  You could potentially show a specific configuration of a pattern based on whether a specific plugin is active, for example.  Internationalizing text strings and including media are the most common scenarios.
+Images are merely the tip of the iceberg when it comes to what type of data you can use in a block pattern.  You could potentially show a specific configuration based on whether a specific plugin is active, for example.  Internationalizing text strings and including media are the most common scenarios.
 
-> **Note**\
-> Because patterns are registered on the `init` action hook, they cannot rely on any data or conditionals that are set or generated after that point in the WordPress load process.
+> **Note** Because patterns are registered on the `init` action hook, they cannot rely on any data or conditionals that are set or generated after that point in the WordPress load process.
