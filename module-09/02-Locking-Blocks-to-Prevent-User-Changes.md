@@ -15,9 +15,9 @@ The pattern contains the following blocks, arranged like so:
 	- Paragraph
 	- Buttons
 
-The following code snippet is the block code if you get stuck. It will give you a nice base pattern to work with as you make your way through the remainder of this lesson.
+The following code snippet is the block code if you get stuck. It will give you a base pattern to work with as you make your way through the remainder of this lesson.
 
-```php
+```html
 <!-- wp:group {"align":"full","style":{"spacing":{"blockGap":"32px","padding":{"top":"128px","bottom":"128px"}}},"backgroundColor":"vivid-purple","textColor":"white","layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignfull has-white-color has-vivid-purple-background-color has-text-color has-background" style="padding-top:128px;padding-bottom:128px"><!-- wp:heading {"textColor":"base"} -->
 <h2 class="has-base-color has-text-color">WordCamp Happiness Bar</h2>
@@ -49,13 +49,12 @@ Once you click the **Lock** option, a popup modal will appear over the editor wi
 
 Each option applies a specific locking mechanism to the block itself and/or its children:
 
-- **Lock all:** Catchall for both sub-options:
+- **Lock all:** Catchall for both of its sub-options:
 	- **Disable movement:** Disallows users from moving the block within the editor (doesn't disallow movement of sibling blocks).
 	- **Prevent removal:** Prevents users from removing the block altogether.
 - **Apply to all blocks inside:** Applies the rules selected to all nested blocks.
 
-> **Note**\
-> As you can see, the ability to lock blocks is available directly via the interface. This also means the ability to **unlock** blocks is also available to users.  From a practical standpoint, locking blocks in themes merely helps prevent accidental movement and removal in complex layouts.  It is possible to [build custom permissions](https://developer.wordpress.org/block-editor/how-to-guides/curating-the-editor-experience/#locking-apis) around the locking API.  However, that is outside of the scope of this theme course.
+> **Note** As you can see, the ability to lock blocks is available directly via the interface. This also means the ability to **unlock** blocks is also available to users.  From a practical standpoint, locking blocks in themes merely helps prevent accidental movement and removal in complex layouts.  It is possible to [build custom permissions](https://developer.wordpress.org/block-editor/how-to-guides/curating-the-editor-experience/#locking-apis) around the locking API.  However, that is outside of the scope of this theme course.
 
 If you select each of the individual options, you will lock the entire Group block down, preventing it from being moved or removed.  The following snippet is what the code should look like.  You can copy and paste it directly into a custom pattern or theme template.
 
@@ -79,7 +78,7 @@ If you select each of the individual options, you will lock the entire Group blo
 
 ## "Content-Only" Editing (Design Locking)
 
-Content-only editing doesn't sound like a part of the Locking API at first glance.  A better name for the "locking" aspect of it is "design locking."  Essentially, it allows theme authors to lock down the design tools of the block itself and any inner blocks.  From the user's perspective, they can edit just the content (i.e., text, images, and other media).
+Content-only editing doesn't sound like a part of the Locking API at first glance.  A better name for the locking aspect of it is "design locking."  Essentially, it allows theme authors to lock down the design tools of the block itself and any inner blocks.  From the user's perspective, they can edit just the content (i.e., text, images, and other media).
 
 The core blocks that support content locking are limited to Group, Cover, and Column.  These are the major container-type blocks that house smaller pieces of a layout.
 
@@ -126,7 +125,7 @@ Your `patterns/happiness-bar.php` file should look like the following:
 <!-- /wp:group -->
 ```
 
-Once you've saved the pattern to your theme, go to **Pages > Add New** in the WordPress admin and insert the pattern.  If you select the Header, Paragraph, or Buttons blocks within the content canvas, you should see that none of them have any design tools attached to them in the toolbar or block inspector sidebar panel.  Instead, the sidebar shows the grouped blocks:
+Once you've saved the pattern to your theme, go to **Pages > Add New** in the WordPress admin and insert it.  If you select the Header, Paragraph, or Buttons blocks within the content canvas, you should see that none of them have any design tools attached to them in the toolbar or block inspector sidebar panel.  Instead, the sidebar shows the grouped blocks:
 
 ![WordPress content editor with a full-width Group block with a purple background. On the right, the nested blocks are shown in the sidebar in lieu of design tools.](/images/module-09/lesson-02/locking-content-only.png)
 

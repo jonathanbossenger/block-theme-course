@@ -1,6 +1,6 @@
 # Disabling Theme Settings in theme.json
 
-The `theme.json` file is a powerful tool that allows theme authors to control much of the block-editing experience.  Its primary roles is to allow developers to opt into specific design-related settings and create custom styles.
+The `theme.json` file is a powerful tool that allows theme authors to control much of the block-editing experience.  Its primary roles are to allow developers to opt into specific design-related settings and create custom styles.
 
 In this lesson, you will learn how to curate that experience by enabling or disabling specific design settings.
 
@@ -24,11 +24,10 @@ This lesson specifically focuses on items nested under the `settings` key.  Some
 - `layout`
 - `spacing`
 - `typography`
-- `useRootPaddingAwareAlignments`
 
 This lesson will not cover every conceivable setting that you can enable/disable.  You can find the full and most current list via the [settings section](https://developer.wordpress.org/block-editor/reference-guides/theme-json-reference/theme-json-living/#settings) in the `theme.json` living reference.
 
-Each setting controls a specific aspect of the editing experience.  For this lesson, let's take a look at the `border` as an example.  This setting allows you to control whether users can set a block's border color, radius, style, or width.
+Each setting controls a specific aspect of the editing experience.  For this lesson, let's take a look at `border` as an example.  It allows you to control whether users can set a block's border color, radius, style, or width.
 
 The `border` setting is an object with four keys that you can set.  The default object looks like the following:
 
@@ -43,7 +42,7 @@ The `border` setting is an object with four keys that you can set.  The default 
 
 If you are building a theme and don't want users to edit borders, you could simply do nothing in this case.  Each of the default values are already set to `false`.
 
-However, if you wanted to enable a setting, you would need to set it to `true`.
+However, if you wanted to enable one or more settings, you would need to set each to `true`.
 
 Let's imagine that you are building a theme for a client and have carefully designed borders to use a specific style and radius.  However, you are comfortable with giving them control over the color and width.  You only need to set the `color` and `width` keys to `true`, as shown in the following `theme.json` example:
 
@@ -92,7 +91,7 @@ Each of the available settings provides this level of granularity over what desi
 
 One of the settings that developers can opt into is `appearanceTools`.  This allows you to quickly set up several appearance-related settings. However, it can be a double-edged sword, which you'll learn about in this section.
 
-To enable, the setting, set it to `true` in your `theme.json` (the default is `false`):
+To enable the setting, set it to `true` in your `theme.json` (the default is `false`):
 
 ```json
 {
@@ -102,7 +101,7 @@ To enable, the setting, set it to `true` in your `theme.json` (the default is `f
 }
 ```
 
-Enabling into this setting automatically opts the theme into most of the design-related settings.  Essentially, it is shorthand for the following:
+Enabling this setting automatically opts the theme into most of the design-related tools.  Essentially, it is shorthand for the following:
 
 ```json
 {
@@ -136,7 +135,6 @@ For theme authors who always want to support all or most of those appearance too
 
 It is also possible to set `appearanceTools` to `true` and then opt out of individual settings if you prefer to disable them.
 
-> **Warning**\
-> Opting into `appearanceTools` could also automatically opt the theme into future appearance tools not listed.  Currently, it's limited to border, color, spacing, and typography.  However, WordPress may add box-shadow or other design tools down the road.
+> **Warning** Opting into `appearanceTools` could also automatically opt the theme into future appearance tools not listed.  Currently, it's limited to border, color, spacing, and typography.  However, WordPress may add box-shadow or other design tools down the road.
 
 Because of the aforementioned warning, developers who want complete control over the design settings their themes offer should not enable `appearanceTools`.  Potential future tools are unknowns and could spoil a carefully-crafted system, particularly in agency and freelancing work for clients.
