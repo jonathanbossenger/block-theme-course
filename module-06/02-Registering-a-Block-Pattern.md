@@ -121,7 +121,7 @@ By default, WordPress registers several pattern categories.  You can add one or 
 
 However, there are times when you may want to add custom categories for your theme's patterns.  Sometimes, none of the core categories make a good fit for what you've created.  At other times, you may want to separate your patterns from those registered by WordPress and third-party plugins.
 
-One common category that themes add is a catchall group for all of their theme's patterns.  Let's create that via the `[register_block_pattern_category()` function](https://developer.wordpress.org/reference/functions/register_block_pattern_category/).
+One common category that themes add is a catchall group for all of their theme's patterns.  Let's create that via the `[register_block_pattern_category()](https://developer.wordpress.org/reference/functions/register_block_pattern_category/) function.
 
 Open your theme's `functions.php` file in your code editor and enter the following code:
 
