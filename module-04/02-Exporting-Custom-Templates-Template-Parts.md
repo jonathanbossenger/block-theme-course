@@ -120,12 +120,12 @@ Remember to add the new custom template to the `customTemplates` array in the th
 
 The general process to export custom template parts is the same as for templates, with the only really difference being how they are registered in `theme.json`.
 
-Instead of using the `customTemplates` objects in `theme.json`, you use the `templateParts` object. This object has a similar structure to the `customTemplates` object, but instead of `postTypes`, you specify a template part `area` of "general".
+Instead of using the `customTemplates` objects in `theme.json`, you use the `templateParts` object. This object has a similar structure to the `customTemplates` object, but instead of `postTypes`, you specify a template part `area` of `uncategorized`, which adds it to the "General" area.
 
 ```json
 "templateParts": [
     {
-        "area": "general",
+        "area": "uncategorized",
         "name": "post-meta",
         "title": "Post Meta"
     },
