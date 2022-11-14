@@ -44,7 +44,9 @@ If you are building a theme and don't want users to edit borders, you could simp
 
 However, if you wanted to enable one or more settings, you would need to set each to `true`.
 
-Let's imagine that you are building a theme for a client and have carefully designed borders to use a specific style and radius.  However, you are comfortable with giving them control over the color and width.  You only need to set the `color` and `width` keys to `true`, as shown in the following `theme.json` example:
+Let's imagine that you are building a theme for a client and have carefully designed borders to use a specific style and radius.  However, you are comfortable with giving them control over the color and width.  
+
+> **Do:** You only need to set the `color` and `width` keys to `true`, as shown in the following `theme.json` example:
 
 ```json
 {
@@ -61,7 +63,9 @@ In the post or site editor, users should see the following border controls:
 
 ![WordPress post editor with a Group block. The border control is selected in the sidebar with a specific color and width selected.](/images/module-09/lesson-01/limited-border-settings.png)
 
-You can also set up default settings but overrule them for specific blocks.  For example, perhaps you want to allow your theme users to edit all aspects of a block's border, except you don't want them to change the radius on the Group block.  For this, you would need to set both `settings.border` and `settings.blocks[core/group].border`, as shown in the following code snippet:
+You can also set up default settings but overrule them for specific blocks.  For example, perhaps you want to allow your theme users to edit all aspects of a block's border, except you don't want them to change the radius on the Group block.  
+
+> **Do:** For this, you would need to set both `settings.border` and `settings.blocks[core/group].border`, as shown in the following code snippet:
 
 ```json
 {
@@ -91,7 +95,7 @@ Each of the available settings provides this level of granularity over what desi
 
 One of the settings that developers can opt into is `appearanceTools`.  This allows you to quickly set up several appearance-related settings. However, it can be a double-edged sword, which you'll learn about in this section.
 
-To enable the setting, set it to `true` in your `theme.json` (the default is `false`):
+> **Do:** To enable the setting, set it to `true` in your `theme.json` (the default is `false`):
 
 ```json
 {

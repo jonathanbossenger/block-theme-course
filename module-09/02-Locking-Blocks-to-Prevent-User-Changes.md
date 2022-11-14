@@ -4,7 +4,7 @@ The WordPress Locking API is a feature for locking down the state of blocks and 
 
 Parts of the Locking API are available directly via the editor, so theme authors can build out their templates and patterns from the comfort of the interface.
 
-For the purposes of this lesson, you will build an initial pattern of blocks to work with.  The layout can be anything, but try recreating the following full-width Group and its nested blocks:
+> **Do:** For the purposes of this lesson, you will build an initial pattern of blocks to work with.  The layout can be anything, but try recreating the following full-width Group and its nested blocks:
 
 ![WordPress content editor with a full-width Group block and purple background. Nested inside are Heading, Paragraph, and Button blocks in white demo text.](/images/module-09/lesson-02/locking-base-pattern.png)
 
@@ -39,7 +39,7 @@ The following code snippet is the block code if you get stuck. It will give you 
 
 With your base set of blocks in place in the editor, you will now learn how to lock them down.  WordPress provides several locking options directly via the block editor UI.
 
-Select the Group block in the content canvas and click the **⋮** (Options) button in the toolbar.  Look for the option titled **Lock**, as shown in the following screenshot:
+> **Do:** Select the Group block in the content canvas and click the **⋮** (Options) button in the toolbar.  Look for the option titled **Lock**, as shown in the following screenshot:
 
 ![Dropdown options list in the WordPress post editor toolbar. The "Lock" option is highlighted in the list.](/images/module-09/lesson-02/locking-dropdown.png)
 
@@ -90,13 +90,13 @@ Let's take the original base pattern's code you created earlier in this lesson. 
 <!-- wp:group {"align":"full","style":{"spacing":{"blockGap":"32px","padding":{"top":"128px","bottom":"128px"}}},"backgroundColor":"vivid-purple","textColor":"white","layout":{"type":"constrained"}} -->
 ```
 
-To lock down the design and allow the end-user to only edit the content, you must add `"templateLock":"contentOnly"` within the comment's JSON.  Your code should look similar to the following:
+> **Do:** To lock down the design and allow the end-user to only edit the content, you must add `"templateLock":"contentOnly"` within the comment's JSON.  Your code should look similar to the following:
 
 ```html
 <!-- wp:group {"templateLock":"contentOnly","align":"full","style":{"spacing":{"blockGap":"32px","padding":{"top":"128px","bottom":"128px"}}},"backgroundColor":"vivid-purple","textColor":"white","layout":{"type":"constrained"}} -->
 ```
 
-Now, turn this into a pattern by placing the code into a `patterns/happiness-bar.php` file in your theme.  Please refer back to the [Block Patterns Lesson](/module-06/01-Creating-a-Block-Pattern.md) if you need a refresher on registering custom patterns.
+> **Do:** Now, turn this into a pattern by placing the code into a `patterns/happiness-bar.php` file in your theme.  Please refer back to the [Block Patterns Lesson](/module-06/01-Creating-a-Block-Pattern.md) if you need a refresher on registering custom patterns.
 
 Your `patterns/happiness-bar.php` file should look like the following:
 
