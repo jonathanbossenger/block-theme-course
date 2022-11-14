@@ -2,7 +2,7 @@
 
 Now that you've built a custom pattern in the previous lesson, it is time to bundle it with your theme.  Doing this will allow the users of the theme to insert it into any block-capable area, such as posts and pages.
 
-To register a pattern, you first need the block code.  You can get this by clicking on the **⋮** (Options) button in the block toolbar.  In the dropdown that appears, select the **Copy block** option.
+> **Do:** To register a pattern, you first need the block code.  You can get this by clicking on the **⋮** (Options) button in the block toolbar.  In the dropdown that appears, select the **Copy block** option.
 
 ![WordPress block editor with a Cover block selected and a drop-down with the Copy Blocks option selected.](/images/module-06/lesson-02/copy-pattern.png)
 
@@ -12,7 +12,7 @@ This will copy the block HTML code to your clipboard, allowing you to paste it w
 
 The recommended method of registering a block pattern is by creating a new PHP file within a `/patterns` folder in your theme.  It's best to give it a filename that matches your pattern.  In this case, that would be `hero.php`.  
 
-Create this file in your theme so that your theme structure looks like the following:
+> **Do:** Create this file in your theme so that your theme structure looks like the following:
 
 - `themeslug`
 	- `/patterns`
@@ -21,7 +21,7 @@ Create this file in your theme so that your theme structure looks like the follo
 
 Patterns registered via the `/patterns` folder require a file header with the pattern data.  At the very least, each file requires a `Title` and `Slug` field.  A `Categories` field is strongly recommended too so that it's easier for users to find patterns related to what they're looking for.
 
-Enter the following code into your `hero.php` file.  Let's give it the minimum fields needed to become a pattern.
+> **Do:** Enter the following code into your `hero.php` file.  Let's give it the minimum fields needed to become a pattern.
 
 ```php
 <?php
@@ -48,7 +48,7 @@ There are several file header fields that you may choose from (remember that `Ti
 - **Block Types:** A comma-separated list of block types to associate the pattern with.
 - **Post Types:** A comma-separated list of post types in which to limit the pattern. Defaults to all post types.
 
-_Remember the block code that you copied earlier in this lesson?_  Replace the `<!-- Pattern code goes here. -->` line from your `hero.php` file with it.  Your entire file should look similar to the following code snippet:
+> **Do:** _Remember the block code that you copied earlier in this lesson?_  Replace the `<!-- Pattern code goes here. -->` line from your `hero.php` file with it.  Your entire file should look similar to the following code snippet:
 
 ```php
 <?php
@@ -76,7 +76,8 @@ _Remember the block code that you copied earlier in this lesson?_  Replace the `
 <!-- /wp:group --></div></div>
 <!-- /wp:cover -->
 ```
-Save your progress in your code editor.  Now, open a new post or page in the WordPress admin and click the **+** (Toggle block inserter) button in the editor.  Then, select the **Patterns** tab.  You should see your Hero pattern listed under the **Featured** category, as shown in the following screenshot:
+
+> **Do:** Save your progress in your code editor.  Now, open a new post or page in the WordPress admin and click the **+** (Toggle block inserter) button in the editor.  Then, select the **Patterns** tab.  You should see your Hero pattern listed under the **Featured** category, as shown in the following screenshot:
 
 ![WordPress post editor with an empty content canvas and a left sidebar panel showing a list of patterns.](/images/module-06/lesson-02/pattern-in-inserter.jpg)
 
@@ -123,7 +124,7 @@ However, there are times when you may want to add custom categories for your the
 
 One common category that themes add is a catchall group for all of their theme's patterns.  Let's create that via the [`register_block_pattern_category()`](https://developer.wordpress.org/reference/functions/register_block_pattern_category/) function.
 
-Open your theme's `functions.php` file in your code editor and enter the following code:
+> **Do:** Open your theme's `functions.php` file in your code editor and enter the following code:
 
 ```php
 add_action( 'init', 'themeslug_register_pattern_categories' );
@@ -135,9 +136,9 @@ function themeslug_register_pattern_categories() {
 }
 ```
 
-Change `themeslug` and `Theme Name` to your theme's real slug and name.
-
-Now, open your original `/patterns/hero.php` file.  In the `Categories` header field, add your custom category to the list:
+> **Do:** Change `themeslug` and `Theme Name` to your theme's real slug and name.
+>
+> Now, open your original `/patterns/hero.php` file.  In the `Categories` header field, add your custom category to the list:
 
 ```php
 <?php

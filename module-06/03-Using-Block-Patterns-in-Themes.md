@@ -33,7 +33,7 @@ The Pattern block code looks like the following:
 
 Because you know the slug for your Hero pattern is `themeslug/hero`, all you need to do is pop that in and put the call to the Pattern block into your template.
 
-Now, add that code to your `templates/home.html` template.  It should look similar to the following code snippet:
+> **Do:** Now, add that code to your `templates/home.html` template.  It should look similar to the following code snippet:
 
 ```html
 <!-- wp:template-part {"slug":"header"} /-->
@@ -67,7 +67,7 @@ The internationalized version of the Heading block should look like the followin
 <h2 class="has-text-align-center"><?php _e( 'Welcome to My Site', 'themeslug' ); ?></h2>
 ```
 
-Now, follow this process for all three blocks with text strings in them.  Your `patterns/hero.php` file should now look similar to the following:
+> **Do:** Now, follow this process for all three blocks with text strings in them.  Your `patterns/hero.php` file should now look similar to the following:
 
 ```php
 <?php
@@ -102,7 +102,7 @@ Now, follow this process for all three blocks with text strings in them.  Your `
 
 Where patterns can be fun and exciting, offering a ton of flexibility, is including other dynamic data.
 
-Let's expand on the Hero pattern.  Find an image on [WordPress Photos](https://wordpress.org/photos/), such as [night view of a hill area](https://wordpress.org/photos/photo/67563182d4/).  Drag it into into the Cover block area in the content canvas.  It should upload and become the background for the Cover:
+> **Do:** Let's expand on the Hero pattern.  Find an image on [WordPress Photos](https://wordpress.org/photos/), such as [night view of a hill area](https://wordpress.org/photos/photo/67563182d4/).  Drag it into into the Cover block area in the content canvas.  It should upload and become the background for the Cover:
 
 ![WordPress post editor with a "hero" pattern in the content canvas. The pattern has a background image of the night sky with hills below it.](/images/module-06/lesson-03/hero-pattern-with-background.jpg)
 
@@ -115,7 +115,7 @@ Here is a partial view of what the Cover block code looks like with the included
 
 Just like the plain text strings covered in the previous section, if you build this pattern directly from the editor, your image URL will be static and look something like `http://localhost/wp-content/uploads/2022/10/image-name.webp`.  That is problematic because the URL is specific to the install where you built the pattern.  Therefore, you must include it dynamically so that it will work on a user's site.
 
-To bundle it in the theme, first give the image a easy-to-remember filename, such as `hero-background.webp`.  Then, add it to your theme's `/assets/images` folder (create this if it doesn't already exist).  Your theme's directory structure should look like the following:
+> **Do:** To bundle it in the theme, first give the image a easy-to-remember filename, such as `hero-background.webp`.  Then, add it to your theme's `/assets/images` folder (create this if it doesn't already exist).  Your theme's directory structure should look like the following:
 
 - `themeslug`
 	- `/assets`

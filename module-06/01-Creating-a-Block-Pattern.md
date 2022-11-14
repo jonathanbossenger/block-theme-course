@@ -26,13 +26,13 @@ For this exercise, let's build one of the more common layouts from around the we
 
 There are many forms this pattern can take, but at its most basic level, it is typically a full-width box with a background that contains some text.  Often, this is a heading, paragraph, and some buttons.
 
-To get started, visit your WordPress admin area and click on **Pages > Add New**.  Then, insert a Cover block into the empty canvas, as shown in the following screenshot, and choose a background color:
+> **Do:** To get started, visit your WordPress admin area and click on **Pages > Add New**.  Then, insert a Cover block into the empty canvas, as shown in the following screenshot, and choose a background color:
 
 ![WordPress page editor with an empty Cover block in the content area, prompting the user to pick a color.](/images/module-06/lesson-01/hero-header-step-01.jpg)
 
 The exciting part about creating a block pattern is that you get to build it however you want.  You are the designer, so now is the time to explore what is possible.
 
-For the hero pattern, try recreating the following content within your inserted Cover block.  _Hint: it contains a Group block, which contains Heading, Paragraph, and Buttons blocks._
+> **Do:** For the hero pattern, try recreating the following content within your inserted Cover block.  _Hint: it contains a Group block, which contains Heading, Paragraph, and Buttons blocks._
 
 ![WordPress page editor with a hero header, containing a heading, paragraph, and button.](/images/module-06/lesson-01/hero-header-step-02.jpg)
 
