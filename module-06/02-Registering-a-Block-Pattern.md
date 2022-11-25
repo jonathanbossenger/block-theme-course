@@ -4,7 +4,7 @@ Now that you've built a custom pattern in the previous lesson, it is time to bun
 
 > **Do:** To register a pattern, you first need the block code.  You can get this by clicking on the **⋮** (Options) button in the block toolbar.  In the dropdown that appears, select the **Copy block** option.
 
-![WordPress block editor with a Cover block selected and a drop-down with the Copy Blocks option selected.](/images/module-06/lesson-02/copy-pattern.png)
+![WordPress block editor with a Cover block selected and a drop-down with the Copy Blocks option selected.](https://learn.wordpress.org/files/2022/11/copy-pattern.png)
 
 This will copy the block HTML code to your clipboard, allowing you to paste it where needed in your code editor.
 
@@ -79,7 +79,7 @@ There are several file header fields that you may choose from (remember that `Ti
 
 > **Do:** Save your progress in your code editor.  Now, open a new post or page in the WordPress admin and click the **+** (Toggle block inserter) button in the editor.  Then, select the **Patterns** tab.  You should see your Hero pattern listed under the **Featured** category, as shown in the following screenshot:
 
-![WordPress post editor with an empty content canvas and a left sidebar panel showing a list of patterns.](/images/module-06/lesson-02/pattern-in-inserter.jpg)
+![WordPress post editor with an empty content canvas and a left sidebar panel showing a list of patterns.](https://learn.wordpress.org/files/2022/11/pattern-in-inserter.jpg)
 
 ## Register a Pattern via functions.php
 
@@ -151,7 +151,7 @@ function themeslug_register_pattern_categories() {
 
 If you open the pattern inserter on the post-editing screen in the WordPress admin, you should now see your new category with your pattern listed under it:
 
-![WordPress post editor with an empty content canvas and a left sidebar panel showing a custom category with a single Hero pattern.](/images/module-06/lesson-02/pattern-category.jpg)
+![WordPress post editor with an empty content canvas and a left sidebar panel showing a custom category with a single Hero pattern.](https://learn.wordpress.org/files/2022/11/pattern-category.jpg)
 
 ## Unregister Patterns
 

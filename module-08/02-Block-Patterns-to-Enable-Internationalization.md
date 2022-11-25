@@ -1,6 +1,7 @@
 # Using Block Patterns to Enable Internationalization
 
-As you leaned in module x of this course, Block Patterns are a way that you can implement PHP code in a block theme. In the section on Adding Images and Other Dynamic Data in Patterns, you used a PHP function to add a hero image to the pattern. 
+As you leaned in module x of this course, Block Patterns are a way that you can implement PHP code in a block theme. In the section on Adding Images and Other Dynamic Data in Patterns, you used a PHP function to add a hero image to the pattern.
+
 
 ```php
 echo esc_url( get_theme_file_uri( 'assets/images/hero-background.webp' ) ); 
@@ -16,7 +17,7 @@ In this lesson, you're going to make the text that appears in the footer of your
 > 1. Open the Site Editor, and navigate to the list of template parts.
 > 2. Open the Footer template part
 
-![Footer template part](/images/module-08/lesson-02/footer-template-part.png)
+![Footer template part](https://learn.wordpress.org/files/2022/11/footer-template-part.png)
 
 If you switch to the Code Editor view, or view footer.html file contents, the block code that makes up the footer looks like this:
 
@@ -99,8 +100,6 @@ Now you can make the "Proudly powered by" text translatable, by applying the tra
 > 2. Make sure the text is inside quotes, and you pass the text domain as the second parameter
 > 3. Include an echo statement to output the translated text
 > 4. Wrap the code in a PHP block
-
-```php
 
 The text domain is the same value that you used in the style.css file, so you can use that here.
 

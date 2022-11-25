@@ -6,7 +6,7 @@ Parts of the Locking API are available directly via the editor, so theme authors
 
 > **Do:** For the purposes of this lesson, you will build an initial pattern of blocks to work with.  The layout can be anything, but try recreating the following full-width Group and its nested blocks:
 
-![WordPress content editor with a full-width Group block and purple background. Nested inside are Heading, Paragraph, and Button blocks in white demo text.](/images/module-09/lesson-02/locking-base-pattern.png)
+![WordPress content editor with a full-width Group block and purple background. Nested inside are Heading, Paragraph, and Button blocks in white demo text.](https://learn.wordpress.org/files/2022/11/locking-base-pattern.png)
 
 The pattern contains the following blocks, arranged like so:
 
@@ -41,11 +41,11 @@ With your base set of blocks in place in the editor, you will now learn how to l
 
 > **Do:** Select the Group block in the content canvas and click the **⋮** (Options) button in the toolbar.  Look for the option titled **Lock**, as shown in the following screenshot:
 
-![Dropdown options list in the WordPress post editor toolbar. The "Lock" option is highlighted in the list.](/images/module-09/lesson-02/locking-dropdown.png)
+![Dropdown options list in the WordPress post editor toolbar. The "Lock" option is highlighted in the list.](https://learn.wordpress.org/files/2022/11/locking-dropdown.png)
 
 Once you click the **Lock** option, a popup modal will appear over the editor with the settings shown in the following screenshot:
 
-![WordPress post editor with a popup modal that shows a list of options for locking the selected Group block.](/images/module-09/lesson-02/locking-popup.png)
+![WordPress post editor with a popup modal that shows a list of options for locking the selected Group block.](https://learn.wordpress.org/files/2022/11/locking-popup.png)
 
 Each option applies a specific locking mechanism to the block itself and/or its children:
 
@@ -127,7 +127,7 @@ Your `patterns/happiness-bar.php` file should look like the following:
 
 Once you've saved the pattern to your theme, go to **Pages > Add New** in the WordPress admin and insert it.  If you select the Header, Paragraph, or Buttons blocks within the content canvas, you should see that none of them have any design tools attached to them in the toolbar or block inspector sidebar panel.  Instead, the sidebar shows the grouped blocks:
 
-![WordPress content editor with a full-width Group block with a purple background. On the right, the nested blocks are shown in the sidebar in lieu of design tools.](/images/module-09/lesson-02/locking-content-only.png)
+![WordPress content editor with a full-width Group block with a purple background. On the right, the nested blocks are shown in the sidebar in lieu of design tools.](https://learn.wordpress.org/files/2022/11/locking-content-only.png)
 
 Locked patterns like this are crucial to creating a curated editing experience, especially as you begin applying locking to more complex layouts and in templates.  Imagine creating the perfect site header design, which may often be too advanced for a client to meddle with.  With the locking API, you can break down the editing process to just the important pieces, such as customizing nav menu links.
 

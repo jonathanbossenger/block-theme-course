@@ -19,7 +19,7 @@ Go ahead and apply these colors to your theme in the Site Editor, starting with 
 
 Now apply the alternative colours to the Text as well as the Links and Headings style elements. Your dark theme style should look something like this:
 
-![Dark theme style](/images/module-07/lesson-02/dark-theme-style.png)
+![Dark theme style](https://learn.wordpress.org/files/2022/11/dark-theme-style.png)
 
 Go ahead and save this to the Global Styles in the database.
 

@@ -61,7 +61,7 @@ Let's imagine that you are building a theme for a client and have carefully desi
 
 In the post or site editor, users should see the following border controls:
 
-![WordPress post editor with a Group block. The border control is selected in the sidebar with a specific color and width selected.](/images/module-09/lesson-01/limited-border-settings.png)
+![WordPress post editor with a Group block. The border control is selected in the sidebar with a specific color and width selected.](https://learn.wordpress.org/files/2022/11/limited-border-settings.png)
 
 You can also set up default settings but overrule them for specific blocks.  For example, perhaps you want to allow your theme users to edit all aspects of a block's border, except you don't want them to change the radius on the Group block.  
 
@@ -133,7 +133,7 @@ Enabling this setting automatically opts the theme into most of the design-relat
 
 Enabling support will make the design tools appear in the site editor or on individual blocks (for those that support each tool), as shown in the following screenshot:
 
-![WordPress page editor with a Group block in the content and the block inspector in the sidebar, which shows color, typography, dimensions, and border design tools.](/images/module-09/lesson-01/appearance-tools.png)
+![WordPress page editor with a Group block in the content and the block inspector in the sidebar, which shows color, typography, dimensions, and border design tools.](https://learn.wordpress.org/files/2022/11/appearance-tools.png)
 
 For theme authors who always want to support all or most of those appearance tools, this is an easy way to cut back on code in `theme.json`.
 

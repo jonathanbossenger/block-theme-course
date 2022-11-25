@@ -8,11 +8,11 @@ At its foundation, a block pattern is nothing more than one or more blocks that 
 
 You can bundle these directly into a theme.  The following is a screenshot of some Gallery patterns:
 
-![Gallery patterns as shown in the WordPress pattern modal.](/images/module-06/lesson-01/gallery-patterns.jpg)
+![Gallery patterns as shown in the WordPress pattern modal.](https://learn.wordpress.org/files/2022/11/gallery-patterns.jpg)
 
 You can also submit them to the [Pattern Directory](https://wordpress.org/patterns/) and make them available to all WordPress users:
 
-![Screenshot of the WordPress.org Pattern Directory, which shows a grid of block patterns](/images/module-06/lesson-01/pattern-directory.jpg)
+![Screenshot of the WordPress.org Pattern Directory, which shows a grid of block patterns](https://learn.wordpress.org/files/2022/11/pattern-directory.jpg)
 
 Patterns can pretty much be anything.  They can be as simple as a single Gallery block with some preset options for the user.  They can be something extremely complex, such as a full page layout for a magazine-type website.  Or, something in between, such as a product pricing table.
 
@@ -28,13 +28,13 @@ There are many forms this pattern can take, but at its most basic level, it is t
 
 > **Do:** To get started, visit your WordPress admin area and click on **Pages > Add New**.  Then, insert a Cover block into the empty canvas, as shown in the following screenshot, and choose a background color:
 
-![WordPress page editor with an empty Cover block in the content area, prompting the user to pick a color.](/images/module-06/lesson-01/hero-header-step-01.jpg)
+![WordPress page editor with an empty Cover block in the content area, prompting the user to pick a color.](https://learn.wordpress.org/files/2022/11/hero-header-step-01.jpg)
 
 The exciting part about creating a block pattern is that you get to build it however you want.  You are the designer, so now is the time to explore what is possible.
 
 > **Do:** For the hero pattern, try recreating the following content within your inserted Cover block.  _Hint: it contains a Group block, which contains Heading, Paragraph, and Buttons blocks._
 
-![WordPress page editor with a hero header, containing a heading, paragraph, and button.](/images/module-06/lesson-01/hero-header-step-02.jpg)
+![WordPress page editor with a hero header, containing a heading, paragraph, and button.](https://learn.wordpress.org/files/2022/11/hero-header-step-02.jpg)
 
 If you run into any trouble, copy the following block HTML code and insert it into the editor.  Then, feel free to customize it.
 

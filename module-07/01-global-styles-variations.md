@@ -6,7 +6,7 @@ One of the big benefits of block themes for users is the ease at which they can 
 
 One of the reasons we chose Twenty Twenty-Three as the "example" theme for this course, is that it's the first theme of it's kind. As it's described in the [proposal post](https://make.wordpress.org/design/2022/07/19/proposal-a-new-kind-of-default-theme/), Twenty Twenty-Three is essentially a stripped back, minimal version of Twenty Twenty-Two which offers a blank canvas to let a diverse range of style variations shine. Released as the new default theme for WordPress 5.9, Twenty Twenty-Three shops will 11 unique Global Styles variations.
 
-![Twenty Twenty-Three Global Styles variations](/images/module-07/lesson-01/global-styles.gif)
+![Twenty Twenty-Three Global Styles variations](https://learn.wordpress.org/files/2022/11/global-styles.gif)
 
 ## How Global Styles Variations Work
 

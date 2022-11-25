@@ -47,7 +47,7 @@ Because you know the slug for your Hero pattern is `themeslug/hero`, all you nee
 
 When a user loads the Home template via **Appearance > Editor**, they will see the pattern already placed into template:
 
-![Hero pattern that stretches across the screen below a typical site title + menu header. It sits within the content canvas of the WordPress site editor.](/images/module-06/lesson-03/pattern-home-template-editor.jpg)
+![Hero pattern that stretches across the screen below a typical site title + menu header. It sits within the content canvas of the WordPress site editor.](https://learn.wordpress.org/files/2022/11/pattern-home-template-editor.jpg)
 
 ## Internationalizing Text in Patterns
 
@@ -104,7 +104,7 @@ Where patterns can be fun and exciting, offering a ton of flexibility, is includ
 
 > **Do:** Let's expand on the Hero pattern.  Find an image on [WordPress Photos](https://wordpress.org/photos/), such as [night view of a hill area](https://wordpress.org/photos/photo/67563182d4/).  Drag it into into the Cover block area in the content canvas.  It should upload and become the background for the Cover:
 
-![WordPress post editor with a "hero" pattern in the content canvas. The pattern has a background image of the night sky with hills below it.](/images/module-06/lesson-03/hero-pattern-with-background.jpg)
+![WordPress post editor with a "hero" pattern in the content canvas. The pattern has a background image of the night sky with hills below it.](https://learn.wordpress.org/files/2022/11/hero-pattern-with-background.jpg)
 
 Here is a partial view of what the Cover block code looks like with the included background image.  Take note of the two instances of the image URL that begin with `http://`:
 
@@ -167,7 +167,7 @@ Once you've replaced each instance of the URL path, your `patterns/hero.php` fil
 
 Once you saved your progress, go to **Pages > Add New** in your WordPress admin and open the pattern inserter.  Your new pattern with its background image should appear:
 
-![WordPress page editor with the Patterns inserter open on the left, showing a single hero pattern with a background image.](/images/module-06/lesson-03/hero-with-background-inserter.jpg)
+![WordPress page editor with the Patterns inserter open on the left, showing a single hero pattern with a background image.](https://learn.wordpress.org/files/2022/11/hero-with-background-inserter.jpg)
 
 Images are merely the tip of the iceberg when it comes to what type of data you can use in a block pattern.  You could potentially show a specific configuration based on whether a specific plugin is active, for example.  Internationalizing text strings and including media are the most common scenarios.
 

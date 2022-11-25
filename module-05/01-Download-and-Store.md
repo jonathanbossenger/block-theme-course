@@ -8,13 +8,13 @@ There are many sites around the web to download custom web fonts from.  Google F
 
 To get started, head over to the [Google Fonts](https://fonts.google.com/) website and browse for a font as shown in the following screenshot:
 
-![Google Fonts homepage, which lists a grid of font selections.](/images/module-05/lesson-01/google-fonts.png)
+![Google Fonts homepage, which lists a grid of font selections.](https://learn.wordpress.org/files/2022/11/google-fonts.png)
 
 For this lesson, we have selected the [Open Sans font](https://fonts.google.com/specimen/Open+Sans).  It is one of the most popular choices from Google Fonts.
 
 The next step for getting the Open Sans or a font family of your choice into your theme is to click the **Download Family** button on the font's page, as shown in the following screenshot:
 
-![Open Sans family on the Google Fonts website. The "Download Family" button is highlighted.](/images/module-05/lesson-01/google-fonts-download.png)
+![Open Sans family on the Google Fonts website. The "Download Family" button is highlighted.](https://learn.wordpress.org/files/2022/11/google-fonts-download.png)
 
 Once downloaded, unzip the `Open_Sans.zip` file using your preferred utility on your computer.  You will see several files in the folder.  However, you will only need the following two:
 
