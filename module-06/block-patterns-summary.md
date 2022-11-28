@@ -1,12 +1,12 @@
-# Custom Fonts Summary
+# Block Patterns Summary
 
-Congratulations, you've successfully added a custom font to your block theme.
+Congratulations, you've successfully added a custom pattern to your block theme.
 
 In this module you learned:
 
-- How to add a custom font to your block theme
-- How to register the font in your theme's `theme.json` file
-- How to apply the font to your theme's global styles or block level styles
+- How to register a custom pattern using the patterns directory
+- How to register a custom pattern in PHP
+- How to include a pattern in you theme templates
 
 Please complete the quiz for this module before continuing to the next one.
 

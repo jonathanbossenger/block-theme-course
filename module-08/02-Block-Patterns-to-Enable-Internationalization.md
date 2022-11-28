@@ -120,5 +120,52 @@ The final pattern code looks like this:
 <!-- /wp:paragraph -->
 ```
 
-## Summary
+## Internationalizing the Hero Pattern
+
+Remember the Hero pattern you built in module 6. That pattern included some human-readable text that could do with internationalizing. 
+
+The first section you could update would be the Heading block from that pattern:
+
+```html
+<h2 class="has-text-align-center">Welcome to My Site</h2>
+```
+
+The internationalized version of the Heading block should look like the following:
+
+```php
+<h2 class="has-text-align-center"><?php _e( 'Welcome to My Site', 'themeslug' ); ?></h2>
+```
+
+> **Tip:** the _e function is a wrapper for "echo __()" so it in can be used to quickly make a string translatable, and echo it to the screen.
+
+> **Do:** Now, follow this process for all three blocks with text strings in them.  Your `patterns/hero.php` file should now look similar to the following:
+
+```php
+<?php
+/**
+ * Title: Hero
+ * Slug: themeslug/hero
+ * Categories: featured, themeslug
+ */
+?>
+<!-- wp:cover {"overlayColor":"contrast","align":"full"} -->
+<div class="wp-block-cover alignfull"><span aria-hidden="true" class="wp-block-cover__background has-contrast-background-color has-background-dim-100 has-background-dim"></span><div class="wp-block-cover__inner-container"><!-- wp:group {"style":{"spacing":{"blockGap":"2.5rem"}},"layout":{"type":"constrained","wideSize":"%","contentSize":"75%"}} -->
+<div class="wp-block-group"><!-- wp:heading {"textAlign":"center"} -->
+<h2 class="has-text-align-center"><?php _e( 'Welcome to My Site', 'themeslug' ); ?></h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"align":"center"} -->
+<p class="has-text-align-center"><?php _e( "This is my little home away from home. Here, you will get to know me.  I'll share my likes, hobbies, and more.  Every now and then, I'll even have something interesting to say in a blog post.", 'themeslug' ); ?></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
+<div class="wp-block-buttons"><!-- wp:button {"className":"is-style-outline"} -->
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button"><?php _e( 'See My Popular Posts →', 'themeslug' ); ?></a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div>
+<!-- /wp:group --></div></div>
+<!-- /wp:cover -->
+```
+
+> **Note** Dynamic data, such as internationalized text strings, only remains dynamic when it comes from the theme.  The moment that a user saves a post in the block content editor or a template in the site editor, the data becomes static.
 
