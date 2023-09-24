@@ -16,7 +16,7 @@ One of the main advantages of block themes over classic themes is that you can e
 
 This is useful when developing themes, as you could use a "base" or "starter" block theme, edit the base templates, and then export the updated templates to a new theme. Alternatively, you could create an entirely new theme from scratch for a specific use case, all from the Site Editor. 
 
-> **Note:** For a detailed breakdown of all the different parts of the Site Editor, take a look at this [handy help document](https://wordpress.org/support/article/site-editor/).
+> **Note:** For a full breakdown of all the different parts of the Site Editor, take a look at this [detailed overview of the Site Editor](https://wordpress.org/support/article/site-editor/).
 
 You can then either save the template for the current site, which stores it in the database, or export the template code into the relevant file in the `templates` directory of your theme. 
 
@@ -24,13 +24,13 @@ You can then either save the template for the current site, which stores it in t
 
 In the previous lesson, you created an empty `index.html` template file. Let's add some content to this template.
 
-Start by navigating to Appearance -> Editor. You'll be presented with a blank canvas, ready to add content to your index.html template.
+Start by navigating to Appearance -> Editor. The Site Editor will open and after clicking anywhere on the blank canvas, you will be ready to add content to your index.html template.
 
 ![The index template in the editor](https://learn.wordpress.org/files/2022/10/empty-index-template.png)
 
 As the index template is the default template that WordPress will load if it can't find a matching template file for the content being rendered, it's a good idea to add some content to this template. General best practice is to populate this template with a query loop, so that all posts on the site are displayed.
 
-> **Note:** If you're not familiar with the Query Loop, take a look at this [handy tutorial](https://learn.wordpress.org/tutorial/taking-advantage-of-query-loops/).
+> **Note:** The Query Loop block is equivalent to [The Loop](https://codex.wordpress.org/The_Loop) in a classic theme. For more details on the power of the Query Loop block, take a look at this [tutorial](https://learn.wordpress.org/tutorial/taking-advantage-of-query-loops/).
 
 While editing your template, you can toggle the Site Editor's List View to get a better overview of the template's structure, and select specific blocks.
 
@@ -39,9 +39,9 @@ While editing your template, you can toggle the Site Editor's List View to get a
 Go ahead and add a query loop to the template, the pagination block, and a spacer to allow a bit of space between the query loop and the pagination.
 
 > **Do:** 
-> 1. Add a **Query Loop** block, and select the **Standard** pattern for the query loop.
-> 2. Add a **Pagination** block inside the Query Loop, right at the bottom.
-> 3. Inside the Query Loop, select the **Post Template** block and add a **Spacer** block at the bottom.
+> 1. Add a **Query Loop** block, select **Choose** then select the **Standard** pattern for the block.
+> 2. Add a **Pagination** block inside the **Query Loop**, right at the bottom, after the **Post Template** block.
+> 3. Inside the **Query Loop**, add a **Spacer** block at the bottom of the **Post Template** block.
 
 ![The index template with a header and query loop](https://learn.wordpress.org/files/2022/10/basic-index-template.png)
 
@@ -91,38 +91,36 @@ If you save this template content, it will save the changes to the database. Thi
 
 Besides adding block content to existing templates, you can also create brand new templates from the Site Editor. 
 
-To start, toggle to the Site Editor navigation sidebar, and click on "Templates" in the editor navigation.
+To start from within the Site Editor, click on the **Open Navigation** button in the top left corner of your screen.
 
-> **Tip:** If you don't see the Site Editor navigation sidebar, click the WordPress logo in the top left corner of the editor, which is the  "Toggle Navigation" button.
+Navigate back to Templates then click on the **Add New Template** plus sign icon.
 
 ![Editor Navigation](https://learn.wordpress.org/files/2022/10/editor-navigation.png)
 
-You'll be presented with a list of the templates in this theme, and a button to add a new template.
+Alternatively, you can select **Manage all templates** where you'll be presented with a list of the templates in this theme, and a button to add a new template.
 
 ![Editor Templates](https://learn.wordpress.org/files/2022/10/editor-templates.png)
-
-> **Do:** Click on the Add New button to create a new template.
 
 ![Editor Add new template](https://learn.wordpress.org/files/2022/10/editor-add-new-template.png)
 
 The Editor will give you the option of creating a new template based on the primary templates, ranging from things like a Front Page to a 404 Page. 
 
+**NEW SCREENSHOT GOES HERE editor-add-new-template-popup.png**
+
 > **Do:** 
-> 1. Select the **Page** option, to create a new page template.
-> 2. Select **All Pages** to create a template that will be used for all pages. (to be tested with 6.1)
+> 1. Select the **Pages** option, to create a new page template.
+> 2. Select **All Pages** to create a template that will be used for all pages.
+> 3. Don't choose the pattern and instead click **Skip** to start from scratch.
 
-The page template will be created, and you'll be taken to the editor to add blocks to the template. By default, WordPress will populate the new template with the content from the index template.
+The page template will be created, and you'll be taken to the editor to add blocks to the template. Note that the pattern you were presented with was automatically populated with the content from the index template.
 
-> **Do:** Delete the Query Loop from the new page template, so you have an empty page template
-
-Because a page in WordPress is merely a custom post type, you can use the Post Title, Post Featured Image, and Post Content blocks to render the title and content of a page in the template. You can also use Group blocks to logically group specific blocks, based on the design.
+Because a page in WordPress is merely a custom post type, you can use the **Post Title, Post Featured Image**, and **Post Content** blocks to render the title and content of a page in the template. You can also use **Group** blocks to logically group specific blocks, based on the design.
 
 > **Do:**
 > 1. Add a **Group** block to the template.
-> 2. Add a **Post Content** block to the group.
-> 3. Add another **Group** block to the template, before the **Post Content** block.
-> 4. Add a **Post Featured Image** block to the second **Group** block.
-> 5. Add a **Post Title** block to the second **Group** block.
+> 2. Add another **Group** block nested below.
+> 3. Add a **Post Featured Image** block and the **Title** block to the nested Group block.
+> 4. Add a **Post Content** block below the nested Group block.
 
 Your final page template should look something like this:
 
