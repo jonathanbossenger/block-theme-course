@@ -24,7 +24,7 @@ Generally, you, or a designer you work with, would design the theme using someth
 
 To learn more about the process of designing a theme, take a look at the following resources:
 
-1. [Designing a WordPress Theme module in the Create a Low Code Block theme course](#)
+1. [Develop Your First Low-Code Block Theme course](https://learn.wordpress.org/course/develop-your-first-low-code-block-theme)
 2. [The open source theme designs](https://make.wordpress.org/design/2022/07/01/open-sourcing-theme-designs/) released by the WordPress design team, which include the designs for TT3.
 
 The Twenty Twenty-Three designs are available to [view on Figma,](https://www.figma.com/community/file/1139275543113752375) but we recommend making a copy of the designs and working on your own copy.
