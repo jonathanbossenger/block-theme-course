@@ -28,7 +28,7 @@ Start by navigating to Appearance -> Editor. The Site Editor will open and after
 
 ![The index template in the editor](https://learn.wordpress.org/files/2022/10/empty-index-template.png)
 
-As the index template is the default template that WordPress will load if it can't find a matching template file for the content being rendered, it's a good idea to add some content to this template. General best practice is to populate this template with a query loop, so that all posts on the site are displayed.
+As the Index template is the default template that WordPress will load if it can't find a matching template file for the content being rendered, it's a good idea to add some content to this template. General best practice is to populate this template with a query loop, so that all posts on the site are displayed.
 
 > **Note:** The Query Loop block is equivalent to [The Loop](https://codex.wordpress.org/The_Loop) in a classic theme. For more details on the power of the Query Loop block, take a look at this [tutorial](https://learn.wordpress.org/tutorial/taking-advantage-of-query-loops/).
 
@@ -103,7 +103,7 @@ Alternatively, you can select **Manage all templates** where you'll be presented
 
 ![Editor Add new template](https://learn.wordpress.org/files/2022/10/editor-add-new-template.png)
 
-The Editor will give you the option of creating a new template based on the primary templates, ranging from things like a Front Page to a 404 Page. 
+The Site Editor will give you the option of creating a new template based on the primary templates, ranging from things like a Front Page to a 404 Page. 
 
 **NEW SCREENSHOT GOES HERE editor-add-new-template-popup.png**
 
@@ -112,7 +112,7 @@ The Editor will give you the option of creating a new template based on the prim
 > 2. Select **All Pages** to create a template that will be used for all pages.
 > 3. Don't choose the pattern and instead click **Skip** to start from scratch.
 
-The page template will be created, and you'll be taken to the editor to add blocks to the template. Note that the pattern you were presented with was automatically populated with the content from the index template.
+The Pages template will be created, and you'll be taken to the editor to add blocks to the template. Note that the pattern you were presented with was automatically populated with the content from the index template.
 
 Because a page in WordPress is merely a custom post type, you can use the **Post Title, Post Featured Image**, and **Post Content** blocks to render the title and content of a page in the template. You can also use **Group** blocks to logically group specific blocks, based on the design.
 
@@ -122,11 +122,11 @@ Because a page in WordPress is merely a custom post type, you can use the **Post
 > 3. Add a **Post Featured Image** block and the **Title** block to the nested Group block.
 > 4. Add a **Post Content** block below the nested Group block.
 
-Your final page template should look something like this:
+Your final Pages template should look something like this:
 
 ![Image of the page template](https://learn.wordpress.org/files/2022/10/page-template.png)
 
-Now switch to the Code editor view, to see the block markup that makes up this page template.
+Now switch to the Code editor view, to see the block markup that makes up the Pages template.
 
 ```html
 <!-- wp:group {"layout":{"type":"constrained"}} -->
