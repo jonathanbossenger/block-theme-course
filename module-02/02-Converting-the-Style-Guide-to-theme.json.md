@@ -390,5 +390,7 @@ There is no design for the Index template, mostly because this template will onl
 
 ![Updated Index Template](https://learn.wordpress.org/files/2022/10/updated-page-template.png)
 
+**Replace above screenshot with "updated-index-template.png"**
+
 > **Tip:** Using **Group**, **Row** and **Column** blocks for defining layout is very useful, so it's a good idea to learn about all the different [core blocks](https://developer.wordpress.org/block-editor/reference-guides/core-blocks/) and what functionality they provide.
 
