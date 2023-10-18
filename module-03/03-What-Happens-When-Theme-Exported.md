@@ -1,6 +1,6 @@
 # Exporting a Theme
 
-Now that you understand how changes to Global Styles, templates and template parts are stored in the database, let's take a look at what happens behind the scenes, when you export the theme.
+Now that you understand how changes to Global Styles, templates, and template parts are stored in the database, let's take a look at what happens behind the scenes, when you export the theme.
 
 ## Site Editor Export
 
@@ -12,8 +12,8 @@ When you export the theme from the Site Editor, a request is made to to the `wp-
 4. Runs through all active theme templates and template parts, and creates the relevant file in the Zip archive
    1. It first looks for a template/part in the database, and creates the file from the saved data
    2. If it cannot find a template/part in the database, it will look for one in the active themes templates directory
-5. Generates the settings and styles JSON object, converts it to a theme.json file, and adds it to the Zip archive
-   1. It first gets the JSON object from the active themes theme.json file
+5. Generates the settings and styles JSON object, converts it to a `theme.json` file, and adds it to the Zip archive
+   1. It first gets the JSON object from the active themes `theme.json` file
    2. Next it looks for any Global Styles stored in the database, and merges them with the JSON object
 6. Finally, it outputs the Zip archive to the browser, to be saved by the user.
 
