@@ -10,16 +10,16 @@ Instead, you might choose to manually export the code to a file to give it a spe
 
 ## Manually Exporting Custom Templates
 
-To start, export the alternative page template to a file. This process will follow the same process as described in the Manually exporting templates section of the Exporting theme files lesson from Module 01.
+To start, manually export the alternative page template to a file. Follow the same process described in the Exporting a Block Theme lesson from the first module.
 
-To manually export the alternative page template, navigate to the template and switch to the Code Editor view, then copy the block markup code into a file in the `templates` directory. The file name is arbitrary, but it should be descriptive of the template. For this example, call the file `page-alternative.html`.
+To manually export the alternative page template, navigate to the template and switch to the **Code editor** view, then copy the block markup code into a file in the `templates` directory. The file name is arbitrary, but it should be descriptive of the template. For this example, call the file `page-alternative.html`.
 
 > **Do:**
-> 2. Create the `page-alternative.html` file in the `templates` directory
-> 3. Navigate to the template and switch to the Code Editor view
-> 4. Copy the block markup from the Code Editor View
-> 5. Navigate to the `templates` directory of your theme, and open the `page-alternative.html` file in a text editor
-> 6. Paste the block markup into the `page-alternative.html` file, and save the file.
+> 1. Create the `page-alternative.html` file in the `templates` directory.
+> 2. Navigate to the template and switch to the **Code editor** view.
+> 3. Copy the block markup from the **Code editor** view.
+> 4. Navigate to the `templates` directory of your theme, and open the `page-alternative.html` file in a text editor.
+> 5. Paste the block markup into the `page-alternative.html` file, and save the file.
 
 ## Exporting Custom Templates using the Site Editor export tool
 
@@ -83,38 +83,11 @@ Then you can register your custom template, giving it a name, a list of postType
 
 ## A little housekeeping
 
-If you switch back to the Site Editor, and refresh the Templates list, you'll see there are now two Page Alternative templates listed. 
+If you switch back to the Site Editor, and refresh the Templates list, you'll see there is now two Page Alternative template listed. 
 
 ![Duplicate Templates](https://learn.wordpress.org/files/2022/10/updated-custom-templates-list.png)
 
-One is marked as added by your user, and the other as added by the theme. The one added by the user was created soley in the editor, and is therefore only stored in the database. The other is the file you just created and registered. You can therefore delete the one added by the user.
-
-To practice this process, export the post alternative template you created in the previous lesson. Follow the same steps as you did for the alternative page
-
-1. Export the template to the relevant template file
-2. Register the template in theme.json
-4. Delete the template added by the user
-
-Remember to add the new custom template to the `customTemplates` array in the theme.json file, using a comma between each custom template object. Remember to also set the correct post type for the alternative post template
-
-```json 
-"customTemplates": [
-		{
-			"name": "page-alternative",
-			"postTypes": [
-				"page"
-			],
-			"title": "Page Alternative"
-		}, 
-		{
-			"name": "post-alternative",
-			"postTypes": [
-				"post"
-			],
-			"title": "Post Alternative"
-		},
-	],
-```
+When adding new custom templates, remember to add it to the `customTemplates` array in the `theme.json` file using a comma between each custom template object. Remember to also set the correct post type for each custom template.
 
 ## Exporting Custom Template Parts
 
