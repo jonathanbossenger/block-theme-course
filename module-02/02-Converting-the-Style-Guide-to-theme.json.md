@@ -37,16 +37,16 @@ To implement this in the `theme.json` file, you first create a system wide Typog
 
 > **Note** 
 > - The `fontFamily` value is the CSS value of the font
-> - The `name` value is the name of the font as it will appear in the Site editor
+> - The `name` value is the name of the font as it will appear in the Site Editor
 > - The `slug` value is used to create the CSS variable, using the following format `--wp--preset--font-family--{slug}`
 
 This creates a CSS preset variable called `--wp--preset--font-family--system-font` that can be used in the theme's Global Styles. 
 
-To apply this font setting to your theme, you can select this preset in the Global Styles interface in the Editor.
+To apply this font setting to your theme, you can select this preset in the **Global Styles** interface in the Site Editor.
 
 ## Applying a Setting in the Global Styles Interface
 
-Switch back to the Site editor, open the Global Styles interface, and apply the new font in the Typography section.
+Switch back to the Site Editor, open the **Global Styles** interface, and apply the new font in the **Typography** section.
 
 > **Do** 
 > 1. Open the **Global Styles** interface.
@@ -60,7 +60,7 @@ Instantly you'll notice that the font in the template in the editor has been upd
 
 ![System Font Applied](https://learn.wordpress.org/files/2022/10/system-font-applied.png)
 
-Make sure to save your Custom Styles, to ensure they are applied to the theme.
+Make sure to save your **Custom Styles**, to ensure they are applied to the theme.
 
 ## Applying a Setting in the theme.json File
 
@@ -111,7 +111,7 @@ Now switch back to your Site Editor, and take a look at any of the templates. Yo
 
 At this point you might be wondering if it's possible to view the code for the styles applied in the Global Styles interface, in the same way you can view the code for the templates and template parts.
 
-Due to the nature of JSON vs HTML/block code, it's not currently possible. What you can do however is use the Overwrite option of the Create Block Theme plugin, which will update your theme.json file with anny changes applied in the Global Styles interface.
+Due to the nature of JSON vs HTML/block code, it's not currently possible. What you can do however is use the **Overwrite** option of the Create Block Theme plugin, which will update your theme.json file with anny changes applied in the Global Styles interface.
 
 If you do follow this process, note that the Create Block Theme plugin will write your theme.json top level elements in alphabetical order, which may not be the order you want. This won't break the functionality of the theme, but it may be a little confusing if, for example, you're used to seeing the `schema` and `version` items at the top of the file.
 
@@ -129,7 +129,7 @@ Styles can be applied globally, as we did for the typography, or to specific blo
 
 For the purposes of this lesson, we've gone ahead and done some groundwork for you. Go ahead and copy the `settings` and `styles` sections below and replace your current `theme.json` settings and styles.
 
-> **Note** These settings and styles are a sub set of the Twenty Twenty-Three Figma styles.
+> **Note** These settings and styles are a sub-set of the Twenty Twenty-Three Figma styles.
 
 **Settings:**
 
@@ -326,7 +326,7 @@ For the purposes of this lesson, we've gone ahead and done some groundwork for y
   ...
 ```
 
-Once you've updated your theme.json file, refresh the Site editor, and you'll see the settings and styles applied to your theme.
+Once you've updated your `theme.json` file, refresh the Site Editor, and you'll see the settings and styles applied to your theme.
 
 ![Settings and Styles applied](https://learn.wordpress.org/files/2022/10/updated-theme-json-applied.png)
 
@@ -342,7 +342,7 @@ So now might be a good time to review the header and footer template parts, and 
 
 If you take a look at any of the template designs, you'll notice the following commonalities:
 
-1. The largest element on any page is 1000 pixels wide (eg featured images, titles, latest posts etc.)
+1. The largest element on any page is 1000 pixels wide (e.g. featured images, titles, latest posts etc.)
 3. Any text content is contained within a 650 pixel wide area
 
 > **Note:** The actual text content size is 655 pixels wide in the designs, but it's a good idea to stick to round numbers in web design, so we'll go with 650.
@@ -361,34 +361,36 @@ These two layout values are set in the theme.json `layout` setting, as follows:
 Based on this, you can update your header and footer template parts to use the new `layout` `wideSize` setting:
 
 > **Do:** 
-> 1. Navigate to the Template Parts, and select the header template part
+> 1. Navigate to the **Template Parts**, and select the Header template part
 > 2. Select the **Row** block that contains the Site Title and Navigation
-> 3. Change the Alignment from None to Wide width
+> 3. Change the **Alignment** from **None** to **Wide width**
 > 4. Save the template
 
 This will force the header content to always display at a width of 1000 pixels across the site. Do the same for the footer template
 
 > **Do:**
-> 1. Navigate to the Template Parts, and select the footer template part
-> 2. Select the **Row** block that contains the Site Title and "powered by WordPress" text
-> 3. Change the Alignment from None to Wide width
+> 1. Navigate to the **Template Parts**, and select the Footer template part
+> 2. Select the **Row** block that contains the **Site Title** and "powered by WordPress" text
+> 3. Change the **Alignment** from **None** to **Wide width**
 > 4. Save the template
 
 Then take a look at the page template you created earlier, and you will see how the header and footer are now aligned to the 1000 pixel wide layout.
 
 ![Updated Page Template](https://learn.wordpress.org/files/2022/10/updated-page-template.png)
 
-At the same time, take a look at the Figma design for the page layout. You'll notice that the Featured Image and the Post Title should also be set to 1000 pixels wide, and the text should be 650 pixels wide.
+At the same time, take a look at the Figma design for the page layout. You'll notice that the Post Featured Image and the Title blocks should also be set to 1000 pixels wide, and the text should be 650 pixels wide.
 
 > **Do:**
-> 1. Navigate to the Page template
-> 2. Select the **Group** block that contains the Featured Image and Post Title, and set it's alignment to Wide width
-> 3. Select the **Featured Image** block, and set it's alignment to Wide width
-> 4. Select the **Post Title** block, and set it's alignment to Wide width
+> 1. Navigate to the Pages template
+> 2. Select the **Group** block that contains the **Post Featured Image** and **Title** blocks, and set it's alignment to **Wide width**
+> 3. Select the **Post Featured Image** block, and set it's alignment to **Wide width**
+> 4. Select the **Title** block, and set it's alignment to **Wide width**
 
-There is no design for the index template, mostly because this template will only be used as a fallback if the archive template is not defined. However, you can also set the Query Loop block to constrain itself to the widths specified in the theme.json, by toggling the **Inner blocks use content width** setting.
+There is no design for the Index template, mostly because this template will only be used as a fallback if the archive template is not defined. However, you can also set the **Query Loop** block to constrain itself to the widths specified in the theme.json, by toggling the **Inner blocks use content width** setting.
 
 ![Updated Index Template](https://learn.wordpress.org/files/2022/10/updated-page-template.png)
 
-> **Tip:** Using Group, Row and Column blocks for defining layout is very useful, so it's a good idea to learn about all the different [core blocks](https://developer.wordpress.org/block-editor/reference-guides/core-blocks/) and what functionality they provide.
+**Replace above screenshot with "updated-index-template.png"**
+
+> **Tip:** Using **Group**, **Row** and **Column** blocks for defining layout is very useful, so it's a good idea to learn about all the different [core blocks](https://developer.wordpress.org/block-editor/reference-guides/core-blocks/) and what functionality they provide.
 
