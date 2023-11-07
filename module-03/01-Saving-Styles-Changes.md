@@ -69,17 +69,17 @@ Take note of the following:
 
 ## How WordPress Decides Which Global Styles to use
 
-When a post or page is rendered, WordPress will first load all the settings and styles from the theme.json file, and then merge any settings or styles stored in the `wp_global_styles` custom post type record.
+When a post or page is rendered, WordPress will first load all the settings and styles from the `theme.json` file, and then merge any settings or styles stored in the `wp_global_styles` custom post type record.
 
-What is also important to understand is that if you make changes to a setting or style in theme.json, and there's also a value for that setting or style in the custom post type record, then the value from the custom post type record will be used, and not the value from theme.json. 
+What is also important to understand is that if you make changes to a setting or style in `theme.json`, and there's also a value for that setting or style in the custom post type record, then the value from the custom post type record will be used, and not the value from `theme.json`. 
 
 ## Resetting Global Styles
 
-If you manually make changes to the theme.json file, you can reset the theme styles in the Global Styles interface. To do this, click on the tree dots in the Global Styles interface, to open the options menu, and select **Reset to defaults**.
+If you manually make changes to the `theme.json` file, you can reset the theme styles in the Global Styles interface. To do this, click on the **Revisions** icon in the Global Styles interface and select **Reset to defaults**.
 
 ![Reset Global Styles](https://learn.wordpress.org/files/2022/10/reset-global-styles.png)
 
 > **Do:** Go ahead and reset the Global Styles now.
 
-This will delete the custom post type record, and the theme styles will be loaded from the theme.json file.
+This will delete the custom post type record, and the theme styles will be loaded from the `theme.json` file.
 
