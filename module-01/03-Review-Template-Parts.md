@@ -95,6 +95,6 @@ Notice that the **Template Part** block accepts the slug of the template part as
 
 ### Further Reading
 
-You can read more about the [block theme template parts](https://developer.wordpress.org/themes/block-themes/templates-and-template-parts/) in the Theme Handbook. [In this article](https://make.wordpress.org/core/2023/07/13/core-editor-improvement-advancing-the-power-of-patterns), you can learn more about the improvement made to the Site Editor in release 6.3 when reusable blocks became synced patterns. Furthermore, you can learn more in the article about [patterns, template parts, and synced patterns](https://wordpress.org/documentation/article/comparing-patterns-template-parts-and-reusable-blocks).
+You can read more about the [block theme template parts](https://developer.wordpress.org/themes/block-themes/templates-and-template-parts/) in the Theme Handbook. [In this article](https://make.wordpress.org/core/2023/07/13/core-editor-improvement-advancing-the-power-of-patterns), you can learn more about the improvement made to the Site Editor in WordPress 6.3 when reusable blocks became synced patterns. Furthermore, you can learn more in the article about [patterns, template parts, and synced patterns](https://wordpress.org/documentation/article/comparing-patterns-template-parts-and-reusable-blocks).
 
 Now that we've covered creating and editing templates and template parts in the Editor, let's look at the options for exporting them to theme files.

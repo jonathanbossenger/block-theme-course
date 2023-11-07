@@ -16,7 +16,7 @@ One of the main advantages of block themes over classic themes is that you can e
 
 This is useful when developing themes, as you could use a "base" or "starter" block theme, edit the base templates, and then export the updated templates to a new theme. Alternatively, you could create an entirely new theme from scratch for a specific use case, all from the Site Editor. 
 
-> **Note:** For a full breakdown of all the different parts of the Site Editor, take a look at this [detailed overview of the Site Editor](https://wordpress.org/support/article/site-editor/).
+> **Note:** For a full breakdown of all the different parts of the Site Editor, take a look at this [detailed overview](https://wordpress.org/support/article/site-editor/).
 
 You can then either save the template for the current site, which stores it in the database, or export the template code into the relevant file in the `templates` directory of your theme. 
 
