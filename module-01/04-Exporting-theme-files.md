@@ -63,7 +63,7 @@ After:
 
 If you wanted to follow the process for the page template, you'd first create the `page.html` template file in the `templates` directory, and copy the code from the page template in the Editor.
 
-> **Do:** Create the page.html template file now, and copy the block markup from the page template in the Site Editor.
+> **Do:** Create the `page.html` template file now, and copy the block markup from the page template in the Site Editor.
 
 ## Manually exporting template parts
 
@@ -84,7 +84,7 @@ You should now have 4 theme files on your block theme:
 
 While manually exporting templates and template parts helps with understanding how a block theme is built, it's not the most suitable solution. Not only is it tedious, but if you've made changes to the Global Styles, you have no way of also exporting those changes to the `theme.json` file. 
 
-Fortunately, The Site Editor has an export tool that will export all of your block theme code into an installable theme zip that you can then install on another WordPress site. You can access the export tool from the Site Editor's More Options menu, by clicking on the three dots.
+Fortunately, the Site Editor has an export tool that will export all of your block theme code into an installable theme zip that you can then install on another WordPress site. You can access the export tool from the Site Editor's More Options menu, by clicking on the three dots.
 
 ![Accessing the export tool](https://learn.wordpress.org/files/2022/10/export-tool.gif)
 
@@ -103,9 +103,9 @@ This plugin provides the same functionally as the Editor's Export tool, but it a
 3. Overwrite your current block theme with the changes made in the Editor.
 4. Create a new "empty" block theme, ready for you to start editing.
 
-If you prefer to keep a record of all the changes to your theme using revision control, like Git or SVN, then the Overwrite option is extremely valuable. You can make small changes to your theme in the Editor, overwrite the changes to the theme files, and then commit those changes to your revision control system.
+If you prefer to keep a record of all the changes to your theme using revision control, like Git or SVN, then the **Overwrite** option is extremely valuable. You can make small changes to your theme in the Editor, overwrite the changes to the theme files, and then commit those changes to your revision control system.
 
-> **Note:** If you have not created empty header.html and footer.html files in your parts directory, the Create Block Theme plugin will not save the changes if you use the Overwrite option. So make sure to create those files before using Overwrite.
+> **Note:** If you have not created empty `header.html` and `footer.html` files in your parts directory, the Create Block Theme plugin will not save the changes if you use the **Overwrite** option. So make sure to create those files before using **Overwrite**.
 
 ## Summary
 

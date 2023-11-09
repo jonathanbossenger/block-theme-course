@@ -1,6 +1,8 @@
 # Block Theme Template Parts
 
-Template Parts are reusable parts of a theme. Unlike templates, template parts are not rendered directly, but are instead used inside templates to render specfic content. Template parts are very similar to reusable blocks, in that they are reusable pieces of content that can be inserted into multiple places.
+The **Template Part** block is frequently used for creating the header and footer of your theme. Template parts are very similar to [synced patterns](https://wordpress.org/documentation/article/reusable-blocks), in that they are reusable pieces of content that can be inserted into multiple places.
+
+For this reason, you will now find your Template Parts within the **Patterns** folder in the Site Editor.
 
 If you completed the [Develop Your First Low-Code Block Theme course](https://learn.wordpress.org/course/develop-your-first-low-code-block-theme/) course you would have created a header and footer template part. These template parts are used inside the page template to render the same header and footer on all template files.
 
@@ -8,11 +10,11 @@ If you completed the [Develop Your First Low-Code Block Theme course](https://le
 
 Just like you did with creating a new Page template, you can also create new template parts from the Site Editor. The difference here is that you define the template part by giving it a name, and then choosing what type of template part it is.
 
-Create a new template part by navigating to the Editor. Toggle the Editor navigation menu, and select **Template Parts**.
+Create a new template part by opening the Patterns folder and selecting **Manage all template parts**.
 
 ![Template parts](https://learn.wordpress.org/files/2022/10/editor-template-parts.png)
 
-> **Do:** Click on the Add New button to create a new template part. 
+> **Do:** Click on the **Add New Template Part** button to create a new template part. 
 
 The Editor will ask you to give the template part a name, and select to either create a general template part, a header template part or a footer template part. 
 
@@ -26,7 +28,7 @@ Once the template part is created, you'll be taken straight to the new template 
 
 ![Editing the header template part](https://learn.wordpress.org/files/2022/10/editor-edit-header-template-part.png)
 
-Now you can begin designing your header template part. You can use Group blocks and Row blocks to group and align elements in the template part.
+Now you can begin designing your header template part. You can use **Group** blocks and **Row** blocks to group and align elements in the template part.
 
 > **Do:** 
 > 1. Add a **Group** block.
@@ -44,19 +46,26 @@ At this point you probably agree that it would be ideal if the navigation were a
 
 ![Header template part content 2](https://learn.wordpress.org/files/2022/10/editor-header-template-part-content-space.png)
 
+> **Do:** If you can't see the block's **Settings Sidebar** on the right, select the Row block and click on the Settings menu to show the **Settings Sidebar**.
+
 Save the template part. You can now use this template part in your page template.
 
-Now create a footer template part for your theme. Then you can add some block content to the footer
+> **Do:** Save the `Header` template part.
+
+Now create a footer template part for your theme.
+
+> **Do:** Create a `Footer` template part by navigating to the Template Parts list and clicking **Add New Template Part**. Name the template part and choose the Footer location.
+
+Then you can add some content to the footer.
 
 > **Do:**
-> 1. Create a Footer template part in the same way you created a header template part.
 > 2. Add a **Group** block.
 > 3. Add a **Row** block to the **Group** block.
 > 4. Add the **Site Title** block to the **Row** block.
 > 5. Change the **Site Title** block settings to use a paragraph and not an h1 tag.
-> 6. Add a **Paragraph** block next to the **Site Title** block with the text "Proudly powered by WordPress"
+> 6. Add a **Paragraph** block next to the **Site Title** block with the text "Proudly powered by WordPress".
 > 7. Add a link to the word WordPress in the **Paragraph** block that links to `https://wordpress.org/`.
-> 8. Change the **Justification** setting on the **Row** block to **Space between items**.
+> 8. Change the **Justification** setting on the **Row** block to "Space between items".
 
 ![Footer template part content](https://learn.wordpress.org/files/2022/10/editor-footer-template-part-content.png)
 
@@ -86,6 +95,6 @@ Notice that the **Template Part** block accepts the slug of the template part as
 
 ### Further Reading
 
-You can read more about the [block theme template parts](https://developer.wordpress.org/themes/block-themes/templates-and-template-parts/) in the Theme Handbook.
+You can read more about the [block theme template parts](https://developer.wordpress.org/themes/block-themes/templates-and-template-parts/) in the Theme Handbook. [In this article](https://make.wordpress.org/core/2023/07/13/core-editor-improvement-advancing-the-power-of-patterns), you can learn more about the improvement made to the Site Editor in WordPress 6.3 when reusable blocks became synced patterns. Furthermore, you can learn more in the article about [patterns, template parts, and synced patterns](https://wordpress.org/documentation/article/comparing-patterns-template-parts-and-reusable-blocks).
 
 Now that we've covered creating and editing templates and template parts in the Editor, let's look at the options for exporting them to theme files.
