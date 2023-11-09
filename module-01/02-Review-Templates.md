@@ -4,7 +4,7 @@
 
 The core files that make up a WordPress theme are templates. [Templates](https://developer.wordpress.org/themes/basics/template-files/) are the files that WordPress uses to render the content of a post or page. 
 
-In a classic theme templates are PHP files that contain HTML and PHP code. In a block theme, templates are HTML files that contain HTML and block markup. Both classic and block theme templates follow the WordPress [Template Hierarchy](https://developer.wordpress.org/themes/basics/template-hierarchy/).
+In a block theme, templates are HTML files that contain HTML and block markup. Block theme templates follow the WordPress [Template Hierarchy](https://developer.wordpress.org/themes/basics/template-hierarchy/).
 
 The Template Hierarchy is the logic WordPress uses to decide which theme template file to use when rendering content. By creating template files that follow the Template Hierarchy naming convention WordPress can automatically determine which template file to use for a given piece of content.
 
@@ -12,7 +12,7 @@ For example, to render the content for a single post, you can create any of the 
 
 ## Editing or Creating Templates
 
-One of the main advantages of block themes over classic themes is that you can edit existing templates or create new theme templates from the Site Editor. 
+One of the main advantages of block themes is that you can edit existing templates or create new theme templates from the Site Editor. 
 
 This is useful when developing themes, as you could use a "base" or "starter" block theme, edit the base templates, and then export the updated templates to a new theme. Alternatively, you could create an entirely new theme from scratch for a specific use case, all from the Site Editor. 
 
@@ -24,17 +24,25 @@ You can then either save the template for the current site, which stores it in t
 
 In the previous lesson, you created an empty `index.html` template file. Let's add some content to this template.
 
-Start by navigating to Appearance -> Editor. The Site Editor will open and after clicking anywhere on the blank canvas, you will be ready to add content to your index.html template.
+Start by navigating to **Appearance -> Editor**, and the Site Editor will open.
 
-![The index template in the editor](https://learn.wordpress.org/files/2022/10/empty-index-template.png)
+![The Site Editor](../images/module-01/lesson-02/site-editor.png)
+
+After clicking anywhere on the blank canvas, you will be ready to add content to your index.html template.
+
+![The index template in the editor](../images/module-01/lesson-02/empty-index-template.png)
+
+> **Do:**
+> 1. Navigate to **Appearance -> Editor**
+> 2. Click anywhere on the blank canvas to start adding content to the template.
 
 As the Index template is the default template that WordPress will load if it can't find a matching template file for the content being rendered, it's a good idea to add some content to this template. General best practice is to populate this template with a query loop, so that all posts on the site are displayed.
 
 > **Note:** The Query Loop block is equivalent to [The Loop](https://codex.wordpress.org/The_Loop) in a classic theme. For more details on the power of the Query Loop block, take a look at this [tutorial](https://learn.wordpress.org/tutorial/taking-advantage-of-query-loops/).
 
-While editing your template, you can toggle the Site Editor's List View to get a better overview of the template's structure, and select specific blocks.
+While editing your template, you can toggle the Site Editor's **List View** to get a better overview of the template's structure, and select specific blocks.
 
-![Enabling the List View](https://learn.wordpress.org/files/2022/10/enabling-list-view.png)
+![Enabling the List View](../images/module-01/lesson-02/enabling-list-view.png)
 
 Go ahead and add a query loop to the template, the pagination block, and a spacer to allow a bit of space between the query loop and the pagination.
 
@@ -43,13 +51,13 @@ Go ahead and add a query loop to the template, the pagination block, and a space
 > 2. Add a **Pagination** block inside the **Query Loop**, right at the bottom, after the **Post Template** block.
 > 3. Inside the **Query Loop**, add a **Spacer** block at the bottom of the **Post Template** block.
 
-![The index template with a header and query loop](https://learn.wordpress.org/files/2022/10/basic-index-template.png)
+![The index template with a header and query loop](../images/module-01/lesson-02/basic-index-template.png)
 
 If you switch to the Code editor View, you'll be able to see the block markup for the Query Loop block.
 
 > **Do:** Enable the Code editor view by clicking the More Options three-dot menu and selecting **Code editor**.
 
-> ![Enabling the Code editor](https://learn.wordpress.org/files/2022/10/editor-more-options.png)
+> ![Enabling the Code editor](../images/module-01/lesson-02/editor-more-options.png)
 
 ```
 <!-- wp:query {"queryId":31,"query":{"perPage":3,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":true}} -->
@@ -89,23 +97,23 @@ If you save this template content, it will save the changes to the database. Thi
 
 ### Adding New Templates from the Site Editor
 
-Besides adding block content to existing templates, you can also create brand new templates from the Site Editor. 
+Besides adding block content to existing templates, you can also create brand-new templates from the Site Editor. 
 
 To start from within the Site Editor, click on the **Open Navigation** button in the top left corner of your screen.
 
 Navigate back to Templates then click on the **Add New Template** plus sign icon.
 
-![Editor Navigation](https://learn.wordpress.org/files/2022/10/editor-navigation.png)
+![Editor Navigation](../images/module-01/lesson-02/editor-navigation.png)
 
 Alternatively, you can select **Manage all templates** where you'll be presented with a list of the templates in this theme, and a button to add a new template.
 
-![Editor Templates](https://learn.wordpress.org/files/2022/10/editor-templates.png)
+![Editor Templates](../images/module-01/lesson-02/editor-templates.png)
 
-![Editor Add new template](https://learn.wordpress.org/files/2022/10/editor-add-new-template.png)
+![Editor Add new template](../images/module-01/lesson-02/editor-add-new-template.png)
 
 The Site Editor will give you the option of creating a new template based on the primary templates, ranging from things like a Front Page to a 404 Page. 
 
-**NEW SCREENSHOT GOES HERE editor-add-new-template-popup.png**
+![Editor Add new template](../images/module-01/lesson-02/editor-add-new-template-popup.png)
 
 > **Do:** 
 > 1. Select the **Pages** option, to create a new page template.
@@ -124,7 +132,7 @@ Because a page in WordPress is merely a custom post type, you can use the **Post
 
 Your final Pages template should look something like this:
 
-![Image of the page template](https://learn.wordpress.org/files/2022/10/page-template.png)
+![Image of the page template](../images/module-01/lesson-02/page-template.png)
 
 Now switch to the Code editor view, to see the block markup that makes up the Pages template.
 
