@@ -14,11 +14,11 @@ All themes, including block themes, reside in a directory in the `wp-content/the
 
 ![Image of themes directory with 'new-block-theme' directory](https://learn.wordpress.org/files/2022/10/new-block-theme.png)
 
-Once you've created your theme directory, your theme must have at minimum a `style.css` file and an `index.php` file. 
+Once you've created your theme directory, your theme must have at minimum a `style.css` file and an `index.html` template file. 
 
 ### style.css
 
-In a block theme, the `style.css` is primarily used to register the [header comment](https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/#basic-structure) for your theme, which is used to display information about the theme in the Appearance -> Themes dashboard panel. 
+In a block theme, the `style.css` is primarily used to register the [header comment](https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/#basic-structure) for your theme, which is used to display information about the theme in the **Appearance -> Themes** dashboard panel. 
 
 ![Theme Information](https://learn.wordpress.org/files/2022/10/base-block-theme-01.png)
 
@@ -67,36 +67,25 @@ Text Domain: new-block-theme
 */
 ```
 
-### index.php
+### index.html template
 
-The `index.php` file is the theme template file that WordPress will use by default, if it can't find a matching template file for the content being rendered. For the purposes of block themes, this file can be left empty, and just include the PHP opening tag. Some developers like to add a comment to the file to indicate that it is intentionally left blank.
-
-> **Do:** Create your theme's index.php file, and add the following code:
-
-```php
-<?php
-// Silence is golden.
-```
-
-### index.html block template
-
-Block themes require one additional file, and `index.html` template. This file needs to be created inside a new directory in the theme directory called `templates`. This file can be empty, but it is required for the theme to be recognized as a block theme, and enable the Editor option in the Appearance menu.
+Block themes require one additional file, and `index.html` template. This file needs to be created inside a new directory in the theme directory called `templates`. This file can be empty, but it is required for the theme to be recognized as a block theme, and enable the **Editor** option in the **Appearance** menu.
 
 > **Do:**
 > 1. Create your theme's `templates` directory.
 > 2. Create your theme's `index.html` file inside this directory, and leave it blank for now.
 
-### theme.json
+## Global Settings and Styles - theme.json
 
-Finally, a block theme should have a theme.json file. This file handles the global settings and styles for a block theme. While this file is not required for a block theme to be active on a WordPress site, for the purposes of developing your theme, it's extremely useful to create it early on. 
+While not a requirement, it's a good idea to give a new block theme a `theme.json` file. This file will store the global settings and styles for a block theme. While this file is not required for a block theme to be active on a WordPress site, for the purposes of developing your theme, it's extremely useful to create it early on. 
 
-It's not a requirement to add any settings or styles to the theme.json file when starting a new block theme. 
+It's also not a requirement to add any settings or styles to the `theme.json` file when starting a new block theme. 
 
-However, it is useful to start by including the JSON schema, as well as setting the theme.json "version", and creating empty fields for the "settings" and "styles". 
+However, it is useful to start by including the JSON schema, as well as setting the `theme.json` version property, and creating empty fields for the settings and styles properties. 
 
 > **Note:** The JSON schema is used by code editors to provide things like tooltips, autocomplete, and validation while editing theme.json.
 
-> **Do:** Create your theme's theme.json file in the root of the theme directory, and add the following code:
+> **Do:** Create your theme's `theme.json` file in the root of the theme directory, and add the following code:
 
 ```
 {
@@ -111,13 +100,13 @@ However, it is useful to start by including the JSON schema, as well as setting 
 
 Once you've added these required files, you are ready to start developing your block theme.
 
-![Minimum Theme Requirements](https://learn.wordpress.org/files/2022/10/directory-structure.png)
+![Minimum Theme Requirements](../images/module-01/lesson-01/directory-structure.png)
 
 > **Note:** For the rest of this course, you'll be working in your new theme, so go ahead and activate it now from the **Appearance -> Themes** dashboard page.
 
 ![Image of new block theme active](https://learn.wordpress.org/files/2022/10/new-block-theme-active.png)
 
-### Further Reading
+## Further Reading
 
 You can read more about the minimum requirements for setting up a Block Theme in the section on [Block Themes](https://developer.wordpress.org/themes/block-themes/block-theme-setup/) in the Theme Handbook. Also, check out these useful [developer tools and resources](https://developer.wordpress.org/themes/basics/tools-resources/) that will help speed up your block theme development.
 
