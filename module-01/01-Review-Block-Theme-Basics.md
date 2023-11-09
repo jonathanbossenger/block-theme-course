@@ -10,7 +10,7 @@ Let's start by reviewing the requirements for a block theme. This is the bare mi
 
 All themes, including block themes, reside in a directory in the `wp-content/themes` directory of your WordPress installation. If you take a look at the `wp-content/themes` directory of your WordPress installation you will see a number of directories, each containing a theme. The directory name of each theme is also known as the theme slug which is used to identify the theme in the WordPress admin.
 
-> **Do:** To begin create a new directory in your `themes` directory, and give the directory the name `new-block-theme` for your new theme.
+> **Do:** To begin create a new directory in your `themes` directory, and give the directory the name `new-block-theme`.
 
 ![Image of themes directory with 'new-block-theme' directory](https://learn.wordpress.org/files/2022/10/new-block-theme.png)
 
